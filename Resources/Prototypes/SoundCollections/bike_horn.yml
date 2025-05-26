@@ -11,7 +11,7 @@
 - type: soundCollection
   id: BananiumHorn
   files:
-  - /Audio/Items/airhorn.ogg
+  - /Audio/Items/bikehornreverb.ogg
 
 - type: soundCollection
   id: DeskBell
