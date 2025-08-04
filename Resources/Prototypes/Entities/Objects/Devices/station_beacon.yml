@@ -722,14 +722,6 @@
     defaultText: station-beacon-barbershop
 
 - type: entity
-  parent: DefaultStationBeaconCommand
-  id: DefaultStationBeaconCommandBar
-  suffix: Command Bar
-  components:
-  - type: NavMapBeacon
-    defaultText: station-beacon-command-bar
-
-- type: entity
   parent: DefaultStationBeaconService
   id: DefaultStationBeaconRestroom
   suffix: Restroom
