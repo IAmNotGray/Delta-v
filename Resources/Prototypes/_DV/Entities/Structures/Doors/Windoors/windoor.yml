@@ -198,3 +198,12 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsHydroponics ]
+
+- type: entity
+  parent: Windoor
+  id: WindoorReporterLocked
+  suffix: Reporter, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsReporter ]

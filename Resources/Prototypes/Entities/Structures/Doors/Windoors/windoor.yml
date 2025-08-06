@@ -140,15 +140,6 @@
     layoutId: AirlockService
 
 - type: entity
-  parent: Windoor
-  id: WindoorReporterLocked
-  suffix: Reporter, Locked
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsReporter ]
-
-- type: entity
   parent: WindoorServiceLocked
   id: WindoorTheatreLocked
   suffix: Theatre, Locked
