@@ -24,6 +24,14 @@
   - type: Label
     currentLabel: holopad-command-lobby
 
+- type: entity
+  parent: Holopad
+  id: HolopadCommandBar
+  suffix: Command Bar
+  components:
+  - type: Label
+    currentLabel: holopad-command-bar
+
 #Justice
 - type: entity
   parent: Holopad
@@ -48,6 +56,14 @@
   components:
   - type: Label
     currentLabel: holopad-justice-lobby
+
+- type: entity
+  parent: Holopad
+  id: HolopadJusticeAttorney
+  suffix: Attorney
+  components:
+  - type: Label
+    currentLabel: holopad-justice-attorney
 
 #Logistics
 - type: entity

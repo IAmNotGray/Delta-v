@@ -124,14 +124,6 @@
   - type: NavMapBeacon
     defaultText: station-beacon-restroom
 
-- type: entity
-  parent: DefaultStationBeaconService
-  id: DefaultStationBeaconArcade
-  suffix: Arcade
-  components:
-  - type: NavMapBeacon
-    defaultText: station-beacon-arcade
-
 #Surveilance
 - type: entity
   parent: DefaultStationBeaconAI
@@ -174,7 +166,6 @@
   - type: NavMapBeacon
     defaultText: station-beacon-pool
 
-
 - type: entity
   parent: DefaultStationBeacon
   id: DefaultStationBeaconLaundromat
@@ -190,6 +181,14 @@
   components:
   - type: NavMapBeacon
     defaultText: station-beacon-barbershop
+
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconArcade
+  suffix: Arcade
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-arcade
 
 #Security
 - type: entity
