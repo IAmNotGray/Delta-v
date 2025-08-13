@@ -73,4 +73,5 @@ holopad-general-pool = General - Pool
 holopad-general-shooting-range = General - Shooting Range
 holopad-security-hallway = Security - Hallway
 holopad-security-bomb-training = Security - Bomb Training
-holopad-security-solitary = Solitary Confinement
+holopad-security-solitary = Security - Solitary Confinement
+holopad-general-zoo = General - Zoo

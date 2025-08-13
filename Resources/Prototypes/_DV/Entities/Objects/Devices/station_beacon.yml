@@ -190,6 +190,14 @@
   - type: NavMapBeacon
     defaultText: station-beacon-arcade
 
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconZoo
+  suffix: Zoo
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-zoo
+
 #Security
 - type: entity
   parent: DefaultStationBeaconSecurity

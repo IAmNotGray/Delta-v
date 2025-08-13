@@ -295,6 +295,14 @@
   - type: Label
     currentLabel: holopad-general-pool
 
+- type: entity
+  parent: Holopad
+  id: HolopadGeneralZoo
+  suffix: Zoo
+  components:
+  - type: Label
+    currentLabel: holopad-general-zoo
+
 #Medical
 - type: entity
   parent: Holopad
