@@ -10,11 +10,15 @@ cosmic-examine-text-imposition = [color=#4cabb3]A barrier of astral power wards 
 cosmic-examine-text-chantry = [color=#4cabb3]You get the horrific feeling that there's somebody trapped inside![/color]
 cosmic-examine-text-effigy = [color=#4cabb3]It radiates unstable anomalous energy![/color]
 cosmic-examine-text-god = [color=#4cabb3]the end is the end is the end is the end is the end is the end is the end is the end is the end is the end is[/color]
+cosmic-examine-text-subtle-mark = [color=#4cabb3]Otherwordly energies surge within their eyes![/color]
 
 ## CULTIST EXAMINES
 cosmic-examine-text-forthecult = [color=#4cabb3]This is our doing. As things should be.[/color]
 cosmic-examine-text-cultentity = [color=#4cabb3]A powerful ally.[/color]
 cosmic-examine-text-culteffigy = [color=#4cabb3]This may prove useful.[/color]
+cosmic-examine-transmutable = This can be transmuted into [color=#4cabb3]{$result}[/color] by using [color=#4cabb3]{$glyph}[/color].
+cosmic-examine-transmutable-verb-text = Transmutability.
+cosmic-examine-transmutable-error = This item should be transmutable, but it doesn't seem to work.
 
 ## GLYPH EXAMINES
 cosmic-examine-glyph-cultcount = {$COUNT ->

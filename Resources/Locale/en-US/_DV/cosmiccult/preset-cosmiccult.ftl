@@ -18,7 +18,7 @@ cosmiccult-vote-steward-briefing =
     Ensure that The Monument is placed in a secure location, and organize the cult to ensure your collective victory.
     You are not permitted to instruct cultists on how to use or spend their Entropy.
 
-cosmiccult-finale-autocall-briefing = The Monument activates in {$minutesandseconds}! Gather yourselves, and prepare for the end.
+cosmiccult-finale-autocall-briefing = The Monument has been completed! Gather yourselves, activate it, and prepare for the end.
 cosmiccult-finale-ready = A terrifying light surges forth from The Monument!
 cosmiccult-finale-speedup = The beckoning quickens! Energy surges through the surroundings...
 
@@ -104,9 +104,8 @@ cosmiccult-monument-stage2-briefing =
     Its influence will affect realspace in {$time} seconds.
 
 cosmiccult-monument-stage3-briefing =
-    The Monument has been completed!
+    The Monument grows in power!
     Its influence will begin to overlap with realspace in {$time} seconds.
-    This is the final stretch! Amass as much entropy as you can muster.
 
 
 ## MALIGN RIFTS
@@ -132,6 +131,7 @@ cosmiccult-chantry-powerup = The vacuous chantry flares to life!
 
 cosmiccult-ui-deconverted-title = Deconverted
 cosmiccult-ui-converted-title = Converted
+cosmiccult-ui-mindwiped-title = Mindwiped
 cosmiccult-ui-roundstart-title = The Unknown
 
 cosmiccult-ui-converted-text-1 =
@@ -151,6 +151,12 @@ cosmiccult-ui-deconverted-text-1 =
 cosmiccult-ui-deconverted-text-2 =
     You have lost all memories pertaining to the Cosmic Cult.
     If you are converted back, these memories will return.
+
+cosmiccult-ui-mindwiped-text-1 =
+    You have been mindwiped with a censer.
+cosmiccult-ui-mindwiped-text-2 =
+    You no longer remember anything that happened during this round.
+    There is no way to recover your memory.
 
 cosmiccult-ui-popup-confirm = Confirm
 
@@ -176,11 +182,11 @@ objective-condition-victory-desc = Beckon The Unknown, and herald the final curt
 
 cosmiccult-radio-tier1-progress = The Monument is beckoned unto the station...
 
-cosmiccult-announce-tier2-progress = An unnerving numbness prickles your senses.
-cosmiccult-announce-tier2-warning = Scanners detect a notable increase in Λ-CDM! Rifts in realspace may appear shortly. Please alert your station's chaplain if sighted.
+cosmiccult-announce-tier3-progress = An unnerving numbness prickles your senses.
+cosmiccult-announce-tier3-warning = Scanners detect an abnormal increase in Λ-CDM! Report any unnatural phenomena to security or epistemics.
 
-cosmiccult-announce-tier3-progress = Arcs of noospheric energy crackle across the station's groaning structure. The end draws near.
-cosmiccult-announce-tier3-warning = Critical increase in Λ-CDM detected. Infected personnel are to be subdued or neutralized on sight.
+cosmiccult-announce-pre-finale-progress = Arcs of noospheric energy crackle across the station's groaning structure. The end draws near.
+cosmiccult-announce-pre-finale-warning = Critical increase in Λ-CDM detected! We are monitoring the situation. Await further instructions.
 
 cosmiccult-announce-finale-warning = All station crew. The Λ-CDM anomaly is going supercritical, instruments failing; noospheric-to-real transitional event horizon IMMINENT. If you are not already on counter-protocol, immediately sortie and intervene. Repeat: Intervene immediately or die.
 
