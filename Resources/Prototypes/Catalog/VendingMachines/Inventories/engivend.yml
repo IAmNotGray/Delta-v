@@ -8,6 +8,8 @@
     CrowbarYellow: 8
     Multitool: 4
     NetworkConfigurator: 5
+    NaniteApplicator: 4 # Monolith - Nanite Applicator
+    JerryCanNaniteFuel: 2 # Monolith - Nanite Applicator
     PowerCellMedium: 5
     ClothingHandsGlovesColorYellow: 6
     MetalFoamGrenade: 3 # DeltaV - added

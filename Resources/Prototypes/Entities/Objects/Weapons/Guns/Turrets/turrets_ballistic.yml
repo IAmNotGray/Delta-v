@@ -45,7 +45,8 @@
     graph: WeaponTurretSyndicateDisposable
     node: disposableTurret
   - type: Repairable
-    qualityNeeded: "Anchoring"
+    qualities: # Monolith - Converted to Array
+    - Anchoring
     doAfterDelay: 3
   - type: TriggerOnEmptyGunshot
   - type: ExplodeOnTrigger

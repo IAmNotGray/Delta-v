@@ -5,6 +5,7 @@ using Content.Shared.Database;
 using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
 using Content.Shared.Popups;
+using Content.Shared.Tools.Components; // Monolith - Nanite Applicators
 using Content.Shared.Tools.Systems;
 using Robust.Shared.Serialization;
 
@@ -115,8 +116,18 @@ public sealed partial class RepairableSystem : EntitySystem
             delay *= ent.Comp.SelfRepairPenalty;
         }
 
+        // BEGIN Monolith - Nanite Applicators
+        if (!TryComp<ToolComponent>(args.Used, out var tool))
+            return;
+
         // Run the repairing doafter
-        args.Handled = _toolSystem.UseTool(args.Used, args.User, ent.Owner, delay, ent.Comp.QualityNeeded, new RepairDoAfterEvent(), ent.Comp.FuelCost);
+        foreach (var quality in ent.Comp.QualityNeeded)
+        {
+            if (_toolSystem.HasQuality(args.Used, quality, tool))
+                args.Handled = _toolSystem.UseTool(args.Used, args.User, ent.Owner, delay, quality, new RepairDoAfterEvent(), ent.Comp.FuelCost);
+        }
+        // END Monolith
+
     }
 }
 

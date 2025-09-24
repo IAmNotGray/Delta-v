@@ -55,6 +55,9 @@
     resistance: 2
   - type: BlockWeather
   - type: SunShadowCast
+  - type: Repairable # Monolith - Nanite Applicator
+    qualities:
+    - Applicating
 
 - type: entity
   abstract: true
