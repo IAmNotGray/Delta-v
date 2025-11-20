@@ -22,3 +22,38 @@
   - type: ClothingSpeedModifier # Make em a bit more nimble so they can hide/Run
     walkModifier: 1
     sprintModifier: 1
+
+- type: entity
+  parent: ClothingOuterEVASuitBase
+  id: ClothingOuterHardsuitEVAScience
+  name: Epistemics EVA Suit
+  description: A modified EVA suit padded with shock-absorbant airbags. Looks like it could take a pretty strong blast.
+  components:
+  - type: Sprite
+    sprite: _DV/Clothing/OuterClothing/Suits/eva_epistemics.rsi
+  - type: Clothing
+    sprite: _DV/Clothing/OuterClothing/Suits/eva_epistemics.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetEVAScience
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot { }
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.6 
+        Blunt: 0.85
+        Heat: 0.9
+        Caustic: 0.9 # Wouldn't want John Scientist getting obliterated by the funny caustic chem artifact.
+  - type: ExplosionResistance
+    damageCoefficient: 0.45 # Practically a budget bombsuit, so it absorbs a lot of explosion damage.
+  - type: ClothingSpeedModifier # Super lightweight, so very minor speed modifier.
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: Tag
+    tags:
+    - SuitEVA
+    - MonkeyWearable
+    - WhitelistChameleon
+    - HidesHarpyWings

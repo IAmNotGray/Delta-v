@@ -49,3 +49,13 @@
   canBuildInImpassable: false
   conditions:
   - !type:TileNotBlocked
+
+- type: construction
+  id: CatwalkReinforced
+  graph: CatwalkReinforced
+  startNode: start
+  targetNode: CatwalkReinforced
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false

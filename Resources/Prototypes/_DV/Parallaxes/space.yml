@@ -74,3 +74,26 @@
       configPath: "/Prototypes/Parallaxes/parallax_config.toml"
     slowness: 0.875
   layersLQUseHQ: false
+
+- type: parallax
+  id: CrucibleStation
+  layers:
+  - texture:
+      !type:ImageParallaxTextureSource
+      path: "/Textures/_DV/Parallaxes/placeholderlava.png"
+    slowness: 0.998
+    scale: "0.5, 0.5"
+    scrolling: "0.05, -0.005"
+  - texture:
+      !type:ImageParallaxTextureSource
+      path: "/Textures/_DV/Parallaxes/noisegrey.png"
+    slowness: 0.95
+    scale: "2.5, 2.5"
+    scrolling: "0.1, -0.05"
+  - texture:
+      !type:ImageParallaxTextureSource
+      path: "/Textures/_DV/Parallaxes/noisegreyflipped.png"
+    slowness: 0.95
+    scale: "5, 5"
+    scrolling: "-0.1, 0.05"
+  layersLQUseHQ: true

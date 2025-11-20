@@ -1,22 +1,22 @@
-# TODO move this to tiles once tile smoothing is supported
+# god please work
 - type: entity
-  id: Catwalk
-  name: catwalk
-  description: A catwalk for easier EVA maneuvering and cable placement.
+  id: CatwalkReinforced
+  name: reinforced catwalk
+  description: A tough, reinforced variant of the catwalk everyone knows and loves.
   placement:
     mode: SnapgridCenter
   components:
   - type: Clickable
   - type: Sprite
-    sprite: _DV/Structures/Catwalks/catwalk.rsi # Delta-V - Resprite
+    sprite: _DV/Structures/Catwalks/reinforcedcatwalk.rsi
     drawdepth: FloorTiles
   - type: Icon
-    sprite: _DV/Structures/Catwalks/catwalk.rsi # Delta-V - Resprite
+    sprite: _DV/Structures/Catwalks/reinforcedcatwalk.rsi
     state: catwalk_preview
   - type: Transform
     anchored: true
   - type: IconSmooth
-    key: catwalk
+    key: catwalk_reinforced
     base: catwalk_
   - type: FootstepModifier
     footstepSoundCollection:
@@ -27,8 +27,8 @@
     tags:
       - Catwalk
   - type: Construction
-    graph: Catwalk
-    node: Catwalk
+    graph: CatwalkReinforced
+    node: CatwalkReinforced
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic
@@ -36,23 +36,23 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 500
+        damage: 700
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 500
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          PartRodMetal: # takes two to construct, so drop less than that
+          PartRodMetal: # recipe needs 4 rods, drop half of that
             min: 0
-            max: 1
+            max: 2
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: TrayScanReveal
   - type: RCDDeconstructable
-    cost: 2
-    delay: 2
+    cost: 4
+    delay: 4
     fx: EffectRCDDeconstruct2
