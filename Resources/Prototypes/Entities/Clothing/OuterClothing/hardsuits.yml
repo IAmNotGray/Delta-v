@@ -29,7 +29,7 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.8
-        Radiation: 0.5
+        Radiation: 0.85 # Delta-V - Was 0.5
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.7
@@ -47,7 +47,7 @@
   parent: [ClothingOuterHardsuitBase, BaseEngineeringContraband]
   id: ClothingOuterHardsuitEngineering
   name: engineering hardsuit
-  description: A special suit that protects against hazardous, low pressure environments. Has radiation shielding.
+  description: A special suit that protects against hazardous, low pressure environments. # Delta-V - Removed "Has radiation shielding."
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/engineering.rsi
@@ -61,12 +61,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
+        Blunt: 0.8 # Delta-V - Was 0.9
+        Slash: 0.8 # Delta-V - Was 0.9
+        Piercing: 0.85 # Delta-V - Was 0.9
         Shock: 0.8
         Caustic: 0.5
-        Radiation: 0.2
+        Radiation: 0.8 # Delta-V - Was 0.2
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.7
