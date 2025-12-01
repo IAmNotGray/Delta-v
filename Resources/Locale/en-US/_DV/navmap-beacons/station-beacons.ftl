@@ -16,6 +16,7 @@ station-beacon-psych = Psych
 
 station-beacon-glimmer-prober = Prober
 station-beacon-forensic-mantis = Mantis
+station-beacon-crematorium = Crematorium
 
 station-beacon-mailroom = Mail
 
@@ -44,6 +45,8 @@ station-beacon-corpsman = Corpsman
 station-beacon-security-solitary = Solitary Confinement
 station-beacon-bomb-training = Bomb Training
 station-beacon-perma-disposals = Perma Disposals
+station-beacon-security-outpost = Security Outpost
+station-beacon-evidence = Evidence Room
 
 station-beacon-justice = Justice
 station-beacon-chiefjustice = Chief Justice

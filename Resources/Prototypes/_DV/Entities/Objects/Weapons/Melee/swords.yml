@@ -62,3 +62,48 @@
   - type: RevealRevenantOnCollide
   - type: CollisionWake
     enabled: false
+
+- type: entity
+  name: The Nightingale
+  parent: BaseMeleeWeaponEnergy
+  id: Nightingale
+  description: When the button on the hilt is pressed, a long blade of shadow extends outward, glowing despite itself. The blade brings a certain weight to the sword, oddly enough. Seems like it'll do heavy damage, but not very fast.
+  components:
+  - type: EnergySword
+    colorOptions: [ white ]
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+        types:
+            Slash: 25
+            Heat: 20
+            Structural: 50
+    deactivatedSecret: true
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Melee/nightingale.rsi
+    layers:
+      - state: e_sword
+      - state: e_sword_blade
+        color: white
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: MeleeWeapon # trade swing speed for heavy damage
+    attackRate: 0.6
+    soundHit:
+      path: /Audio/Weapons/eblade1.ogg
+    damage:
+      types:
+        Blunt: 6
+  - type: Item
+    size: Small
+    storedSprite:
+      state: storage
+      sprite: _DV/Objects/Weapons/Melee/nightingale.rsi
+  - type: ItemToggleSize
+    activatedSize: Huge
+    sprite: _DV/Objects/Weapons/Melee/nightingale.rsi
+  - type: PointLight
+    enabled: false
+    color: white
+    radius: 2
+    energy: 2

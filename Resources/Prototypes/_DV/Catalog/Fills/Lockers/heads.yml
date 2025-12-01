@@ -99,3 +99,71 @@
     - id: SecWatchCartridge
     - id: LunchboxCommandFilledRandom
       prob: 0.3
+
+- type: entityTable
+  id: LockerFillHeadOfSecuritySword
+  table: !type:AllSelector
+    children:
+    - id: BoxPDASecurity
+    - id: Nightingale # Crucible-specific, but feel free to use on other maps too.
+    - id: HoSIDCard
+    - id: ClothingOuterVestPlateCarrierAdv
+    - id: SecWatchCartridge
+    - id: LunchboxCommandFilledRandom
+      prob: 0.3
+
+- type: entityTable
+  id: LockerFillHeadOfSecurityNoGun
+  table: !type:AllSelector
+    children:
+    - id: BookSecretDocuments
+    # - id: WeaponEnergyShotgun # DeltaV - Moved to warden locker
+    - id: BookSpaceLaw
+    - id: BoxEncryptionKeySecurity
+    - id: CigarGoldCase
+      prob: 0.50
+    - id: ClothingBeltSecurityFilled
+    - id: ClothingEyesGlassesSecurity
+    - id: ClothingHeadsetAltSecurity
+    - id: ClothingMaskNeckGaiter
+    - id: ClothingOuterCoatHoSTrench
+    - id: ClothingShoesBootsJack
+    - id: DoorRemoteSecurity
+    - id: HoloprojectorSecurity
+    - id: RubberStampHos
+    - id: SecurityTechFabCircuitboard
+    - id: CargoRequestSecurityComputerCircuitboard
+    - id: WeaponDisabler
+    - id: DrinkHosFlask
+
+# HoS Locker w/ Sword + Hardsuit
+- type: entity
+  id: LockerHeadOfSecurityFilledSwordHardsuit
+  parent: LockerHeadOfSecurity
+  suffix: Filled, Sword & Hardsuit
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: LockerFillHeadOfSecuritySword
+        - !type:NestedSelector
+          tableId: FillHeadOfSecurityHardsuit
+        - !type:NestedSelector
+          tableId: LockerFillHeadOfSecurityNoGun
+
+# HoS Locker w/ Sword no Hardsuit
+- type: entity
+  id: LockerHeadOfSecurityFilledSword
+  parent: LockerHeadOfSecurity
+  suffix: Filled, Sword
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: LockerFillHeadOfSecurityNoGun
+        - !type:NestedSelector
+          tableId: LockerFillHeadOfSecuritySword

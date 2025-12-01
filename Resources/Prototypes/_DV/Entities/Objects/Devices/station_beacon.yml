@@ -73,6 +73,14 @@
   - type: NavMapBeacon
     defaultText: station-beacon-forensic-mantis
 
+- type: entity
+  parent: DefaultStationBeaconScience
+  id: DefaultStationBeaconCrematorium
+  suffix: Crematorium
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-crematorium
+
 #Logistics
 - type: entity
   parent: DefaultStationBeaconSupply
@@ -254,6 +262,22 @@
   components:
   - type: NavMapBeacon
     defaultText: station-beacon-perma-disposals
+
+- type: entity
+  parent: DefaultStationBeaconSecurity
+  id: DefaultStationBeaconSecurityOutpost
+  suffix: Security Outpost
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-security-outpost
+
+- type: entity
+  parent: DefaultStationBeaconSecurity
+  id: DefaultStationBeaconEvidence
+  suffix: Evidence
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-evidence
 
 #Justice
 - type: entity

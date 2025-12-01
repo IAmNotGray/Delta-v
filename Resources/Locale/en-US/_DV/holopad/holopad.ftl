@@ -16,6 +16,7 @@ holopad-epistemics-breakroom = Epistemics - Breakroom
 holopad-epistemics-mantis = Epistemics - Mantis
 holopad-epistemics-oracle = Epistemics - Oracle
 holopad-epistemics-lobby = Epistemics - Lobby
+station-beacon-crematorium = Epistemics - Crematorium
 
 # Logistics
 holopad-logistics-front = Logistics - Front
@@ -38,6 +39,7 @@ holopad-justice-lobby = Justice - Lobby
 holopad-security-corpsman = Security - Corpsman
 holopad-security-evidence = Security - Evidence
 holopad-security-lobby = Security - Lobby
+holopad-security-outpost = Security - Outpost
 
 # General
 holopad-general-park = General - Park

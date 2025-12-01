@@ -73,3 +73,50 @@
         tableId: LockerFillQuarterMasterHardsuit
   - type: AccessReader
     access: [["Quartermaster"]]
+
+# Departmental EVA Suits
+- type: entityTable
+  id: FillSuitStorageScienceEVA
+  table: !type:AllSelector
+    children:
+    - id: NitrogenTankFilled
+    - id: OxygenTankFilled
+    - id: ClothingOuterHardsuitEVAScience
+    - id: ClothingHeadHelmetEVAScience
+    - id: ClothingMaskBreath   
+    - id: GeigerCounter    
+
+- type: entity
+  parent: SuitStorageBase
+  id: SuitStorageEVAEpistemics
+  suffix: Epistemics EVA
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillSuitStorageScienceEVA
+  - type: AccessReader
+    access: [["Research"]]
+
+- type: entityTable
+  id: FillSuitStorageEngineeringEVA
+  table: !type:AllSelector
+    children:
+    - id: NitrogenTankFilled
+    - id: OxygenTankFilled
+    - id: ClothingOuterHardsuitEVAEngineering
+    - id: ClothingHeadHelmetEVAEngineering
+    - id: ClothingMaskGas
+    - id: GeigerCounter
+
+- type: entity
+  parent: SuitStorageBase
+  id: SuitStorageEVAEngineering
+  suffix: Engineering EVA
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillSuitStorageEngineeringEVA
+  - type: AccessReader
+    access: [["Engineering"]]
