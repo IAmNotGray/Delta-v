@@ -1,0 +1,8 @@
+- type: entity
+  parent: AirAlarm
+  id: AirAlarmEpistemics
+  name: air alarm
+  description: An air alarm. Alarms... air? This one is accessible to scientists.
+  components:
+    - type: AccessReader
+    access: [["Research"]]
