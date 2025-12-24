@@ -1,0 +1,25 @@
+# Lava
+- type: tile
+  id: FloorBasaltBordered
+  name: tiles-basalt-floor
+  sprite: /Textures/_DV/Tiles/Planet/Basalt/basalt.png
+  variants: 2
+  placementVariants:
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 1
+  edgeSprites:
+    SouthEast: /Textures/_DV/Tiles/Planet/Basalt/Edges/single_edge_2.png
+    NorthEast: /Textures/_DV/Tiles/Planet/Basalt/Edges/single_edge_0.png
+    NorthWest: /Textures/_DV/Tiles/Planet/Basalt/Edges/single_edge_1.png
+    SouthWest: /Textures/_DV/Tiles/Planet/Basalt/Edges/single_edge_3.png
+    South: /Textures/_DV/Tiles/Planet/Basalt/Edges/double_edge_0.png
+    East: /Textures/_DV/Tiles/Planet/Basalt/Edges/double_edge_3.png
+    North: /Textures/_DV/Tiles/Planet/Basalt/Edges/double_edge_1.png
+    West: /Textures/_DV/Tiles/Planet/Basalt/Edges/double_edge_2.png
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+  indestructible: true

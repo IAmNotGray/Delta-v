@@ -73,6 +73,14 @@
   - type: NavMapBeacon
     defaultText: station-beacon-forensic-mantis
 
+- type: entity
+  parent: DefaultStationBeaconScience
+  id: DefaultStationBeaconCrematorium
+  suffix: Crematorium
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-crematorium
+
 #Logistics
 - type: entity
   parent: DefaultStationBeaconSupply
@@ -142,27 +150,11 @@
 
 - type: entity
   parent: DefaultStationBeaconService
-  id: DefaultStationBeaconBoxing
-  suffix: Boxing Ring
+  id: DefaultStationBeaconRestroom
+  suffix: Restroom
   components:
   - type: NavMapBeacon
-    defaultText: station-beacon-boxing-ring
-
-- type: entity
-  parent: DefaultStationBeaconService
-  id: DefaultStationBeaconBarbershop
-  suffix: Barbershop
-  components:
-  - type: NavMapBeacon
-    defaultText: station-beacon-barbershop
-
-- type: entity
-  parent: DefaultStationBeaconService
-  id: DefaultStationBeaconZoo
-  suffix: Zoo
-  components:
-  - type: NavMapBeacon
-    defaultText: station-beacon-zoo
+    defaultText: station-beacon-restroom
 
 #Surveilance
 - type: entity
@@ -174,6 +166,13 @@
     defaultText: station-beacon-camera-servers
 
 #General
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconBoxing
+  suffix: Boxing Ring
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-boxing-ring
 
 - type: entity
   parent: DefaultStationBeacon
@@ -209,6 +208,14 @@
 
 - type: entity
   parent: DefaultStationBeacon
+  id: DefaultStationBeaconBarbershop
+  suffix: Barbershop
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-barbershop
+
+- type: entity
+  parent: DefaultStationBeacon
   id: DefaultStationBeaconArcade
   suffix: Arcade
   components:
@@ -217,11 +224,11 @@
 
 - type: entity
   parent: DefaultStationBeacon
-  id: DefaultStationBeaconRestroom
-  suffix: Restroom
+  id: DefaultStationBeaconZoo
+  suffix: Zoo
   components:
   - type: NavMapBeacon
-    defaultText: station-beacon-restroom
+    defaultText: station-beacon-zoo
 
 #Security
 - type: entity
@@ -255,6 +262,22 @@
   components:
   - type: NavMapBeacon
     defaultText: station-beacon-perma-disposals
+
+- type: entity
+  parent: DefaultStationBeaconSecurity
+  id: DefaultStationBeaconSecurityOutpost
+  suffix: Security Outpost
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-security-outpost
+
+- type: entity
+  parent: DefaultStationBeaconSecurity
+  id: DefaultStationBeaconEvidence
+  suffix: Evidence
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-evidence
 
 #Justice
 - type: entity
