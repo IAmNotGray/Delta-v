@@ -23,7 +23,7 @@
     layers:
     - state: chasm
   - type: Icon
-    sprite: _DVTiles/Planet/Chasms/basalt_chasm.rsi # DeltaV - Resprite
+    sprite: _DV/Tiles/Planet/Chasms/basalt_chasm.rsi # DeltaV - Resprite
     state: full
   - type: IconSmooth
     key: chasm
