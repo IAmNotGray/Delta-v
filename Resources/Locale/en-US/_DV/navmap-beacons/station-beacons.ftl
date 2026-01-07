@@ -16,7 +16,7 @@ station-beacon-psych = Psych
 
 station-beacon-glimmer-prober = Prober
 station-beacon-forensic-mantis = Mantis
-station-beacon-crematorium = Crematorium
+station-beacon-deltav-crematorium = Crematorium
 
 station-beacon-mailroom = Mail
 

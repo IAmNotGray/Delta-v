@@ -79,6 +79,21 @@
         },
         {
             "name": "detective"
-        }
+        },
+		{
+			"name": "dock"
+		},
+		{
+			"name": "anchor"
+		},
+		{
+			"name": "tech"
+		},
+		{
+			"name": "cryogenics"
+		},
+		{
+			"name": "arrivals"
+		}
     ]
 }
