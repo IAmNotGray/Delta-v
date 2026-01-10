@@ -92,7 +92,7 @@
 
 - type: entity
   parent: BaseSign
-  id: SignArrivals
+  id: SignArrivalsDeltaV
   name: arrivals sign
   description: A sign indicating where the arrivals area is.
   components:
