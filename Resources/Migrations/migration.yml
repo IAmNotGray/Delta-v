@@ -766,3 +766,17 @@ LeftFootHuman: null
 RightLegSkeleton: null
 OrganRatStomach: null
 TorsoHuman: null
+
+# 2026-01-14
+HeadHuman: OrganHumanHead
+HeadSkeleton: OrganSkeletonPersonHead
+LeftArmHuman: OrganHumanArmLeft
+LeftArmSkeleton: OrganSkeletonPersonArmLeft
+LeftHandSkeleton: OrganSkeletonPersonHandLeft
+LeftLegHuman: OrganHumanLegLeft
+LeftLegSkeleton: OrganSkeletonPersonLegLeft
+RightArmHuman: OrganHumanArmRight
+RightHandSkeleton: OrganSkeletonPersonHandRight
+RightLegHuman: OrganHumanLegRight
+TorsoSkeleton: OrganSkeletonPersonTorso
+RightArmSkeleton: OrganSkeletonPersonArmRight
