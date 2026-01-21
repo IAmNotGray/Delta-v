@@ -56,6 +56,11 @@
       input: AutomationSlotMaterials
       output: null
   - type: TechnologyDatabase
+  - type: ApcPowerReceiver
+    powerLoad: 150
+  - type: PowerState
+    idlePowerDraw: 150
+    workingPowerDraw: 1000
     supportedDisciplines: # DeltaV - don't add it to every map
     - Industrial
     - Biochemical
