@@ -94,8 +94,6 @@
   sounds:
     Scream:
       path: /Audio/Voice/Reptilian/reptilian_scream.ogg
-    Laugh:
-      path: /Audio/Animals/lizard_happy.ogg
     Hiss:
       collection: ReptillianHiss # Impstation
     Honk:
@@ -132,8 +130,6 @@
   sounds:
     Scream:
       path: /Audio/Voice/Reptilian/reptilian_scream.ogg
-    Laugh:
-      path: /Audio/Animals/lizard_happy.ogg
     Hiss:
       collection: ReptillianHiss # Impstation
     Honk:
@@ -154,7 +150,7 @@
     Sigh:
       collection: FemaleSigh
     Yawn:
-      collection: FemaleYawn 
+      collection: FemaleYawn
     # End DeltaV Additions
     Gasp:
       collection: FemaleGasp
@@ -280,7 +276,7 @@
       collection: Weh
     Hew:
       collection: Hew
-    Gasp: 
+    Gasp:
       collection: VoxGasp # DeltaV - Combined upstream and our sounds
     DefaultDeathgasp:
       collection: VoxDeathgasp # DeltaV - Combined upstream and our sounds
