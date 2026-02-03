@@ -1234,10 +1234,16 @@
           - SurplusBundle
 
 - type: listing
-  id: UplinkAntimovCircuitBoard
-  name: uplink-overlord-law-name # DeltaV: Changed antimov to overlord, for traitors only
-  description: uplink-overlord-law-desc # DeltaV: Changed antimov to overlord
-  productEntity: OverlordCircuitBoard # DeltaV: replaced antimov with overlord
+  id: UplinkSyndimovCircuitKit
+  name: uplink-syndimov-law-name
+  description: uplink-syndimov-law-desc
+  icon: { sprite: /Textures/Objects/Storage/boxicons.rsi, state: syndicate_circuit }
+  productEntity: SyndimovCircuitKit
+# DV - Earlier version, keeping just for comparison for CR
+#  id: UplinkAntimovCircuitBoard
+#  name: uplink-overlord-law-name # DeltaV: Changed antimov to overlord, for traitors only
+#  description: uplink-overlord-law-desc # DeltaV: Changed antimov to overlord
+#  productEntity: OverlordCircuitBoard # DeltaV: replaced antimov with overlord
   discountCategory: usualDiscounts
   discountDownTo:
     Telecrystal: 4 # DeltaV: was 10
