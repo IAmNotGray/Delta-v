@@ -176,6 +176,8 @@ public sealed partial class DragonSystem : EntitySystem
         }
 
         var carpUid = Spawn(component.RiftPrototype, _transform.GetMapCoordinates(uid, xform: xform));
+        Transform(carpUid).LocalRotation = Angle.Zero;
+
         component.Rifts.Add(carpUid);
         Comp<DragonRiftComponent>(carpUid).Dragon = uid;
         component.HalftimePopupShown = false; // DeltaV - Reset popup flag
