@@ -75,9 +75,9 @@
       types:
         Blunt: 15
     openSound:
-      path: /Audio/_DV/Machines/airlock_open.ogg
+      path: /Audio/_DV/Machines/airlock_open.ogg #Delta V - Change Sound
     closeSound:
-      path: /Audio/_DV/Machines/airlock_close.ogg
+      path: /Audio/_DV/Machines/airlock_close.ogg #Delta V - Change Sound
     denySound:
       path: /Audio/Machines/airlock_deny.ogg
   - type: ContainerContainer

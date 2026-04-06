@@ -9,9 +9,9 @@
       types:
         Blunt: 15
     openSound:
-      path: /Audio/_DV/Machines/airlock_ext_open.ogg
+      path: /Audio/_DV/Machines/airlock_ext_open.ogg #Delta V - Change Sound
     closeSound:
-      path: /Audio/_DV/Machines/airlock_ext_close.ogg
+      path: /Audio/_DV/Machines/airlock_ext_close.ogg #Delta V - Change Sound
     denySound:
       path: /Audio/Machines/airlock_deny.ogg
   - type: Sprite
