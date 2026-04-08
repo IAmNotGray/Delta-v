@@ -70,6 +70,9 @@
   id: CartridgeMusket #For the Craftable Musket
 
 - type: Tag
+  id: ChemicalMedipen # Storage blacklist: CigPackBase
+
+- type: Tag
   id: ChitinSharkminnow
 
 - type: Tag
@@ -107,6 +110,9 @@
 
 - type: Tag
   id: HidesHarpyWings
+
+- type: Tag
+  id: Honker # Creatures who can make a honk emote. IPCs, Borgs, and Motorkind.
 
 - type: Tag
   id: HudDiagnostic
@@ -181,7 +187,7 @@
   id: SpeedLoaderSpecial
 
 - type: Tag
-  id: Vial
+  id: Vial # Storage Blacklist: CigPackBase
 
 - type: Tag
   id: Wakizashi
@@ -200,6 +206,9 @@
 
 - type: Tag
   id: AgentUplink # Used for allowing agent to buy their suit
+
+- type: Tag
+  id: LoneOpUplink # Used to allow loneop to buy jugsuit
 
 - type: Tag
   id: CleaningGrenade

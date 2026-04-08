@@ -236,6 +236,9 @@
   - type: CosmicTransmutable # DeltaV - cosmic cult
     transmutesTo: CosmicMedipen
     requiredGlyphType: CosmicGlyphBlades # Well I mean it DOES have a needle in it
+  - type: Tag #deltav
+    tags:
+    - ChemicalMedipen
 
 - type: entity
   name: emergency medipen
@@ -672,9 +675,9 @@
         maxVol: 30
         reagents:
         - ReagentId: Omnizine
-          Quantity: 25
+          Quantity: 20 # DeltaV - Was 25
         - ReagentId: TranexamicAcid
-          Quantity: 5
+          Quantity: 10 # DeltaV - Was 5
   - type: StaticPrice
     price: 1500
 

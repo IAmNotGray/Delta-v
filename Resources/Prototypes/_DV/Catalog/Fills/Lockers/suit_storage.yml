@@ -124,12 +124,12 @@
   table: !type:AllSelector
     children:
     - id: ClothingOuterHardsuitERTLeader
-    - id: JetpackSecurityFilled
+    - id: ClothingShoesBootsERTMagboots
     - id: ClothingMaskGasERT
     - id: HandheldGPSBasic
-    - id: DoubleEmergencyOxygenTankFilled
-    - id: DoubleEmergencyNitrogenTankFilled
-    - id: DoubleEmergencyWaterVaporTankFilled
+    - id: OxygenTankERTFilled
+    - id: NitrogenTankERTFilled
+    - id: WaterVaporTankERTFilled
 
 - type: entity
   parent: SuitStorageBase
@@ -148,12 +148,12 @@
   table: !type:AllSelector
     children:
     - id: ClothingOuterHardsuitERTSecurity
-    - id: JetpackSecurityFilled
+    - id: ClothingShoesBootsERTMagboots
     - id: ClothingMaskGasERT
     - id: HandheldGPSBasic
-    - id: DoubleEmergencyOxygenTankFilled
-    - id: DoubleEmergencyNitrogenTankFilled
-    - id: DoubleEmergencyWaterVaporTankFilled
+    - id: OxygenTankERTFilled
+    - id: NitrogenTankERTFilled
+    - id: WaterVaporTankERTFilled
 
 - type: entity
   parent: SuitStorageBase
@@ -172,12 +172,12 @@
   table: !type:AllSelector
     children:
     - id: ClothingOuterHardsuitERTMedical
-    - id: JetpackSecurityFilled
+    - id: ClothingShoesBootsERTMagboots
     - id: ClothingMaskGasERT
     - id: HandheldGPSBasic
-    - id: DoubleEmergencyOxygenTankFilled
-    - id: DoubleEmergencyNitrogenTankFilled
-    - id: DoubleEmergencyWaterVaporTankFilled
+    - id: OxygenTankERTFilled
+    - id: NitrogenTankERTFilled
+    - id: WaterVaporTankERTFilled
 
 - type: entity
   parent: SuitStorageBase
@@ -196,12 +196,12 @@
   table: !type:AllSelector
     children:
     - id: ClothingOuterHardsuitERTJanitor
-    - id: JetpackSecurityFilled
+    - id: ClothingShoesBootsERTMagboots
     - id: ClothingMaskGasERT
     - id: HandheldGPSBasic
-    - id: DoubleEmergencyOxygenTankFilled
-    - id: DoubleEmergencyNitrogenTankFilled
-    - id: DoubleEmergencyWaterVaporTankFilled
+    - id: OxygenTankERTFilled
+    - id: NitrogenTankERTFilled
+    - id: WaterVaporTankERTFilled
 
 - type: entity
   parent: SuitStorageBase
@@ -220,12 +220,12 @@
   table: !type:AllSelector
     children:
     - id: ClothingOuterHardsuitERTEngineer
-    - id: JetpackSecurityFilled
+    - id: ClothingShoesBootsERTMagboots
     - id: ClothingMaskGasERT
     - id: HandheldGPSBasic
-    - id: DoubleEmergencyOxygenTankFilled
-    - id: DoubleEmergencyNitrogenTankFilled
-    - id: DoubleEmergencyWaterVaporTankFilled
+    - id: OxygenTankERTFilled
+    - id: NitrogenTankERTFilled
+    - id: WaterVaporTankERTFilled
 
 - type: entity
   parent: SuitStorageBase
@@ -244,9 +244,33 @@
   table: !type:AllSelector
     children:
     - id: ClothingOuterHardsuitERTChaplain
-    - id: JetpackSecurityFilled
+    - id: ClothingShoesBootsERTMagboots
     - id: ClothingMaskGasERT
     - id: HandheldGPSBasic
-    - id: DoubleEmergencyOxygenTankFilled
-    - id: DoubleEmergencyNitrogenTankFilled
-    - id: DoubleEmergencyWaterVaporTankFilled
+    - id: OxygenTankERTFilled
+    - id: NitrogenTankERTFilled
+    - id: WaterVaporTankERTFilled
+
+# Science EVA Suit
+- type: entityTable
+  id: FillSuitStorageScienceEVA
+  table: !type:AllSelector
+    children:
+    - id: NitrogenTankFilled
+    - id: OxygenTankFilled
+    - id: ClothingOuterHardsuitEVAScience
+    - id: ClothingHeadHelmetEVAScience
+    - id: ClothingMaskBreath
+    - id: GeigerCounter
+
+- type: entity
+  parent: SuitStorageBase
+  id: SuitStorageEVAEpistemics
+  suffix: Epistemics EVA
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillSuitStorageScienceEVA
+  - type: AccessReader
+    access: [["Research"]]
