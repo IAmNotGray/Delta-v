@@ -14,3 +14,37 @@
     - FloorMowedAstroSnow
   - type: Stack
     stackType: FloorTileMowedAstroSnow
+
+- type: entity
+  id: FloorTileItemWhiteSquiggly
+  parent: FloorTileItemBase
+  name: white steel squiggly tile
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Tiles/tile.rsi
+    state: white-squiggly
+  - type: Item
+    heldPrefix: white
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorWhiteSquiggly
+  - type: Stack
+    stackType: FloorTileItemWhiteSquiggly
+    
+- type: entity
+  id: FloorTileItemSteelSquiggly
+  parent: FloorTileItemBase
+  name: steel squiggly tile
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Tiles/tile.rsi
+    state: steel-squiggly
+  - type: Item
+    heldPrefix: steel
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorSteelSquiggly
+  - type: Stack
+    stackType: FloorTileItemSteelSquiggly

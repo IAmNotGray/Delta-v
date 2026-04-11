@@ -54,9 +54,9 @@
   suffix: Chromite
   components:
   - type: Sprite
-    sprite: Tiles/Planet/Chasms/chromite_chasm.rsi
+    sprite: _DV/Tiles/Planet/Chasms/chromite_chasm.rsi # DeltaV - Resprite, was Tiles/Planet/Chasms/chromite_chasm.rsi
   - type: Icon
-    sprite: Tiles/Planet/Chasms/chromite_chasm.rsi
+    sprite: _DV/Tiles/Planet/Chasms/chromite_chasm.rsi # DeltaV - Resprite, was Tiles/Planet/Chasms/chromite_chasm.rsi 
     
 - type: entity
   parent: FloorChasmEntity

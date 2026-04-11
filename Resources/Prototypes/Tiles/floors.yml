@@ -1380,7 +1380,7 @@
 - type: tile
   id: FloorMetalFoam
   name: tiles-metal-foam
-  sprite: /Textures/Tiles/foammetal.png
+  sprite: /Textures/_DV/Tiles/foammetal.png # DeltaV - Resprite
   variants: 1
   placementVariants:
   - 1.0
@@ -1894,7 +1894,7 @@
 - type: tile
   id: FloorChromite
   name: tiles-chromite
-  sprite: /Textures/Tiles/chromite.png
+  sprite: /Textures/_DV/Tiles/Planet/Chromite/chromite.png # DeltaV - Resprite, was /Textures/Tiles/chromite.png 
   variants: 7
   placementVariants:
   - 1.0
@@ -2138,7 +2138,7 @@
 - type: tile
   id: FloorDarkSquiggly
   name: tiles-dark-squiggly
-  sprite: /Textures/Tiles/dark_squiggly.png
+  sprite: /Textures/_DV/Tiles/dark_squiggly.png # DeltaV - Resprite
   variants: 4
   placementVariants:
   - 1.0

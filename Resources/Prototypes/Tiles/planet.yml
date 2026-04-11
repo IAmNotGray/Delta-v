@@ -88,7 +88,7 @@
 - type: tile
   id: FloorBasalt
   name: tiles-basalt-floor
-  sprite: /Textures/Tiles/Planet/basalt.png
+  sprite: /Textures/_DV/Tiles/Planet/Basalt/basalt.png # DeltaV - Resprite
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
