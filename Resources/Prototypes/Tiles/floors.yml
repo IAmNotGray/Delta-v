@@ -1583,7 +1583,7 @@
 - type: tile
   id: FloorChromite
   name: tiles-chromite
-  sprite: /Textures/Tiles/chromite.png
+  sprite: /Textures/_DV/Tiles/Planet/Chromite/chromite.png # DeltaV - Resprite, was /Textures/Tiles/chromite.png 
   variants: 7
   placementVariants:
   - 1.0

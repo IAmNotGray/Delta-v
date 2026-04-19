@@ -79,7 +79,7 @@
   id: FloorBasalt
   name: tiles-basalt-floor
   parent: BaseFloorPlanet
-  sprite: /Textures/Tiles/Planet/basalt.png
+  sprite: /Textures/_DV/Tiles/Planet/Basalt/basalt.png # DeltaV - Resprite, was /Textures/Tiles/Planet/basalt.png
 
 # Snow
 - type: tile
