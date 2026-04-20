@@ -107,6 +107,14 @@
   - type: Label
     currentLabel: holopad-epistemics-lobby
 
+- type: entity
+  parent: Holopad
+  id: HolopadEpistemicsCrematorium
+  suffix: Crematorium
+  components:
+  - type: Label
+    currentLabel: holopad-epistemics-crematorium
+
 #Security
 - type: entity
   parent: Holopad
@@ -123,6 +131,14 @@
   components:
   - type: Label
     currentLabel: holopad-security-lobby
+
+- type: entity
+  parent: Holopad
+  id: HolopadSecurityOutpost
+  suffix: Security Outpost
+  components:
+  - type: Label
+    currentLabel: holopad-security-outpost
 
 #Station Specific - Security
 - type: entity
