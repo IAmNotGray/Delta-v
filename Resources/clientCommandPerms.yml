@@ -73,7 +73,9 @@
     - fullstatereset
     - dumpentities
     - fuckrules # DeltaV: move fuckrules to DEBUG
+    - showwallmounts
     - showaccessreaders
+    - quickinspect
 
 - Flags: ADMIN # DeltaV
   Commands:
@@ -87,6 +89,7 @@
     - showsubfloorforever
     - toggleautosave
     - toggledecals
+    - showwallmounts
     - showaccessreaders
 
 - Flags: QUERY

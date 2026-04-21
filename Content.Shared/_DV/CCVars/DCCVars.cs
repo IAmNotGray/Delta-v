@@ -124,6 +124,12 @@ public sealed partial class DCCVars
     public static readonly CVarDef<int> YearOffset =
         CVarDef.Create("game.current_year_offset", 550, CVar.SERVERONLY);
 
+    /// <summary>
+    /// What species to hide, as a comma seperated list.
+    /// </summary>
+    public static readonly CVarDef<string> HiddenSpecies =
+        CVarDef.Create("species.hidden", "Motorkind", CVar.SERVER | CVar.REPLICATED);
+
     /*
      * Traits
      */
@@ -140,6 +146,12 @@ public sealed partial class DCCVars
     /// </summary>
     public static readonly CVarDef<int> MaxTraitPoints =
         CVarDef.Create("traits.max_points", 15, CVar.SERVER | CVar.REPLICATED);
+
+    /// <summary>
+    /// Whether to skip showing the disabled traits popup when spawning.
+    /// </summary>
+    public static readonly CVarDef<bool> SkipDisabledTraitsPopup =
+        CVarDef.Create("traits.skip_disabled_traits_popup", false, CVar.CLIENT | CVar.ARCHIVE);
 
     /*
      * Feedback webhook
@@ -189,6 +201,12 @@ public sealed partial class DCCVars
     /// </summary>
     public static readonly CVarDef<string> DiscordReplyColor =
         CVarDef.Create("admin.discord_reply_color", string.Empty, CVar.SERVERONLY);
+
+    /// <summary>
+    ///     The maximum amount of hours that will trigger an admin alert on late join.
+    /// </summary>
+    public static readonly CVarDef<double> LateJoinAlertMaxHours =
+        CVarDef.Create("admin.alerts.latejoin_max_hours", 2.0, CVar.SERVERONLY);
 
     /// <summary>
     ///    Whether or not to disable the preset selecting test rule from running. Should be disabled in production. DeltaV specific, attached to Impstation Secret concurrent feature.

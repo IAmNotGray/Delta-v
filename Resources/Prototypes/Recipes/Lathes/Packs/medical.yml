@@ -6,6 +6,7 @@
   - Brutepack
   - Ointment
   - Gauze
+  - PurifyingSalts1 # DeltaV
 
 - type: latheRecipePack
   parent:
@@ -17,7 +18,8 @@
   - Syringe
   - PillCanister
   - HandLabeler
-  - BaseChemistryEmptyVial
+  - ChemistryEmptyVial
+  - ChemistryEmptyVialSmall
   - Dropper
 
 - type: latheRecipePack

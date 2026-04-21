@@ -59,7 +59,7 @@
         Piercing: 8
   - type: Body
     prototype: Rat
-    requiredLegs: 1 # TODO: More than 1 leg
+    requiredLegs: 0 # TODO: Make more than 1 leg, set to 0 to avoid sprint speed being reset by the body system
   - type: SurgeryTarget # Shitmed
   - type: UserInterface # Shitmed
     interfaces:
@@ -130,7 +130,6 @@
     attributes:
       gender: male
   - type: Sharp
-  - type: PotentialPsionic # Nyano
   - type: NightVision #Delta-v - Added nightvision
     color: "#808080"
 
@@ -183,7 +182,7 @@
   - type: CombatMode
   - type: MovementSpeedModifier
     baseWalkSpeed : 3.5
-    baseSprintSpeed : 3.5
+    baseSprintSpeed : 4.5 #Delta-V was 3.5
   - type: InputMover
   - type: MobMover
   - type: HTN
@@ -236,8 +235,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      15: Critical
-      30: Dead
+      15: Dead # Delta-V nobody is reviving rats
+      #30: Dead
   - type: Destructible
     thresholds:
     - trigger:
@@ -248,7 +247,7 @@
       - !type:GibBehavior
         recursive: false
   - type: Stamina
-    critThreshold: 60
+    baseCritThreshold: 60
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
@@ -256,11 +255,11 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 5
-        Piercing: 3
+        Slash: 4 #Delta-V was 5
+        Piercing: 2 #Delta-V was 3
   - type: Body
     prototype: Rat
-    requiredLegs: 1 # TODO: More than 1 leg
+    requiredLegs: 0 # TODO: Make more than 1 leg, set to 0 to avoid sprint speed being reset by the body system
   - type: SurgeryTarget # Shitmed
   - type: UserInterface # Shitmed
     interfaces:

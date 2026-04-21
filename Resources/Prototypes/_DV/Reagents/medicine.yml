@@ -50,7 +50,7 @@
   desc: reagent-desc-unholy-water
   physicalDesc: reagent-physical-desc-menacing
   flavor: UnholyWater
-  color: "#1614143d"
+  color: "#c4c4c4"
   metabolisms:
     Medicine:
       effects:
@@ -85,6 +85,25 @@
         sprintSpeedModifier: 0.5
 
 - type: reagent
+  id: Photoxadone
+  name: reagent-name-photoxadone
+  desc: reagent-desc-photoxadone
+  flavor: clean
+  color: "#A695AD"
+  physicalDesc: reagent-physical-desc-enigmatic
+  group: Medicine
+  worksOnTheDead: true
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:EvenHealthChange
+        conditions:
+        - !type:TemperatureCondition
+          max: 213.0
+        damage:
+          Metaphysical: -5
+
+- type: reagent
   id: Stabilizine
   name: reagent-name-stabilizine
   group: Medicine
@@ -110,3 +129,24 @@
         - !type:TemperatureCondition
           min: 293.15
         amount: -10000
+
+- type: reagent
+  id: SanctusSal
+  name: reagent-name-sanctussal
+  group: Medicine
+  desc: reagent-desc-sanctussal
+  physicalDesc: reagent-physical-desc-salty
+  flavor: medicine
+  color: "#91C3F7"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.5
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectShieldedFromPsionics
+        type: Add
+        time: 60
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectPsionicsDisabled
+        type: Add
+        time: 60

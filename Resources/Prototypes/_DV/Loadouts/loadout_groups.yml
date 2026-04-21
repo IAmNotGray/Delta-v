@@ -259,6 +259,7 @@
   minLimit: 0
   loadouts:
   - CorpsmanBeret
+  - BrigMedicalBeret
 
 - type: loadoutGroup
   id: BrigMedicNeck
@@ -283,6 +284,7 @@
   id: BrigMedicOuterClothing
   name: loadout-group-brig-medic-outerclothing
   loadouts:
+  - LongcoatBrigmedic
   - StasecWinterCoatCorpsman
   - PlateCarrier
   - DuraVest
@@ -454,6 +456,7 @@
   - PlateCarrier
   - DuraVest
   - StasecSweater
+  - LongcoatSecurity
   - StasecWinterCoat
   - ArmorVestSlim
 
@@ -464,6 +467,7 @@
   loadouts:
   - PlateCarrier
   - DuraVest
+  - WardenLongcoat
   - StasecWinterCoatWarden
   - ArmorVestSlim
 
@@ -474,6 +478,7 @@
   loadouts:
   - PlateCarrier
   - DuraVest
+  - HeadofSecurityLongcoat
   - StasecWinterCoatHoS
   - HeadOfSecurityTrenchcoat
   - ArmorVestSlim
@@ -496,6 +501,7 @@
   id: DetectiveOuterClothingDeltaV
   name: loadout-group-detective-outerclothing
   loadouts:
+  - LongcoatSecurity
   - StasecWinterCoatDet
   - PlateCarrier
   - DuraVest
@@ -510,6 +516,7 @@
   minLimit: 0
   loadouts:
   - MedicalBeret
+  - BlueMedicalBeret
   - MimeFrenchBeret
   - PsychologistGreyFlatcap
   - PsychologistBrownFlatcap
@@ -548,8 +555,19 @@
   loadouts:
   - Stethoscope
   - ScarfBlue
+  - ScarfLightBlue
 
 ## Chemist
+
+- type: loadoutGroup
+  id: ChemistHead
+  name: loadout-group-chemist-head
+  minLimit: 0
+  loadouts:
+  - MedicalBeret
+  - BlueMedicalBeret
+  - SeniorChemistBeret
+
 - type: loadoutGroup
   id: ChemistNeck
   name: loadout-group-chemist-neck
@@ -558,6 +576,7 @@
   - ChemistTie
   - ScarfOrange
   - ScarfBlue
+  - ScarfLightBlue
 
 - type: loadoutGroup
   id: ChemistGloves
@@ -573,6 +592,8 @@
   name: loadout-group-chemist-shoes
   loadouts:
   - WhiteShoes
+  - LeatherShoes
+  - LaceupShoes
   - ChemistWinterBoots
   - ChemistShoes
 
@@ -580,6 +601,7 @@
 - type: loadoutGroup
   id: SurgeonHead
   name: loadout-group-surgeon-head
+  minLimit: 0
   loadouts:
   - BlueSurgeryCap
   - GreenSurgeryCap
@@ -788,6 +810,7 @@
   - RoboticistLabCoat
   - RoboticistWintercoat
   - RegularLabCoat
+  - LongLabCoat
   - ScienceLabCoat
   - CardborgCostume
 
@@ -986,3 +1009,50 @@
   hidden: true
   loadouts:
   - EmergencyIPCBox
+
+# ERT
+- type: loadoutGroup
+  id: GroupEVATankERT
+  name: loadout-group-EVA-tank
+  hidden: true
+  loadouts:
+  - LoadoutEmergencyOxygenExtendedERT
+  - LoadoutEmergencyNitrogenExtendedERT
+  - LoadoutEmergencyWaterVaporExtendedERT
+
+- type: roleLoadout
+  id: RoleSurvivalERT
+  groups:
+  - GroupEVATankERT
+  - SurvivalExtended
+
+# Wildcards
+- type: loadoutGroup
+  id: BoxerJumpsuit
+  name: loadout-group-boxer-jumpsuit
+  loadouts:
+  - BoxerShorts
+  - BoxerShortsWithTop
+
+- type: loadoutGroup
+  id: BoxerGloves
+  name: loadout-group-boxer-gloves
+  loadouts:
+  - RedBoxingGloves
+  - BlueBoxingGloves
+  - GreenBoxingGloves
+  - YellowBoxingGloves
+
+- type: loadoutGroup
+  id: BoxerJobTrinkets
+  name: loadout-group-jobtrinkets
+  minLimit: 0
+  loadouts:
+  - LizardPlushieBoxer
+
+- type: loadoutGroup
+  id: ZookeeperJobTrinkets
+  name: loadout-group-jobtrinkets
+  minLimit: 0
+  loadouts:
+  - LizardPlushieZookeeper

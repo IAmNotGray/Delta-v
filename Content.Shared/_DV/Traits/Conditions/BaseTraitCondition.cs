@@ -1,3 +1,5 @@
+using Content.Shared.Preferences;
+using Content.Shared.StatusEffectNew;
 using JetBrains.Annotations;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -47,6 +49,7 @@ public sealed class TraitConditionContext
     public required IPrototypeManager Proto { get; init; }
     public required IComponentFactory CompFactory { get; init; }
     public required ILogManager LogMan { get; init; }
+    public required StatusEffectsSystem StatusEffects { get; init; }
 
     /// <summary>
     /// The job ID of the player, if available.
@@ -57,4 +60,9 @@ public sealed class TraitConditionContext
     /// The species ID of the player, if available.
     /// </summary>
     public string? SpeciesId { get; init; }
+
+    /// <summary>
+    /// The <see cref="HumanoidCharacterProfile"/> of the player, if available.
+    /// </summary>
+    public HumanoidCharacterProfile? Profile { get; init; }
 }
