@@ -1,0 +1,189 @@
+# Basic
+- type: entity
+  id: WindowDirectionalCorner
+  parent: WindowDirectional
+  name: corner window
+  components:
+  - type: Sprite
+    sprite: /Textures/_DV/Structures/Windows/directional_corners.rsi
+    state: window
+  - type: Icon
+    sprite: /Textures/_DV/Structures/Windows/directional_corners.rsi
+    state: window
+  - type: Tag
+    tags:
+      - Window
+      - Directional
+      - ForceNoFixRotations
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,-0.28125,-0.28125"
+        mask:
+        - FullTileMask
+        layer:
+        - GlassLayer
+  - type: Construction
+    graph: WindowDirectional
+    node: windowCorner
+  - type: Appearance
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: /Textures/_DV/Structures/Windows/cracks_corners.rsi
+
+- type: entity
+  id: PlasmaWindowDirectionalCorner
+  parent: [ WindowDirectionalCorner, PlasmaWindowDirectional]
+  name: corner plasma window
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: plasma_window
+  - type: Icon
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: plasma_window
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _DV/Structures/Windows/cracks_corners.rsi
+
+- type: entity
+  id: UraniumindowDirectionalCorner
+  parent: [ WindowDirectionalCorner, UraniumWindowDirectional]
+  name: corner uranium window
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: uranium_window
+  - type: Icon
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: uranium_window
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _DV/Structures/Windows/cracks_corners.rsi
+
+# Reinforced
+- type: entity
+  id: WindowReinforcedDirectionalCorner
+  parent: [ WindowDirectionalCorner, WindowReinforcedDirectional ]
+  name: corner reinforced window
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: reinforced_window
+  - type: Icon
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: reinforced_window
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,-0.28125,-0.28125"
+        mask:
+        - FullTileMask
+        layer:
+        - GlassLayer
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _DV/Structures/Windows/cracks_corners.rsi
+
+- type: entity
+  id: PlasmaReinforcedWindowDirectionalCorner
+  parent: [ WindowReinforcedDirectionalCorner, PlasmaReinforcedWindowDirectional ]
+  name: corner reinforced plasma window
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: plasma_reinforced_window
+  - type: Icon
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: plasma_reinforced_window
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _DV/Structures/Windows/cracks_corners.rsi
+
+- type: entity
+  id: UraniumReinforcedWindowDirectionalCorner
+  parent: [ WindowReinforcedDirectionalCorner, UraniumReinforcedWindowDirectional ]
+  name: corner reinforced uranium window
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: uranium_reinforced_window
+  - type: Icon
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: uranium_reinforced_window
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _DV/Structures/Windows/cracks_corners.rsi
+
+# Tinted
+- type: entity
+  id: TintedWindowDirectionalCorner
+  parent: [ WindowDirectionalCorner, WindowTintedDirectional ]
+  name: corner tinted window
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: tinted_window
+  - type: Icon
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: tinted_window
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _DV/Structures/Windows/cracks_corners.rsi
+  - type: Occluder
+    boundingBox: "-0.5,-0.5,-0.28125,-0.28125"
+
+- type: entity
+  id: TintedWindowReinforcedDirectionalCorner
+  parent: [ WindowDirectionalCorner, WindowTintedReinforcedDirectional ]
+  name: corner reinforced tinted window
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: tinted_reinforced_window
+  - type: Icon
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: tinted_reinforced_window
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _DV/Structures/Windows/cracks_corners.rsi
+  - type: Occluder
+    boundingBox: "-0.5,-0.5,-0.28125,-0.28125"
+
+# Frosted
+- type: entity
+  id: WindowFrostedDirectionalCorner
+  parent: [ WindowDirectionalCorner, WindowFrostedDirectional ]
+  name: corner frosted window
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: frosted_window
+  - type: Icon
+    sprite: _DV/Structures/Windows/directional_corners.rsi
+    state: frosted_window
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _DV/Structures/Windows/cracks_corners.rsi

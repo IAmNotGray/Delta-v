@@ -1175,7 +1175,25 @@
 - type: tile
   id: FloorGrassJungle
   name: tiles-jungle-grass-floor
-  sprite: /Textures/Tiles/grassjungle.png
+  sprite: /Textures/_DV/Tiles/Planet/Grass/grassjungle.png # DeltaV - Resprite, was "/Textures/Tiles/grassjungle.png"
+## Start of DeltaV Changes
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 1
+  edgeSprites:
+    SouthEast: /Textures/_DV/Tiles/Planet/Grass/single_edge_jungle.png
+    NorthEast: /Textures/_DV/Tiles/Planet/Grass/single_edge_jungle.png
+    NorthWest: /Textures/_DV/Tiles/Planet/Grass/single_edge_jungle.png
+    SouthWest: /Textures/_DV/Tiles/Planet/Grass/single_edge_jungle.png
+    South: /Textures/_DV/Tiles/Planet/Grass/double_edge_jungle.png
+    East: /Textures/_DV/Tiles/Planet/Grass/double_edge_jungle.png
+    North: /Textures/_DV/Tiles/Planet/Grass/double_edge_jungle.png
+    West: /Textures/_DV/Tiles/Planet/Grass/double_edge_jungle.png
+## End of DeltaV Changes
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -1625,7 +1643,8 @@
   id: FloorAstroGrass
   parent: BaseStationTile
   name: tiles-astro-grass
-  sprite: /Textures/Tiles/Planet/Grass/grass.png
+## Start of DeltaV Changes
+  sprite: /Textures/_DV/Tiles/Planet/Grass/grass.png # DeltaV - Resprite
   variants: 4
   placementVariants:
   - 1.0
@@ -1634,14 +1653,15 @@
   - 1.0
   edgeSpritePriority: 1
   edgeSprites:
-    SouthEast: /Textures/Tiles/Planet/Grass/single_edge.png
-    NorthEast: /Textures/Tiles/Planet/Grass/single_edge.png
-    NorthWest: /Textures/Tiles/Planet/Grass/single_edge.png
-    SouthWest: /Textures/Tiles/Planet/Grass/single_edge.png
-    South: /Textures/Tiles/Planet/Grass/double_edge.png
-    East: /Textures/Tiles/Planet/Grass/double_edge.png
-    North: /Textures/Tiles/Planet/Grass/double_edge.png
-    West: /Textures/Tiles/Planet/Grass/double_edge.png
+    SouthEast: /Textures/_DV/Tiles/Planet/Grass/single_edge.png
+    NorthEast: /Textures/_DV/Tiles/Planet/Grass/single_edge.png
+    NorthWest: /Textures/_DV/Tiles/Planet/Grass/single_edge.png
+    SouthWest: /Textures/_DV/Tiles/Planet/Grass/single_edge.png
+    South: /Textures/_DV/Tiles/Planet/Grass/double_edge.png
+    East: /Textures/_DV/Tiles/Planet/Grass/double_edge.png
+    North: /Textures/_DV/Tiles/Planet/Grass/double_edge.png
+    West: /Textures/_DV/Tiles/Planet/Grass/double_edge.png
+## End of DeltaV Changes
   deconstructTools: [ Cutting ]
   footstepSounds:
     collection: FootstepGrass
@@ -1651,8 +1671,17 @@
   id: FloorMowedAstroGrass
   parent: [ BaseStationTile, FloorGrass ]
   name: tiles-mowed-astro-grass
+  sprite: /Textures/_DV/Tiles/grassmowed.png # DeltaV - Resprite
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   isSubfloor: false
   deconstructTools: [ Cutting ]
+  footstepSounds:
+    collection: FootstepGrass
   itemDrop: FloorTileItemMowedAstroGrass
 
 - type: tile
@@ -1661,6 +1690,8 @@
   name: tiles-jungle-astro-grass
   isSubfloor: false
   deconstructTools: [ Cutting ]
+  footstepSounds:
+    collection: FootstepGrass
   itemDrop: FloorTileItemJungleAstroGrass
 
 - type: tile
