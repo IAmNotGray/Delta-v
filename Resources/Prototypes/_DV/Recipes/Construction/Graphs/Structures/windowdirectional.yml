@@ -1,16 +1,16 @@
 - type: constructionGraph
-  id: WindowDirectional
+  id: WindowCornerRecipes
   start: start
   graph:
     - node: start
       edges:
-        - to: windowDirectional # 25 hp
+        - to: windowCorner # 25 hp
           steps:
             - material: Glass
               amount: 1
               doAfter: 1
 
-        - to: windowFrostedDirectional # 25 hp
+        - to: windowFrostedCorner # 25 hp
           steps:
             - material: Glass
               amount: 1
@@ -18,62 +18,54 @@
               amount: 1
               doAfter: 1
 
-        - to: plasmaWindowDirectional # 37 hp
+        - to: plasmaWindowCorner # 37 hp
           steps:
             - material: PlasmaGlass
               amount: 1
               doAfter: 1.5
 
-        - to: uraniumWindowDirectional # 37 hp
+        - to: uraniumWindowCorner # 37 hp
           steps:
             - material: UraniumGlass
               amount: 1
               doAfter: 1.5
 
-        - to: windowClockworkDirectional # 37 hp reinforced damage mod
-          steps:
-            - material: ClockworkGlass
-              amount: 1
-              doAfter: 1.5
-
-        - to: windowReinforcedDirectional # 37 hp reinforced damage mod
+        - to: windowReinforcedCorner # 37 hp reinforced damage mod
           steps:
             - material: ReinforcedGlass
               amount: 1
               doAfter: 1.5
 
-        - to: plasmaReinforcedWindowDirectional # 75 hp reinforced damage mod
+        - to: plasmaReinforcedWindowCorner # 75 hp reinforced damage mod
           steps:
             - material: ReinforcedPlasmaGlass
               amount: 1
               doAfter: 2
 
-        - to: uraniumReinforcedWindowDirectional # 75 hp reinforced damage mod
+        - to: uraniumReinforcedWindowCorner # 75 hp reinforced damage mod
           steps:
             - material: ReinforcedUraniumGlass
               amount: 1
               doAfter: 2
 
-        # Start DeltaV additions
-        - to: tintedWindowDirectional
+        - to: tintedWindowCorner # 50 hp
           steps:
             - material: Glass
               amount: 1
             - material: Plastic
-              amount: 2
-              doAfter: 1.5
+              amount: 1
+              doAfter: 2
 
-        - to: reinforcedTintedWindowDirectional
+        - to: reinforcedTintedWindowCorner
           steps:
             - material: ReinforcedGlass
               amount: 1
             - material: Plastic
               amount: 2
-              doAfter: 1.5
-        # End DeltaV additions
+              doAfter: 2
 
-    - node: windowDirectional
-      entity: WindowDirectional
+    - node: windowCorner
+      entity: WindowDirectionalCorner
       edges:
         - to: start
           completed:
@@ -86,34 +78,29 @@
               doAfter: 1
             - tool: Anchoring
               doAfter: 2
-        - to: windowFrostedDirectional
+        - to: windowFrostedCorner
           steps:
             - material: Plastic
               amount: 1
               doAfter: 0.5
-        - to: plasmaWindowDirectional
+        - to: plasmaWindowCorner
           steps:
             - material: Plasma
               amount: 1
               doAfter: 0.5
-        - to: uraniumWindowDirectional
+        - to: uraniumWindowCorner
           steps:
             - material: Uranium
               amount: 1
               doAfter: 0.5
-        - to: windowClockworkDirectional
-          steps:
-            - material: Brass
-              amount: 1
-              doAfter: 1
-        - to: windowReinforcedDirectional
+        - to: windowReinforcedCorner
           steps:
             - material: MetalRod
               amount: 1
               doAfter: 1
 
-    - node: windowFrostedDirectional
-      entity: WindowFrostedDirectional
+    - node: windowFrostedCorner
+      entity: WindowFrostedCorner
       edges:
         - to: start
           completed:
@@ -130,8 +117,8 @@
             - tool: Anchoring
               doAfter: 2
 
-    - node: plasmaWindowDirectional
-      entity: PlasmaWindowDirectional
+    - node: plasmaWindowCorner
+      entity: PlasmaWindowDirectionalCorner
       edges:
         - to: start
           completed:
@@ -148,14 +135,14 @@
               doAfter: 2
             - tool: Anchoring
               doAfter: 3
-        - to: plasmaReinforcedWindowDirectional
+        - to: plasmaReinforcedWindowCorner
           steps:
             - material: MetalRod
               amount: 1
               doAfter: 0.5
 
-    - node: uraniumWindowDirectional
-      entity: UraniumWindowDirectional
+    - node: uraniumWindowCorner
+      entity: UraniumWindowDirectionalCorner
       edges:
         - to: start
           completed:
@@ -172,33 +159,14 @@
               doAfter: 2
             - tool: Anchoring
               doAfter: 3
-        - to: uraniumReinforcedWindowDirectional
+        - to: uraniumReinforcedWindowCorner
           steps:
             - material: MetalRod
               amount: 1
               doAfter: 0.5
 
-    - node: windowClockworkDirectional
-      entity: WindowClockworkDirectional
-      edges:
-        - to: start
-          completed:
-            - !type:GivePrototype
-              prototype: SheetClockworkGlass1
-              amount: 1
-            - !type:DeleteEntity {}
-          steps:
-            - tool: Screwing
-              doAfter: 2
-            - tool: Prying
-              doAfter: 3
-            - tool: Screwing
-              doAfter: 2
-            - tool: Anchoring
-              doAfter: 3
-
-    - node: windowReinforcedDirectional
-      entity: WindowReinforcedDirectional
+    - node: windowReinforcedCorner
+      entity: WindowReinforcedDirectionalCorner
       edges:
         - to: start
           completed:
@@ -215,19 +183,19 @@
               doAfter: 1
             - tool: Anchoring
               doAfter: 2
-        - to: plasmaReinforcedWindowDirectional
+        - to: plasmaReinforcedWindowCorner
           steps:
             - material: Plasma
               amount: 1
               doAfter: 0.5
-        - to: uraniumReinforcedWindowDirectional
+        - to: uraniumReinforcedWindowCorner
           steps:
             - material: Uranium
               amount: 1
               doAfter: 0.5
 
-    - node: plasmaReinforcedWindowDirectional
-      entity: PlasmaReinforcedWindowDirectional
+    - node: plasmaReinforcedWindowCorner
+      entity: PlasmaReinforcedWindowDirectionalCorner
       edges:
         - to: start
           completed:
@@ -245,8 +213,8 @@
             - tool: Anchoring
               doAfter: 3
 
-    - node: uraniumReinforcedWindowDirectional
-      entity: UraniumReinforcedWindowDirectional
+    - node: uraniumReinforcedWindowCorner
+      entity: UraniumReinforcedWindowDirectionalCorner
       edges:
         - to: start
           completed:
@@ -264,9 +232,8 @@
             - tool: Anchoring
               doAfter: 3
 
-        # Start DeltaV additions
-    - node: tintedWindowDirectional
-      entity: WindowTintedDirectional
+    - node: tintedWindowCorner
+      entity: TintedWindowDirectionalCorner
       edges:
         - to: start
           completed:
@@ -275,21 +242,21 @@
               amount: 1
             - !type:GivePrototype
               prototype: SheetPlastic1
-              amount: 2
+              amount: 1
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
               doAfter: 1
             - tool: Anchoring
               doAfter: 2
-        - to: reinforcedTintedWindowDirectional
+        - to: reinforcedTintedWindowCorner
           steps:
             - material: MetalRod
               amount: 2
               doAfter: 2
 
-    - node: reinforcedTintedWindowDirectional
-      entity: WindowTintedReinforcedDirectional
+    - node: reinforcedTintedWindowCorner
+      entity: TintedWindowReinforcedDirectionalCorner
       edges:
         - to: start
           completed:
@@ -301,16 +268,11 @@
               amount: 2
             - !type:DeleteEntity {}
           steps:
-            - tool: Welding
-              doAfter: 5
             - tool: Screwing
-              doAfter: 1
+              doAfter: 2
             - tool: Prying
-              doAfter: 2
-            - tool: Welding
-              doAfter: 5
+              doAfter: 3
             - tool: Screwing
-              doAfter: 1
-            - tool: Anchoring
               doAfter: 2
-    # End DeltaV additions
+            - tool: Anchoring
+              doAfter: 3
