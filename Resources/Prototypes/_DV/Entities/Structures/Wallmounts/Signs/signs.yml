@@ -128,4 +128,34 @@
   components:
   - type: Sprite
     sprite: _DV/Structures/Wallmounts/signs.rsi
-    state: cryogenics
+    state: cryo
+
+- type: entity
+  parent: BaseSign
+  id: SignLizard
+  name: lizard sign
+  description: A sign indicating where the... Oh, no. Oh dear god. It's too late...
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Wallmounts/signs.rsi
+    state: lizard
+
+- type: entity
+  parent: BaseSign
+  id: SignClown
+  name: clown sign
+  description: A sign indicating where the clown is. Beware.
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Wallmounts/signs.rsi
+    state: clown
+
+- type: entity
+  parent: BaseSign
+  id: SignBlank
+  name: blank sign
+  description: A sign indicating absolutely nothing.
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Wallmounts/signs.rsi
+    state: blank

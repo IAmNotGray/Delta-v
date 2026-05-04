@@ -90,10 +90,61 @@
 			"name": "tech"
 		},
 		{
+			"name": "cryo"
+		},
+		{
+			"name": "magnetics"
+		},
+		{
+			"name": "radiation"
+		},
+		{
+			"name": "memetic"
+		},
+		{
+			"name": "clown"
+		},
+		{
+			"name": "lizard"
+		},
+		{
+			"name": "blank"
+		},
+		{
+			"name": "secure"
+		},
+		{
+			"name": "laser"
+		},
+		{
+			"name": "explosives"
+		},
+		{
+			"name": "flammable"
+		},
+		{
+			"name": "danger"
+		},
+		{
+			"name": "oxidants"
+		},
+		{
+			"name": "corrosives"
+		},
+		{
+			"name": "biohazard"
+		},
+		{
+			"name": "electrical"
+		},
+		{
 			"name": "cryogenics"
 		},
 		{
-			"name": "arrivals"
+			"name": "canisters"
+		},
+		{
+			"name": "optical"
 		}
     ]
 }
