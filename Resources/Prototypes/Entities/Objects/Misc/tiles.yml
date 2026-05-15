@@ -1547,7 +1547,7 @@
     - Plating
     - FloorMowedAstroGrass
   - type: Stack
-    stackType: FloorTileAstroGrass
+    stackType: FloorTileMowedAstroGrass
 ## End of DeltaV Changes
 
 - type: entity
@@ -1562,13 +1562,13 @@
     state: grassjungle
   - type: Item
     sprite: _DV/Objects/Tiles/tile.rsi
-    heldPrefix: grass
+    heldPrefix: jungle
   - type: FloorTile
     outputs:
     - Plating
     - FloorJungleAstroGrass
   - type: Stack
-    stackType: FloorTileAstroGrass
+    stackType: FloorTileJungleAstroGrass
 ## End of DeltaV Changes
 
 - type: entity

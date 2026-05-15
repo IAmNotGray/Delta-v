@@ -159,3 +159,23 @@
   - type: Sprite
     sprite: _DV/Structures/Wallmounts/signs.rsi
     state: blank
+
+- type: entity
+  parent: BaseSignDirectional
+  id: SignDirectionalReactor
+  name: reactor sign
+  description:  A direction sign, pointing out which way the nuclear reactor is.
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Wallmounts/signs.rsi
+    state: direction_reactor
+
+- type: entity
+  parent: BaseSignDirectional
+  id: SignDirectionalTurbine
+  name: turbine sign
+  description:  A direction sign, pointing out which way the reactor turbine is.
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Wallmounts/signs.rsi
+    state: direction_turbine

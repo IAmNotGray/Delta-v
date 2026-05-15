@@ -2,7 +2,7 @@
 - type: tile
   id: FloorSteelBurnt
   name: tiles-steel-floor
-  sprite: /Textures/Tiles/steel_burnt.png
+  sprite: /Textures/_DV/Tiles/steel_burnt.png
   variants: 2
   placementVariants:
   - 1.0
@@ -194,3 +194,46 @@
   itemDrop: FloorTileItemSteelSquiggly
   heatCapacity: 10000
   allowRotationMirror: true
+
+# grass variants
+- type: tile
+  id: FloorAstroGrassChromite
+  parent: BaseStationTile
+  name: tiles-grass-planet-floor-purple-astro
+  sprite: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/purplegrass.png
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/single_edge.png
+    NorthEast: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/single_edge.png
+    NorthWest: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/single_edge.png
+    SouthWest: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/single_edge.png
+    South: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/double_edge.png
+    East: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/double_edge.png
+    North: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/double_edge.png
+    West: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/double_edge.png
+  baseTurf: Plating
+  footstepSounds:
+    collection: FootstepGrass
+  deconstructTools: [ Cutting ]
+  itemDrop: FloorTileItemAstroGrassPurple
+
+- type: tile
+  id: FloorAstroGrassBasalt
+  parent: BaseStationTile
+  name: tiles-grass-planet-floor-red-astro
+  sprite: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/redgrass.png
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/single_edge.png
+    NorthEast: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/single_edge.png
+    NorthWest: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/single_edge.png
+    SouthWest: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/single_edge.png
+    South: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/double_edge.png
+    East: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/double_edge.png
+    North: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/double_edge.png
+    West: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/double_edge.png
+  baseTurf: Plating
+  footstepSounds:
+    collection: FootstepGrass
+  deconstructTools: [ Cutting ]
+  itemDrop: FloorTileItemAstroGrassRed

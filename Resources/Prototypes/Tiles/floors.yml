@@ -1100,7 +1100,7 @@
   id: FloorMetalFoam
   parent: BaseStationTile
   name: tiles-metal-foam
-  sprite: /Textures/Tiles/foammetal.png
+  sprite: /Textures/_DV/Tiles/foammetal.png # DeltaV - Resprite
   variants: 1
   placementVariants:
   - 1.0
@@ -1842,7 +1842,7 @@
   id: FloorDarkSquiggly
   parent: BaseStationTile
   name: tiles-dark-squiggly
-  sprite: /Textures/Tiles/dark_squiggly.png
+  sprite: /Textures/_DV/Tiles/dark_squiggly.png # DeltaV, Resprite
   variants: 4
   placementVariants:
   - 1.0

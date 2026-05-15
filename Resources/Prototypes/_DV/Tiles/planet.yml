@@ -1,7 +1,7 @@
 # Lava
 - type: tile
   id: FloorBasaltBordered
-  name: tiles-basalt-floor
+  name: tiles-basalt-floor-bordered
   sprite: /Textures/_DV/Tiles/Planet/Basalt/basalt.png
   variants: 1
   placementVariants:
@@ -26,7 +26,7 @@
 # Chromite
 - type: tile
   id: FloorChromiteBordered
-  name: tiles-chromite-floor
+  name: tiles-chromite-floor-bordered
   sprite: /Textures/_DV/Tiles/Planet/Chromite/chromite.png 
   variants: 7
   placementVariants:
@@ -53,3 +53,42 @@
   heatCapacity: 10000
   weather: true
   indestructible: true
+
+# grass variants
+- type: tile
+  id: FloorPlanetGrassChromite
+  parent: BaseFloorPlanet
+  name: tiles-grass-planet-floor-purple
+  sprite: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/purplegrass.png
+  edgeSpritePriority: 0
+  edgeSprites:
+    SouthEast: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/single_edge.png
+    NorthEast: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/single_edge.png
+    NorthWest: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/single_edge.png
+    SouthWest: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/single_edge.png
+    South: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/double_edge.png
+    East: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/double_edge.png
+    North: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/double_edge.png
+    West: /Textures/_DV/Tiles/Planet/Grass/Colors/Purple/double_edge.png
+  baseTurf: FloorPlanetDirt
+  footstepSounds:
+    collection: FootstepGrass
+
+- type: tile
+  id: FloorPlanetGrassBasalt
+  parent: BaseFloorPlanet
+  name: tiles-grass-planet-floor-red
+  sprite: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/redgrass.png
+  edgeSpritePriority: 0
+  edgeSprites:
+    SouthEast: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/single_edge.png
+    NorthEast: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/single_edge.png
+    NorthWest: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/single_edge.png
+    SouthWest: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/single_edge.png
+    South: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/double_edge.png
+    East: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/double_edge.png
+    North: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/double_edge.png
+    West: /Textures/_DV/Tiles/Planet/Grass/Colors/Red/double_edge.png
+  baseTurf: FloorPlanetDirt
+  footstepSounds:
+    collection: FootstepGrass

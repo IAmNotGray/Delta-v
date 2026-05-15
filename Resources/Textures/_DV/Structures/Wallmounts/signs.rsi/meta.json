@@ -145,6 +145,17 @@
 		},
 		{
 			"name": "optical"
-		}
+		},
+		{
+			"name": "arrivals"
+		},
+        {
+            "name": "direction_reactor",
+            "directions": 4
+        },
+        {
+            "name": "direction_turbine",
+            "directions": 4
+        }
     ]
 }
