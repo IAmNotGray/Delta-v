@@ -5,7 +5,7 @@
   components:
   - type: Sprite
     drawdepth: FloorTiles
-    sprite: Nyanotrasen/Structures/Furniture/tatami.rsi
+    sprite: _DV/Structures/Furniture/Tatami/1x1.rsi #DeltaV - Resprite
   - type: Tag
     tags: [ Carpet ]
   - type: Physics

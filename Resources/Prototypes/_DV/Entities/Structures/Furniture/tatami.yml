@@ -1,0 +1,54 @@
+- type: entity
+  id: tatami1x2
+  parent: tatamibase
+  suffix: 1x2
+  name: tatami square
+  description: It's tatami, but a rectangle.
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Furniture/Tatami/2x1.rsi
+    state: tatami_2x1
+
+- type: entity
+  id: tatami1x2P
+  parent: tatamibase
+  suffix: 1x2
+  name: tatami mat
+  description: It's a portion of a tatami mat.
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Furniture/Tatami/2x1.rsi
+    state: tatami_2x1P
+
+- type: entity
+  id: tatami2x2
+  parent: tatamibase
+  suffix: 2x2
+  name: tatami square
+  description: It's tatami, but big.
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Furniture/Tatami/2x2.rsi
+    state: tatami_2x2
+
+- type: entity
+  id: tatami4x4
+  parent: tatamibase
+  suffix: 4x4
+  name: tatami square
+  description: It's tatami, but large.
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Furniture/Tatami/4x4.rsi
+    state: tatami_4x4
+
+- type: entity
+  id: tatami6x6
+  parent: tatamibase
+  suffix: 6x6
+  name: tatami square
+  description: It's tatami, but massive.
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Furniture/Tatami/6x6.rsi
+    state: tatami_6x6
