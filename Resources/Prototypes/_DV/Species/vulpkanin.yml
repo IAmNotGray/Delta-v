@@ -3,7 +3,7 @@
   name: species-name-vulpkanin
   roundStart: true
   prototype: MobVulpkanin
-  defaultSkinTone: "#5a3f2d"
+  defaultSkinTone: "#985629"
   dollPrototype: AppearanceVulpkanin
   skinColoration: Hues
   maleFirstNames: NamesVulpkaninMale
