@@ -53,7 +53,7 @@
             - material: Glass
               amount: 1
             - material: Plastic
-              amount: 1
+              amount: 2
               doAfter: 2
 
         - to: reinforcedTintedWindowCorner
@@ -242,7 +242,7 @@
               amount: 1
             - !type:GivePrototype
               prototype: SheetPlastic1
-              amount: 1
+              amount: 2
             - !type:DeleteEntity {}
           steps:
             - tool: Screwing
