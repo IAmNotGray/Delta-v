@@ -3,8 +3,11 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
+using Content.Server._CD.Records;
 using Content.Server.Database;
-using Content.Shared._DV.Species; // Delta-V Hidden species
+using Content.Shared._CD.Records;
+using Content.Shared._DV.Species;
+using Content.Shared._DV.Traits; // Delta-V Hidden species
 using Content.Shared.Body;
 using Content.Shared.CCVar;
 using Content.Shared.Construction.Prototypes;
@@ -168,6 +171,12 @@ namespace Content.Server.Preferences.Managers
                 loadouts[role.RoleName] = loadout;
             }
 
+            // Begin CD - Chracter Records
+            var cdRecords = profile.CDProfile?.CharacterRecords != null
+                ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords, profile.CDProfile.CharacterRecordEntries)
+                : PlayerProvidedCharacterRecords.DefaultRecords();
+            // End CD - Character Records
+
             return new HumanoidCharacterProfile(
                 profile.CharacterName,
                 profile.FlavorText,
@@ -186,7 +195,9 @@ namespace Content.Server.Preferences.Managers
                 (PreferenceUnavailableMode) profile.PreferenceUnavailable,
                 antags.ToHashSet(),
                 traits.ToHashSet(),
-                loadouts
+                loadouts,
+                profile.CDProfile?.Height ?? 1.0f, // CD - Character Records
+                cdRecords // CD - Character Recordss
             );
         }
 
