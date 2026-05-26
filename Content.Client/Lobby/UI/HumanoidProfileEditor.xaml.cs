@@ -380,31 +380,6 @@ namespace Content.Client.Lobby.UI
             IsDirty = false;
         }
 
-        // Begin DeltaV - Traits Integration
-        /// <summary>
-        /// Called when trait selection changes in the TraitsTab.
-        /// Updates the profile with the new trait selection.
-        /// </summary>
-        private void OnTraitsSelectionChanged(HashSet<ProtoId<TraitPrototype>> traits)
-        {
-            if (Profile is null)
-                return;
-
-            // Remove all existing traits - iterate directly over readonly collection
-            foreach (var existingTrait in Profile.TraitPreferences)
-            {
-                Profile = Profile.WithoutTraitPreference(existingTrait, _prototypeManager);
-            }
-
-            // Add newly selected traits
-            foreach (var trait in traits)
-            {
-                Profile = Profile.WithTraitPreference(trait.Id, _prototypeManager);
-            }
-
-            SetDirty();
-        }
-
         private void SetDirty()
         {
             // If it equals default then reset the button.
