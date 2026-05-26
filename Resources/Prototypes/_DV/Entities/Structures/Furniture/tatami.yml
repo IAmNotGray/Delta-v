@@ -4,6 +4,8 @@
   suffix: 1x2
   name: tatami square
   description: It's tatami, but a rectangle.
+  placement:
+    mode: SnapgridBorder
   components:
   - type: Sprite
     sprite: _DV/Structures/Furniture/Tatami/2x1.rsi
@@ -15,6 +17,8 @@
   suffix: 1x2
   name: tatami mat
   description: It's a portion of a tatami mat.
+  placement:
+    mode: SnapgridBorder
   components:
   - type: Sprite
     sprite: _DV/Structures/Furniture/Tatami/2x1.rsi
@@ -26,6 +30,8 @@
   suffix: 2x2
   name: tatami square
   description: It's tatami, but big.
+  placement:
+    mode: SnapgridBorder
   components:
   - type: Sprite
     sprite: _DV/Structures/Furniture/Tatami/2x2.rsi
@@ -37,6 +43,8 @@
   suffix: 4x4
   name: tatami square
   description: It's tatami, but large.
+  placement:
+    mode: SnapgridBorder
   components:
   - type: Sprite
     sprite: _DV/Structures/Furniture/Tatami/4x4.rsi
@@ -48,6 +56,8 @@
   suffix: 6x6
   name: tatami square
   description: It's tatami, but massive.
+  placement:
+    mode: SnapgridBorder
   components:
   - type: Sprite
     sprite: _DV/Structures/Furniture/Tatami/6x6.rsi
