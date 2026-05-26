@@ -228,13 +228,8 @@
   description: "A pair of amphibious lungs along with gills, filtering oxygen out of the air continuously."
   components:
   - type: Metabolizer
-    removeEmpty: true
     solutionOnBody: false
-    solution: "Lung"
     metabolizerTypes: [ Feroxi ]
-    groups:
-    - id: Gas
-      rateModifier: 100.0
   - type: SolutionContainerManager
     solutions:
       organ:

@@ -218,7 +218,6 @@
     speechSounds: Alto
   - type: EncryptionKeyHolder
     keySlots: 4
-    examineWhileLocked: false
     keysExtractionMethod: Cutting
     keysUnlocked: false
   - type: Lock
@@ -367,13 +366,6 @@
   - type: Metabolizer
     maxReagents: 6
     metabolizerTypes: [ Fuel ]
-    groups:
-    - id: Food
-    - id: Drink
-    - id: Medicine
-    - id: Poison
-    - id: Narcotic
-    - id: Alcohol
   - type: Item
     size: Small
     heldPrefix: stomach
@@ -406,6 +398,3 @@
   - type: Metabolizer
     removeEmpty: true
     metabolizerTypes: [ Fuel ]
-    groups:
-    - id: Gas
-      rateModifier: 100.0

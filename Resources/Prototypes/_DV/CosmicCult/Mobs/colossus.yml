@@ -91,8 +91,6 @@
     blacklist:
       tags:
       - GhostOnlyWarp
-  - type: Body
-    requiredLegs: 0
   - type: Emoting
   - type: Speech
     speechSounds: ColossusSpeech
@@ -272,8 +270,8 @@
     allowedStates:
     - Alive
     damage:
-      groups:
-        Brute: -1
+      types:
+        Blunt: -1
         Burn: -0.5
   - type: MultiplyAttackRateOnSupercritical
   - type: MultiplyCorruptingSpeedOnSupercritical

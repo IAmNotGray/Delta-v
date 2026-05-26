@@ -270,7 +270,7 @@
         damage:
           types:
             Cellular: 0.01
-    Food:
+    Digestion:
       effects:
       - !type:SatiateHunger
 

@@ -9,14 +9,12 @@
     sprite: Objects/Consumable/Drinks/lean.rsi
     state: icon
   metabolisms:
-    Narcotic:
+    Bloodstream:
       effects:
       - !type:GenericStatusEffect
         key: Stutter
         component: StutteringAccent
       - !type:Jitter
-    Poison:
-      effects:
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
@@ -31,8 +29,6 @@
           reagent: Lean
           min: 35
         probability: 0.1
-    Medicine:
-      effects:
       - !type:Vomit
         conditions:
           - !type:ReagentCondition
@@ -56,7 +52,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 2
@@ -94,7 +90,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 2
@@ -122,7 +118,7 @@
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 2
@@ -144,7 +140,7 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 2
@@ -167,7 +163,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 2
@@ -217,7 +213,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 2
@@ -260,7 +256,7 @@
   metamorphicChangeColor: false
   fizziness: 0.2
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 2
@@ -275,7 +271,7 @@
   color: "#664300"
   recognizable: false
   metabolisms:
-    Drink:
+    Digestion:
       effects:
       - !type:SatiateThirst
         factor: 2
