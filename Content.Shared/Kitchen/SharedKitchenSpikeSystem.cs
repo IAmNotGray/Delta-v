@@ -239,7 +239,7 @@ public sealed class SharedKitchenSpikeSystem : EntitySystem
                 args.Target.Value,
                 ent);
 
-            // var logSeverity = HasComp<HumanoidAppearanceComponent>(args.Target) ? LogImpact.Extreme : LogImpact.High; // DeltaV - replaced below
+            // var logSeverity = HasComp<HumanoidProfileComponent>(args.Target) ? LogImpact.Extreme : LogImpact.High; // DeltaV - replaced below
             var (logSeverity, hasMind) = LogValuesForTarget(args.Target.Value); // DeltaV
 
             _logger.Add(LogType.Action,
@@ -317,7 +317,7 @@ public sealed class SharedKitchenSpikeSystem : EntitySystem
         {
             _gibbing.Gib(args.Target.Value);
 
-            // var logSeverity = HasComp<HumanoidAppearanceComponent>(args.Target) ? LogImpact.Extreme : LogImpact.High; // DeltaV - replaced below
+            // var logSeverity = HasComp<HumanoidProfileComponent>(args.Target) ? LogImpact.Extreme : LogImpact.High; // DeltaV - replaced below
             var (logSeverity, hasMind) = LogValuesForTarget(args.Target.Value); // DeltaV
 
             _logger.Add(LogType.Gib,

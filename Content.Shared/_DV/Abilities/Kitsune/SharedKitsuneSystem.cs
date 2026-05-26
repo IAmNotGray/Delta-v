@@ -31,9 +31,9 @@ public abstract class SharedKitsuneSystem : EntitySystem
     private void OnProfileLoadFinished(Entity<KitsuneComponent> ent, ref AppearanceLoadedEvent args)
     {
         // Eye color is stored on component to be used for fox fire/fox form color.
-        if (TryComp<HumanoidAppearanceComponent>(ent, out var humanComp))
+        if (TryComp<HumanoidProfileComponent>(ent, out var humanComp))
         {
-            ent.Comp.Color = humanComp.EyeColor;
+            ent.Comp.Color = Color.White; // TODO: Nubody Color
 
             var lightColor = ent.Comp.Color.Value;
             var max = MathF.Max(lightColor.R, MathF.Max(lightColor.G, lightColor.B));

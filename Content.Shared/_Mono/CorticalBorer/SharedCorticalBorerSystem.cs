@@ -6,7 +6,7 @@
 using System.Linq;
 using Content.Shared.Actions;
 using Content.Shared.Body.Components;
-using Content.Shared.Body.Part;
+using Content.Shared.Body;
 using Content.Shared.Body.Systems;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Examine;
@@ -27,7 +27,7 @@ namespace Content.Shared._Mono.CorticalBorer;
 
 public partial class SharedCorticalBorerSystem : EntitySystem
 {
-    [Dependency] private readonly SharedBodySystem _bodySystem = default!;
+    [Dependency] private readonly BodySystem _bodySystem = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly ISerializationManager _serManager = default!;

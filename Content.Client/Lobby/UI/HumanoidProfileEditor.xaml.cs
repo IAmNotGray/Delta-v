@@ -27,7 +27,8 @@ using System.Globalization;
 using Content.Client._CD.Records.UI;
 using Content.Shared._CD.Records;
 // End CD - Character Records
-using Content.Shared._DV.Traits; // DV - Traits
+using Content.Shared._DV.Traits;
+using Content.Shared.Humanoid.Prototypes; // DV - Traits
 
 namespace Content.Client.Lobby.UI
 {

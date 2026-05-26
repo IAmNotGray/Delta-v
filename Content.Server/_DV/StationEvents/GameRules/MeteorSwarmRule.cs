@@ -1,9 +1,9 @@
 using System.Linq;
 using System.Numerics;
 using Content.Server._DV.StationEvents.Components;
-using Content.Server.Atmos.Components;
 using Content.Server.StationEvents.Components;
 using Content.Server.StationEvents.Events;
+using Content.Shared.Atmos.Components;
 using Content.Shared.GameTicking.Components;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;

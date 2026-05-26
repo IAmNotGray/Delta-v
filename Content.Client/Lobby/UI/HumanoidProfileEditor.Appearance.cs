@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Linq;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared.Guidebook;
@@ -191,6 +192,34 @@ public sealed partial class HumanoidProfileEditor
         UpdateSpeciesGuidebookIcon();
         ReloadPreview();
     }
+
+    // Begin CD - Character Records
+    private void SetProfileHeight(float height)
+    {
+        Profile = Profile?.WithHeight(height);
+        SetDirty();
+        ReloadProfilePreview();
+    }
+
+
+    private void UpdateHeightControls()
+    {
+        if (Profile == null)
+        {
+            return;
+        }
+
+        var species = _species.Find(x => x.ID == Profile.Species);
+        if (species != null)
+            _defaultHeight = species.DefaultHeight;
+
+        var prototype = _prototypeManager.Index<SpeciesPrototype>(Profile.Species);
+        var sliderPercent = (Profile.Height - prototype.MinHeight) /
+                            (prototype.MaxHeight - prototype.MinHeight);
+        CDHeightSlider.Value = sliderPercent;
+        CDHeight.Text = Profile.Height.ToString(CultureInfo.InvariantCulture);
+    }
+    // End CD - Character Records
 
     private void SetAge(int newAge)
     {

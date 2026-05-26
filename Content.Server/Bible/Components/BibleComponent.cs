@@ -1,4 +1,5 @@
 using Content.Shared.Damage;
+using Content.Shared.Damage.Prototypes;
 using Content.Shared.FixedPoint; // Goobstation
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
@@ -44,7 +45,7 @@ namespace Content.Server.Bible.Components
         /// How much damage to deal to the entity being smitten - Goob
         /// </summary>
         [DataField]
-        public DamageSpecifier SmiteDamage = new() { DamageDict = new Dictionary<string, FixedPoint2>() { { "Holy", 25 } } }; // Ungodly
+        public DamageSpecifier SmiteDamage = new() { DamageDict = new Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2>() { { "Holy", 25 } } }; // Ungodly
 
         /// <summary>
         /// How long to stun the entity being smitten - Goob

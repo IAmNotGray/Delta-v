@@ -181,9 +181,9 @@ public sealed class PreenableSystem : EntitySystem
     {
         var feather = PredictedSpawnAtPosition(ent.Comp.FeatherPrototype.Id, Transform(ent).Coordinates);
 
-        if (TryComp<HumanoidAppearanceComponent>(ent, out var appearance))
+        if (TryComp<HumanoidProfileComponent>(ent, out var appearance))
         {
-            _appearance.SetData(feather, FeatherVisuals.FeatherColor, appearance.SkinColor);
+            _appearance.SetData(feather, FeatherVisuals.FeatherColor, Color.White); // TODO: Nubody Colors
         }
 
         // best be careful, no cleaning this

@@ -1,5 +1,6 @@
 
 using Content.Shared.Preferences;
+using Robust.Client.UserInterface.Controls;
 
 namespace Content.Client.Lobby.UI;
 

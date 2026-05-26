@@ -1,15 +1,15 @@
-using Content.Shared.Body.Systems;
 using Content.Shared.Inventory;
 using Content.Shared.Trigger;
 using Content.Shared.Trigger.Systems;
 using Content.Shared.Trigger.Components.Effects;
 using Content.Shared._Goobstation.Trigger.Components.Effects;
+using Content.Shared.Body;
 
 namespace Content.Shared._Goobstation.Trigger.Systems;
 
 public sealed class DeleteParentOnTriggerSystem : EntitySystem
 {
-    [Dependency] private readonly SharedBodySystem _body = default!;
+    [Dependency] private readonly BodySystem _body = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
 
     public override void Initialize()

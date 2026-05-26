@@ -1,10 +1,11 @@
 using System.Numerics;
+using Content.Shared._CD.Records;
+using Content.Shared._DV.Traits;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
-using Content.Shared.Traits;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
@@ -79,9 +80,18 @@ public sealed partial class HumanoidCharacterProfileV1
     [DataField]
     public PreferenceUnavailableMode PreferenceUnavailable;
 
+    // Begin CD - Character Records
+    [DataField("cosmaticDriftCharacterHeight")]
+    public float Height;
+
+    [DataField("cosmaticDriftCharacterRecords")]
+    public PlayerProvidedCharacterRecords PlayerProvidedCharacterRecords;
+    // End CD - Character Records
+
+
     public HumanoidCharacterProfile ToV2()
     {
-        return new(Name, FlavorText, Species, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts);
+        return new(Name, FlavorText, Species, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts, Height, PlayerProvidedCharacterRecords);
     }
 }
 
