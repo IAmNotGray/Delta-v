@@ -261,7 +261,7 @@
     Cough:
       collection: MaleCoughs
     Yawn:
-      collection: MaleYawn
+      collection: VulpkaninYawns
     Snore:
       collection: Snores
     Honk:
@@ -307,7 +307,7 @@
     Cough:
       collection: FemaleCoughs
     Yawn:
-      collection: FemaleYawn
+      collection: VulpkaninYawns
     Snore:
       collection: Snores
     Honk:
