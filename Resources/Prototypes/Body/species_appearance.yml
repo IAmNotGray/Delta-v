@@ -71,6 +71,10 @@
       state: "creampie_human"
       visible: false
 
+    # Delta V - Harpy Wings
+    - map: [ "enum.HumanoidVisualLayers.RArmExtension" ]
+    - map: [ "enum.HumanoidVisualLayers.LArmExtension" ]
+
 - type: entity
   id: BaseSpeciesAppearance
   parent:

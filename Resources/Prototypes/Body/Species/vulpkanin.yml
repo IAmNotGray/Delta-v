@@ -18,7 +18,7 @@
       default: [ VulpEar ]
     enum.HumanoidVisualLayers.Snout:
       limit: 1
-      required: true
+      required: false # DV - No requirement
       default: [ VulpSnout ]
     enum.HumanoidVisualLayers.SnoutCover:
       limit: 3
@@ -89,54 +89,55 @@
       Kidneys: OrganVulpkaninKidneys
   - type: HumanoidProfile
     species: Vulpkanin
-  - type: Inventory
-    speciesId: vulpkanin
-    displacements:
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: jumpsuit
-      back:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: back
-      outerClothing:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: outerwear
-      gloves:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: hand
-      shoes:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: shoes
-      head:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: head
-      neck:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: neck
-      eyes:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: eyes
-      belt:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Vulpkanin/displacement.rsi
-            state: belt
+# Delta V - We got no displacement for Vulpkaning
+#  - type: Inventory
+#    speciesId: vulpkanin
+#    displacements:
+#      jumpsuit:
+#        sizeMaps:
+#          32:
+#            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+#            state: jumpsuit
+#      back:
+#        sizeMaps:
+#          32:
+#            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+#            state: back
+#      outerClothing:
+#        sizeMaps:
+#          32:
+#            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+#            state: outerwear
+#      gloves:
+#        sizeMaps:
+#          32:
+#            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+#            state: hand
+#      shoes:
+#        sizeMaps:
+#          32:
+#            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+#            state: shoes
+#      head:
+#        sizeMaps:
+#          32:
+#            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+#            state: head
+#      neck:
+#        sizeMaps:
+#          32:
+#            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+#            state: neck
+#      eyes:
+#        sizeMaps:
+#          32:
+#            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+#            state: eyes
+#      belt:
+#        sizeMaps:
+#          32:
+#            sprite: Mobs/Species/Vulpkanin/displacement.rsi
+#            state: belt
 
 - type: entity
   parent:
@@ -182,16 +183,17 @@
   - type: TemperatureProtection
     heatingCoefficient: 1.2
     coolingCoefficient: 0.3
-  - type: JumpAbility
-    action: ActionVulpkaninGravityJump
-    canCollide: true
-    jumpDistance: 3
-    jumpSound:
-      path: /Audio/Weapons/punchmiss.ogg
-      params:
-        pitch: 1.33
-        volume: -5
-        variation: 0.05
+    # DV - No jumps for Vulpy
+#  - type: JumpAbility
+#    action: ActionVulpkaninGravityJump
+#    canCollide: true
+#    jumpDistance: 3
+#    jumpSound:
+#      path: /Audio/Weapons/punchmiss.ogg
+#      params:
+#        pitch: 1.33
+#        volume: -5
+#        variation: 0.05
 
 - type: entity
   parent: OrganBase
@@ -220,7 +222,7 @@
   components:
   - type: VisualOrgan
     data:
-      sprite: _DV/Mobs/Species/Vulpkanin/parts.rsi
+      sprite: _DV/Mobs/Species/Vulpkanin/parts.rsi # Delta V - Changed to our sprites
   - type: VisualOrganMarkings
     markingData:
       group: Vulpkanin
@@ -231,14 +233,14 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _DV/Mobs/Species/Vulpkanin/parts.rsi
+    sprite: _DV/Mobs/Species/Vulpkanin/parts.rsi # Delta V - Changed to our Sprites
 
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganVulpkaninExternal ]
   id: OrganVulpkaninTorso
 
 - type: entity
-  parent: [ OrganBaseHead, OrganBaseHeadSexed, OrganVulpkaninExternal ]
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganVulpkaninExternal ]
   id: OrganVulpkaninHead
   components:
   - type: VisualOrganMarkings
@@ -291,6 +293,12 @@
 - type: entity
   parent: [ OrganVulpkaninVisual, OrganBaseEyes, OrganVulpkaninInternal ]
   id: OrganVulpkaninEyes
+  components:
+  - type: VisualOrgan
+    layer: enum.HumanoidVisualLayers.Eyes
+    data:
+      sprite: Mobs/Customization/eyes.rsi # Delta V - Different eyes
+      state: eyes
 
 - type: entity
   parent: [ OrganBaseTongue, OrganVulpkaninInternal ]
