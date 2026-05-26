@@ -12,7 +12,7 @@
       metabolismRate: 0.2
       effects:
       - !type:HealthChange
-        conditions:
+        conditio:
         - !type:TotalDamageCondition
           max: 30
         damage:
@@ -103,9 +103,9 @@
       metabolismRate: 0.2
       effects:
       - !type:HealthChange
-        conditions:
-          - !type:TotalDamageCondition
-            min: 30
+#        conditions:
+#          - !type:TotalDamageCondition
+#            min: 30
         damage:
           groups:
             Airloss: -6

@@ -44,8 +44,8 @@
       - id: MobWhimperlet # DeltaV - added Whimperlet
         weight: 0.03
       #- id: MobMouseCancer # DeltaV - no
-      #- id: MobCorticalBorer # DeltaV - ported Borer
-      #  weight: 0.015 # DeltaV - original probability was 0.001 but that seems WAY too low
+#      - id: MobCorticalBorer # DeltaV - ported Borer
+#        weight: 0.015 # DeltaV - original probability was 0.001 but that seems WAY too low
 # Events always spawn a critter regardless of Probability https://github.com/space-wizards/space-station-14/issues/28480 I added the Rat King to their own event with a player cap.
 
 - type: entity

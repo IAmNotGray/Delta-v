@@ -205,4 +205,10 @@ public abstract class SharedWeatherSystem : EntitySystem
         // Otherwise, add the specified weather
         return TryAddWeather(mapUid.Value, weatherProto.Value, out weatherEnt, duration);
     }
+
+    // Delta V
+    public void UpdateWeatherNextUpdate(WeatherStatusEffectComponent comp, TimeSpan newTime)
+    {
+        comp.NextUpdate = newTime;
+    }
 }

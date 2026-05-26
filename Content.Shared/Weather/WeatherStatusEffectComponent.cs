@@ -1,7 +1,10 @@
 using System.Numerics;
+using Content.Shared.Damage;
 using Content.Shared.StatusEffectNew.Components;
+using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Weather;
@@ -43,4 +46,30 @@ public sealed partial class WeatherStatusEffectComponent : Component
     /// </summary>
     [ViewVariables]
     public EntityUid? Stream;
+
+
+    /// <summary>
+    /// DeltaV: How long to wait between updating weather effects.
+    /// </summary>
+    [DataField]
+    public TimeSpan UpdateDelay = TimeSpan.FromSeconds(1);
+
+    /// <summary>
+    /// DeltaV: When to next update weather effects (damage).
+    /// </summary>
+    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
+    public TimeSpan NextUpdate = TimeSpan.Zero;
+
+    /// <summary>
+    /// DeltaV: Damage you can take from being in this weather.
+    /// Only applies when weather has fully set in.
+    /// </summary>
+    [DataField]
+    public DamageSpecifier? Damage;
+
+    /// <summary>
+    /// DeltaV: Don't damage entities that match this blacklist.
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? DamageBlacklist;
 }

@@ -27,7 +27,6 @@
   id: ScarTopSurgeryLong
   bodyPart: Chest
   groupWhitelist: [Human, Dwarf, Felinid, Oni, Feroxi, Vulpkanin, Kitsune, Avali, Reptilian, Slime, Moth, Arachnid, Diona] # DeltaV - Felinid-Avali
-  groupWhitelist: [Human, Reptilian, Moth, Arachnid, Diona]
   sexRestriction: [Male]
   sprites:
   - sprite: Mobs/Customization/scars.rsi

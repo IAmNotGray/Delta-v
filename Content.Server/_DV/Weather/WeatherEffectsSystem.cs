@@ -35,28 +35,20 @@ public sealed partial class WeatherEffectsSystem : EntitySystem
         base.Update(frameTime);
 
         var now = _timing.CurTime;
-        var query = EntityQueryEnumerator<WeatherComponent>();
+        var query = EntityQueryEnumerator<WeatherStatusEffectComponent>();
         while (query.MoveNext(out var map, out var weather))
         {
             if (now < weather.NextUpdate)
                 continue;
 
-            weather.NextUpdate = now + weather.UpdateDelay;
+            _weather.UpdateWeatherNextUpdate(weather, now + weather.UpdateDelay);
 
-            foreach (var (id, data) in weather.Weather)
-            {
-                // start and end do no damage
-                if (data.State != WeatherState.Running)
-                    continue;
-
-                UpdateDamage(map, id);
-            }
+            UpdateDamage(map, weather);
         }
     }
 
-    private void UpdateDamage(EntityUid map, ProtoId<WeatherPrototype> id)
+    private void UpdateDamage(EntityUid map, WeatherStatusEffectComponent weather)
     {
-        var weather = _proto.Index(id);
         if (weather.Damage is not {} damage)
             return;
 
@@ -71,7 +63,7 @@ public sealed partial class WeatherEffectsSystem : EntitySystem
             if (xform.GridUid is {} gridUid && _gridQuery.TryComp(gridUid, out var grid))
             {
                 var tile = _map.GetTileRef((gridUid, grid), xform.Coordinates);
-                if (!_weather.CanWeatherAffect(gridUid, grid, tile))
+                if (!_weather.CanWeatherAffect((gridUid, grid), tile))
                     continue;
             }
 

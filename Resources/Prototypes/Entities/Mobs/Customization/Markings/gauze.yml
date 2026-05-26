@@ -104,7 +104,7 @@
 
 - type: marking
   id: GauzeLowerArmRight
-  bodyPart: RArm, RHand
+  bodyPart: RHand
   groupWhitelist: [Dwarf, Human, Reptilian, Arachnid, Slime, Felinid, Oni, Vulpkanin, Rodentia, Thaven, Feroxi, Kitsune] # DeltaV - Felinid-Kitsune
   coloring:
     default:
@@ -117,7 +117,7 @@
 
 - type: marking
   id: GauzeLeftArm
-  bodyPart: LArm, LHand
+  bodyPart: LHand
   groupWhitelist: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin, Rodentia, Thaven, Feroxi, Kitsune] # DeltaV - Felinid-Kitsune
   coloring:
     default:
