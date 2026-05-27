@@ -21,7 +21,6 @@
     - id: PowerGridCheck
     #- id: RandomSentience # DeltaV - replaced with RandomSentienceGlimmer
     - id: SlimesSpawnHorde
-    - id: SlimesSpawn
     - id: SolarFlare
     - id: SnakeSpawnHorde
     - id: SpiderClownSpawnHorde

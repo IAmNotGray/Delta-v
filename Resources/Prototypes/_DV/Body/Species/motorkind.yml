@@ -396,5 +396,4 @@
   - type: Item
     heldPrefix: lungs
   - type: Metabolizer
-    removeEmpty: true
     metabolizerTypes: [ Fuel ]

@@ -65,7 +65,8 @@
       - !type:HealthChange
         probability: 0.4
         damage:
-          Toxin: 2
+          types:
+            Poison: 2
       - !type:RemovePsionicAbilities
         conditions:
         - !type:ReagentCondition
@@ -86,4 +87,5 @@
       - !type:HealthChange
         probability: 0.4
         damage:
-          Toxin: 2
+          typeS:
+            Poison: 2

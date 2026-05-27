@@ -153,7 +153,7 @@
     soundsId: ReptilianBodyEmotes
   - type: Damageable
     damageContainer: Biological
-    damageModifierSet: GenemoddedScale
+#    damageModifierSet: GenemoddedScale # DV - No dmg modifier set called that?
   - type: MeleeWeapon
     soundHit:
       collection: AlienClaw

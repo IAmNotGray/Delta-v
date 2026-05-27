@@ -286,9 +286,6 @@
     # mm yummy
     maxReagents: 3
     metabolizerTypes: [Animal]
-    groups:
-    - id: Food
-    - id: Drink
 
 - type: entity
   id: OrganChitinidLiver
@@ -306,12 +303,5 @@
   - type: Metabolizer
     maxReagents: 1
     metabolizerTypes: [ Animal ]
-    groups:
-    - id: Alcohol
-  - type: Tag # goob edit
-    tags:
-    - Meat
-    - Organ
-    - Liver
   - type: Item
     size: Small

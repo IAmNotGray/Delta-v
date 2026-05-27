@@ -28,11 +28,11 @@
           reagent: Stasicillin
           min: 11
         damage:
-          groups:
-            Airloss: -6
-            Toxin: -4
-            Brute: -4.5
-            Burn: -6
+          types:
+            Asphyxiation: -6
+            Poison: -4
+            Blunt: -4.5
+            Heat: -6
       - !type:ModifyStatusEffect
         conditions:
         - !type:ReagentCondition
@@ -59,11 +59,11 @@
         - !type:TotalDamageCondition
           min: 30
         damage:
-          groups:
-            Airloss: -2
+          types:
+            Asphyxiation: -2
             Blunt: -1.2
-            Burn: -1.6
-            Toxin: -2
+            Heat: -1.6
+            Poison: -2
 
 - type: reagent
   id: StabilisedStimulants
@@ -114,10 +114,10 @@
         - !type:TotalDamageCondition
           min: 90 # Heals a bit above crit # DeltaV - this brings people to a bit more stable condition
         damage:
-          groups: # 5 Damage every type except rad/pois
-            Airloss: -10
-            Brute: -15
-            Burn: -20
+          types: # 5 Damage every type except rad/pois
+            Asphyxiation: -10
+            Blunt: -15
+            Heat: -20
 
 - type: reagent
   id: Corgium

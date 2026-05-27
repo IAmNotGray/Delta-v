@@ -56,17 +56,17 @@
       input: AutomationSlotMaterials
       output: null
   - type: TechnologyDatabase
-  - type: ApcPowerReceiver
-    powerLoad: 150
-  - type: PowerState
-    idlePowerDraw: 150
-    workingPowerDraw: 1000
     supportedDisciplines: # DeltaV - don't add it to every map
     - Industrial
     - Biochemical
     - Arsenal
     - Experimental
     - CivilianServices
+  - type: ApcPowerReceiver
+    powerLoad: 150
+  - type: PowerState
+    idlePowerDraw: 150
+    workingPowerDraw: 1000
   # Begin DeltaV additions
   - type: Wires
     boardName: wires-board-name-autolathe

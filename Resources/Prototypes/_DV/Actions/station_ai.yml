@@ -139,7 +139,7 @@
     event: !type:StationAiHealthChangeActionEvent
       damage:
         types:
-          Burn: -50
+          Heat: -50
           Blunt: -50
 
 - type: entity

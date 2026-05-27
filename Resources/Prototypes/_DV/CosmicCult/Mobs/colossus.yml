@@ -272,6 +272,10 @@
     damage:
       types:
         Blunt: -1
+        Piercing: -1
+        Slash: -1
+        Heat: -0.5
+        Cold: -0.5
         Burn: -0.5
   - type: MultiplyAttackRateOnSupercritical
   - type: MultiplyCorruptingSpeedOnSupercritical

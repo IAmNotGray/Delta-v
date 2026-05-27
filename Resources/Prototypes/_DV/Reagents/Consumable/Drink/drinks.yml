@@ -97,7 +97,7 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.20
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -170,7 +170,7 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.30
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -220,7 +220,7 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.25
-    Poison:
+    Bloodstream:
       effects:
       - !type:Jitter
 

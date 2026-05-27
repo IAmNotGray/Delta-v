@@ -12,7 +12,7 @@
       metabolismRate: 0.2
       effects:
       - !type:HealthChange
-        condition:
+        conditions:
         - !type:TotalDamageCondition
           max: 30
         damage:
@@ -65,24 +65,26 @@
         - !type:TotalDamageCondition
           max: 30
         damage:
-          groups:
-            Brute: -0.6
+          types:
+            Blunt: -0.2
+            Piercing: -0.2
+            Slash: -0.2
       - !type:HealthChange
         conditions:
         - !type:TotalDamageCondition
           min: 30
         damage:
-          groups:
-            Brute: -2.4
+          types:
+            Blunt: -2.4
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
           reagent: SalicylicAcid
           min: 15.5
         damage: # ODing causes damage but heals brute
-          groups:
-            Burn: 2 # will cause minor caustic damage
-            Brute: -2.4
+          types:
+            Caustic: 2 # will cause minor caustic damage
+            Blunt: -2.4
       - !type:Jitter
         conditions:
         - !type:ReagentCondition
@@ -107,24 +109,23 @@
 #          - !type:TotalDamageCondition
 #            min: 30
         damage:
-          groups:
-            Airloss: -6
+          types:
+            Asphyxiation: -6
       - !type:HealthChange
         conditions:
           - !type:TotalDamageCondition
             max: 30
         damage:
-           groups:
-            Airloss: -1
+           types:
+            Asphyxiation: -1
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
           reagent: Salbutamol
           min: 15.5
         damage:
-          groups: # ODing heals airloss but causes damage
-            Airloss: -6
           types: # DeltaV - genetic is too evil
+            Asphyxiation: -6
             Caustic: 0.2
 
 - type: reagent
@@ -161,8 +162,6 @@
       effects:
       - !type:HealthChange
         damage:
-          groups:
-            Brute: -0.3
           types:
             Blunt: -0.1
             Heat: -0.1
