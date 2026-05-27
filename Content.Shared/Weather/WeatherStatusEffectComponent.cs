@@ -47,13 +47,6 @@ public sealed partial class WeatherStatusEffectComponent : Component
     [ViewVariables]
     public EntityUid? Stream;
 
-
-    /// <summary>
-    /// DeltaV: How long to wait between updating weather effects.
-    /// </summary>
-    [DataField]
-    public TimeSpan UpdateDelay = TimeSpan.FromSeconds(1);
-
     /// <summary>
     /// DeltaV: When to next update weather effects (damage).
     /// </summary>

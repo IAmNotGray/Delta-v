@@ -1,7 +1,5 @@
 using Content.Shared.Destructible.Thresholds;
-using Content.Shared.Weather;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Server._DV.Weather;
@@ -45,10 +43,10 @@ public partial struct WeatherStage
     public MinMax Duration = new(0, 0);
 
     /// <summary>
-    /// The weather prototype to add, or null for clear weather.
+    /// The weather to add, or null for clear weather.
     /// </summary>
     [DataField]
-    public WeatherStatusEffectComponent? Weather;
+    public EntProtoId? Weather;
 
     /// <summary>
     /// Alert message to send in chat for players on the map when it starts.

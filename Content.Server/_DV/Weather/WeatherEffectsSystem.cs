@@ -23,6 +23,12 @@ public sealed partial class WeatherEffectsSystem : EntitySystem
 
     private EntityQuery<MapGridComponent> _gridQuery;
 
+    /// <summary>
+    /// How long to wait between updating weather effects.
+    /// </summary>
+    [DataField]
+    public TimeSpan UpdateDelay = TimeSpan.FromSeconds(1);
+
     public override void Initialize()
     {
         base.Initialize();
@@ -41,7 +47,7 @@ public sealed partial class WeatherEffectsSystem : EntitySystem
             if (now < weather.NextUpdate)
                 continue;
 
-            _weather.UpdateWeatherNextUpdate(weather, now + weather.UpdateDelay);
+            _weather.UpdateWeatherNextUpdate(weather, now + UpdateDelay);
 
             UpdateDamage(map, weather);
         }
