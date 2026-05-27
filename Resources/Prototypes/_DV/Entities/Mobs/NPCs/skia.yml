@@ -85,11 +85,11 @@
     darkDamage:
       types:
         Blunt: -5
-        Burn: -5
-        Toxin: -5
+        Heat: -5
+        Poison: -5
         Asphyxiation: -5
-        Genetic: -5
-        Metaphysical: -1
+        Cellular: -5
+        Shadow: -1
     lightDamage:
       types:
         Blunt: 5

@@ -311,7 +311,8 @@
     - BiologicalMetaphysical
     damage:
       types:
-        Metaphysical: -10
+        Holy: -10
+        Shadow: -10
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:

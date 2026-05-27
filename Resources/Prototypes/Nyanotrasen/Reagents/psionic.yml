@@ -87,5 +87,5 @@
       - !type:HealthChange
         probability: 0.4
         damage:
-          typeS:
+          types:
             Poison: 2
