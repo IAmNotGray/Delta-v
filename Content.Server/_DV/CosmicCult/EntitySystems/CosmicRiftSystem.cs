@@ -5,13 +5,12 @@ using Content.Server.Bible.Components;
 using Content.Server.Popups;
 using Content.Shared._DV.CosmicCult;
 using Content.Shared._DV.CosmicCult.Components;
-using Content.Shared.Damage;
 using Content.Shared.DoAfter;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Popups;
-using Content.Shared.StatusEffect;
+using Content.Shared.StatusEffectNew;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
@@ -71,7 +70,7 @@ public sealed class CosmicRiftSystem : EntitySystem
                 if (!_random.Prob(comp.PulseProb)) continue;
                 var damageMultiplier = Math.Clamp(comp.PulseRange / distance, 1, 10); //0.2 damage per second at max distance, up to 2 per second if closer
                 var effectDuration = _random.Next(10, 40); //2-8 damage at max distance, 20-80 damage at min distance
-                _statusEffects.TryAddStatusEffect<CosmicEntropyDebuffComponent>(mob, "EntropicDegen", TimeSpan.FromSeconds(effectDuration), true);
+                _statusEffects.TryAddStatusEffectDuration(mob, "EntropicDegen", out _, TimeSpan.FromSeconds(effectDuration));
                 if (TryComp<CosmicEntropyDebuffComponent>(mob, out var debuff)) debuff.Degen =
                 new(){DamageDict = new(){
                     {"Cold", 0.05 * damageMultiplier},

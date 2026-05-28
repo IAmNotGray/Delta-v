@@ -1,4 +1,3 @@
-using Content.Server._DV.Weather;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
@@ -6,7 +5,7 @@ using Content.Shared.Weather;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Timing;
 
-namespace Content.Shared._DV.Weather;
+namespace Content.Server._DV.Weather;
 
 /// <summary>
 /// Handles weather damage for exposed entities.

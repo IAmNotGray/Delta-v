@@ -3,7 +3,6 @@ using Content.Shared.Chat;
 using Content.Shared.Weather;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Player;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 

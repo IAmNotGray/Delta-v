@@ -34,23 +34,11 @@ public sealed partial class ThavenMoodsSystem : SharedThavenMoodSystem
     public IReadOnlyList<ThavenMood> SharedMoods => _sharedMoods.AsReadOnly();
     private readonly List<ThavenMood> _sharedMoods = new();
 
-
-    [ValidatePrototypeId<DatasetPrototype>]
     private const string SharedDataset = "ThavenMoodsShared";
-
-    [ValidatePrototypeId<DatasetPrototype>]
     private const string YesAndDataset = "ThavenMoodsYesAnd";
-
-    [ValidatePrototypeId<DatasetPrototype>]
     private const string NoAndDataset = "ThavenMoodsNoAnd";
-
-    [ValidatePrototypeId<DatasetPrototype>]
     private const string WildcardDataset = "ThavenMoodsWildcard";
-
-    [ValidatePrototypeId<EntityPrototype>]
     private const string ActionViewMoods = "ActionViewMoods";
-
-    [ValidatePrototypeId<WeightedRandomPrototype>]
     private const string RandomThavenMoodDataset = "RandomThavenMoodDataset";
 
     public override void Initialize()
