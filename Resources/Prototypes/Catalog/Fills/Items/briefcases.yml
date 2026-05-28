@@ -22,7 +22,7 @@
         - id: MagazineBoxAntiMateriel
         - id: ClothingNeckTieRed
         - id: ClothingHandsGlovesLatex
-        - id: ClothingUniformJumpsuitLawyerBlack
+#        - id: ClothingUniformJumpsuitLawyerBlack # Delta V - Commenting this out since we got a hitman suit now
         - id: ClothingUniformHitmanSuit #imp
         - id: BarberScissors
 

@@ -766,6 +766,7 @@ LeftFootHuman: null
 RightLegSkeleton: null
 OrganRatStomach: null
 TorsoHuman: null
+BoxBuildABuddyHuman: null
 
 # 2026-01-14
 HeadHuman: OrganHumanHead
