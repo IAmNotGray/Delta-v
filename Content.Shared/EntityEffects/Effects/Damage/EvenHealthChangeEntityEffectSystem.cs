@@ -19,7 +19,6 @@ namespace Content.Shared.EntityEffects.Effects.Damage;
 public sealed partial class EvenHealthChangeEntityEffectSystem : EntityEffectSystem<DamageableComponent, EvenHealthChange>
 {
     [Dependency] private readonly DamageableSystem _damageable = default!;
-    [Dependency] private readonly BodySystem _body = default!; // DeltaV
 
     protected override void Effect(Entity<DamageableComponent> entity, ref EntityEffectEvent<EvenHealthChange> args)
     {

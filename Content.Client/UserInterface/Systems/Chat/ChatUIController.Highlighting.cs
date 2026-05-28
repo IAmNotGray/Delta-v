@@ -17,7 +17,6 @@ namespace Content.Client.UserInterface.Systems.Chat;
 /// </summary>
 public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSystem>
 {
-    [Dependency] private readonly ILocalizationManager _loc = default!;
     [UISystemDependency] private readonly CharacterInfoSystem _characterInfo = default!;
 
     private static readonly Regex StartDoubleQuote = new("\"$");
@@ -167,4 +166,9 @@ public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSys
         HighlightsUpdated?.Invoke(newHighlights);
         _charInfoIsAttach = false;
     }*/
+    // Delta V - Complains it needs an invoker. Though we moved it into the client.
+    private void OnHighlightsUpdated(string obj)
+    {
+        HighlightsUpdated?.Invoke(obj);
+    }
 }

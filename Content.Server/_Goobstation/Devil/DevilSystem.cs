@@ -75,7 +75,6 @@ public sealed partial class DevilSystem : EntitySystem
     [Dependency] private readonly CondemnedSystem _condemned = default!;
     [Dependency] private readonly MobStateSystem _state = default!;
     [Dependency] private readonly JitteringSystem _jittering = default!;
-    [Dependency] private readonly BodySystem _body = default!;
     [Dependency] private readonly ContainerSystem _container = default!;
 
     private static readonly Regex WhitespaceAndNonWordRegex = new(@"[\s\W]+", RegexOptions.Compiled);

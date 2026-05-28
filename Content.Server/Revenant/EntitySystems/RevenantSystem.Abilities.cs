@@ -14,6 +14,7 @@ using Content.Shared.Item;
 using Content.Shared.Bed.Sleep;
 using System.Linq;
 using System.Numerics;
+using Content.Server._Impstation.Revenant.EntitySystems;
 using Content.Server.Revenant.Components;
 using Content.Shared.Physics;
 using Content.Shared.DoAfter;

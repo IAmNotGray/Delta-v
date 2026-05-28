@@ -12,7 +12,7 @@ public abstract class SharedRevealRevenantOnCollideSystem : EntitySystem
     [Dependency] private readonly StatusEffectsSystem _status = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedStunSystem _stun = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
+    // [Dependency] private readonly IGameTiming _gameTiming = default!; // Delta V - Never used
 
     [ValidatePrototypeId<StatusEffectPrototype>]
     private const string CorporealStatusId = "Corporeal";

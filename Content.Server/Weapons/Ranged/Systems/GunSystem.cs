@@ -1,6 +1,5 @@
 using System.Numerics;
 using Content.Server.Cargo.Systems;
-using Content.Server.Temperature.Systems; // DeltaV Heat Change system
 using Content.Server.Weapons.Ranged.Components;
 using Content.Shared.Cargo;
 using Content.Shared.Damage;
@@ -29,7 +28,6 @@ public sealed partial class GunSystem : SharedGunSystem
 {
     [Dependency] private readonly PricingSystem _pricing = default!;
     [Dependency] private readonly SharedMapSystem _map = default!;
-    [Dependency] private readonly TemperatureSystem _temperature = default!; // DeltaV Heat change system
 
     private const float DamagePitchVariation = 0.05f;
 

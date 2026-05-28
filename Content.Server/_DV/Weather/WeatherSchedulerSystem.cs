@@ -13,7 +13,6 @@ public sealed class WeatherSchedulerSystem : EntitySystem
 {
     [Dependency] private readonly IChatManager _chat = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedWeatherSystem _weather = default!;
 

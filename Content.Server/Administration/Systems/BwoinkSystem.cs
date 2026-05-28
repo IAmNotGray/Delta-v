@@ -483,6 +483,7 @@ namespace Content.Server.Administration.Systems
 
                 var linkToPrevious = string.Empty;
 
+                _webhookData = await GetWebhookData(_webhookUrl); // Delta V - added so webhook doesn't scream
                 // If we have all the data required, we can link to the embed of the previous round or embed that was too long
                 if (_webhookData is { GuildId: { } guildId, ChannelId: { } channelId })
                 {

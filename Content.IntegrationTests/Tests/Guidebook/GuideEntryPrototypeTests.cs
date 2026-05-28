@@ -22,22 +22,22 @@ public sealed class GuideEntryPrototypeTests
     public async Task Validate(string protoKey)
     {
         return; // DeltaV - shit broken
-        await using var pair = await PoolManager.GetServerClient(new PoolSettings { Connected = true });
-        var client = pair.Client;
-        await client.WaitIdleAsync();
-        var protoMan = client.ResolveDependency<IPrototypeManager>();
-        var resMan = client.ResolveDependency<IResourceManager>();
-        var parser = client.ResolveDependency<DocumentParsingManager>();
-        var proto = protoMan.Index<GuideEntryPrototype>(protoKey);
-
-        await client.WaitAssertion(() =>
-        {
-            using var reader = resMan.ContentFileReadText(proto.Text);
-            var text = reader.ReadToEnd();
-
-            Assert.That(parser.TryAddMarkup(new Document(), text), $"Failed to parse the guide entry's document.");
-        });
-
-        await pair.CleanReturnAsync();
+        // await using var pair = await PoolManager.GetServerClient(new PoolSettings { Connected = true });
+        // var client = pair.Client;
+        // await client.WaitIdleAsync();
+        // var protoMan = client.ResolveDependency<IPrototypeManager>();
+        // var resMan = client.ResolveDependency<IResourceManager>();
+        // var parser = client.ResolveDependency<DocumentParsingManager>();
+        // var proto = protoMan.Index<GuideEntryPrototype>(protoKey);
+        //
+        // await client.WaitAssertion(() =>
+        // {
+        //     using var reader = resMan.ContentFileReadText(proto.Text);
+        //     var text = reader.ReadToEnd();
+        //
+        //     Assert.That(parser.TryAddMarkup(new Document(), text), $"Failed to parse the guide entry's document.");
+        // });
+        //
+        // await pair.CleanReturnAsync();
     }
 }

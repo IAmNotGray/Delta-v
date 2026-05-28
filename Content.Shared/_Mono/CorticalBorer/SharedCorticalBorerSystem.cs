@@ -25,9 +25,9 @@ using Robust.Shared.Serialization.Manager;
 
 namespace Content.Shared._Mono.CorticalBorer;
 
-public partial class SharedCorticalBorerSystem : EntitySystem
+public abstract class SharedCorticalBorerSystem : EntitySystem
 {
-    [Dependency] private readonly BodySystem _bodySystem = default!;
+    // [Dependency] private readonly BodySystem _bodySystem = default!; // Delta V - Not used
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly ISerializationManager _serManager = default!;
@@ -75,7 +75,7 @@ public partial class SharedCorticalBorerSystem : EntitySystem
                     continue;
 
                 var newComp = (Component) _serManager.CreateCopy(compReg.Component, notNullableOverride: true);
-                EntityManager.AddComponent(ent, newComp, true);
+                AddComp(ent, newComp, true);
             }
         }
 
@@ -118,7 +118,7 @@ public partial class SharedCorticalBorerSystem : EntitySystem
                     continue;
 
                 var newComp = (Component) _serManager.CreateCopy(compReg.Component, notNullableOverride: true);
-                EntityManager.AddComponent(ent, newComp, true);
+                AddComp(ent, newComp, true);
             }
         }
 

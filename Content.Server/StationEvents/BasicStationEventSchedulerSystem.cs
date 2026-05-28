@@ -26,7 +26,7 @@ namespace Content.Server.StationEvents
     public sealed class BasicStationEventSchedulerSystem : GameRuleSystem<BasicStationEventSchedulerComponent>
     {
         [Dependency] private readonly IChatManager _chatManager = default!; // DeltaV
-        [Dependency] private readonly IGameTiming _timing = default!; // DeltaV
+        // [Dependency] private readonly IGameTiming _timing = default!; // DeltaV - Never used
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly EventManagerSystem _event = default!;
         [Dependency] private readonly NextEventSystem _next = default!; // DeltaV
