@@ -95,7 +95,7 @@
     checkCanAccess: false
   - type: WorldTargetAction
     event: !type:StationAiSpawnEntityActionEvent
-      entity: StationAiHolopointer
+      entityAction: StationAiHolopointer
 
 - type: entity
   id: StationAiHolopointer

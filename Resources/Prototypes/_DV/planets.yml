@@ -24,6 +24,9 @@
       duration:
         min: 60
         max: 120
+      damage:
+        types:
+          Heat: 5
     - weather: WeatherAshfallLight # ash clears away for 30 seconds
       message: ash-storm-clearing
       duration:

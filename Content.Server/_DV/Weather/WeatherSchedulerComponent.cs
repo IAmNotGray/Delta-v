@@ -1,3 +1,4 @@
+using Content.Shared.Damage;
 using Content.Shared.Destructible.Thresholds;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
@@ -21,7 +22,7 @@ public sealed partial class WeatherSchedulerComponent : Component
     /// The index of <see cref="Stages"/> to use next, wraps back to the start.
     /// </summary>
     [DataField]
-    public int Stage;
+    public int Stage = 0;
 
     /// <summary>
     /// When to go to the next step of the schedule.
@@ -53,4 +54,10 @@ public partial struct WeatherStage
     /// </summary>
     [DataField]
     public LocId? Message;
+
+    /// <summary>
+    /// Damage Specifier to tell how much damage a stage should do
+    /// </summary>
+    [DataField]
+    public DamageSpecifier? Damage;
 }

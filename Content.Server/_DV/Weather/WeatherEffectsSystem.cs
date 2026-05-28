@@ -1,10 +1,9 @@
+using Content.Server._DV.Weather;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Weather;
-using Content.Shared.Whitelist;
 using Robust.Shared.Map.Components;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
 namespace Content.Shared._DV.Weather;
@@ -15,7 +14,6 @@ namespace Content.Shared._DV.Weather;
 public sealed partial class WeatherEffectsSystem : EntitySystem
 {
     [Dependency] private readonly DamageableSystem _damageable = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedMapSystem _map = default!;
     [Dependency] private readonly SharedWeatherSystem _weather = default!;
@@ -40,21 +38,21 @@ public sealed partial class WeatherEffectsSystem : EntitySystem
         base.Update(frameTime);
 
         var now = _timing.CurTime;
-        var query = EntityQueryEnumerator<WeatherStatusEffectComponent>();
-        while (query.MoveNext(out var map, out var weather))
+        var query = EntityQueryEnumerator<WeatherSchedulerComponent>();
+        while (query.MoveNext(out var map, out var weatherSchedulerComponent))
         {
-            if (now < weather.NextUpdate)
+            if (now < weatherSchedulerComponent.NextUpdate)
                 continue;
 
-            _weather.UpdateWeatherNextUpdate(weather, now + UpdateDelay);
+            var weatherStage = weatherSchedulerComponent.Stages[weatherSchedulerComponent.Stage];
 
-            UpdateDamage(map, weather);
+            UpdateDamage(map, weatherStage);
         }
     }
 
-    private void UpdateDamage(EntityUid map, WeatherStatusEffectComponent weather)
+    private void UpdateDamage(EntityUid map, WeatherStage? weather)
     {
-        if (weather.Damage is not {} damage)
+        if (weather == null || weather.Value.Damage is not {} damage)
             return;
 
         var query = EntityQueryEnumerator<MobStateComponent, TransformComponent>();
@@ -72,8 +70,7 @@ public sealed partial class WeatherEffectsSystem : EntitySystem
                     continue;
             }
 
-            if (_whitelist.IsWhitelistFailOrNull(weather.DamageBlacklist, uid))
-                _damageable.TryChangeDamage(uid, damage, interruptsDoAfters: false);
+            _damageable.TryChangeDamage(uid, damage, interruptsDoAfters: false);
         }
     }
 }

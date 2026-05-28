@@ -453,7 +453,7 @@ namespace Content.Server.Kitchen.EntitySystems
                 GetNetEntityArray(component.Storage.ContainedEntities.ToArray()),
                 // DeltaV - start of microwave ejection bugfix
                 (
-                    EntityManager.TryGetComponent<ActiveMicrowaveComponent>(uid, out var active)
+                    TryComp<ActiveMicrowaveComponent>(uid, out var active) // Delta V - Updated to TryComp
                     && active.LifeStage < ComponentLifeStage.Stopping
                 ),
                 // DeltaV - end of microwave ejection bugfix

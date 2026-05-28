@@ -31,13 +31,13 @@ public sealed class WeatherSchedulerSystem : EntitySystem
                 comp.Stage = 0;
 
             var stage = comp.Stages[comp.Stage++];
-            var duration = stage.Duration.Next(_random);
-            comp.NextUpdate = TimeSpan.FromSeconds(duration);
+            var duration = TimeSpan.FromSeconds(stage.Duration.Next(_random));
+            comp.NextUpdate = now + duration;
 
             var mapId = Comp<MapComponent>(map).MapId;
             if (stage.Weather is {} weather)
             {
-                var ending = comp.NextUpdate;
+                var ending = duration;
                 // crossfade weather so as one ends the next starts
                 if (HasWeather(comp, comp.Stage - 1))
                     ending += SharedWeatherSystem.ShutdownTime;

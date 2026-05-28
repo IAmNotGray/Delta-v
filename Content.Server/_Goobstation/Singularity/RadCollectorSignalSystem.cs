@@ -31,7 +31,7 @@ public sealed class RadCollectorSignalSystem : EntitySystem
             if (!_automation.IsAutomated(uid))
                 continue;
 
-            var ent = (uid, comp);
+            // var ent = (uid, comp); // DV - Never used
             _appearance.TryGetData<int>(uid, RadiationCollectorVisuals.PressureState, out var rawState);
             var state = rawState switch
             {

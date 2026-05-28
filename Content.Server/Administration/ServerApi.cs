@@ -9,14 +9,11 @@ using System.Threading.Tasks;
 using Content.Server._NF.Administration;
 using Content.Server.Administration.Managers;
 using Content.Server.Administration.Systems;
-using Content.Server.Administration.Managers; // Frontier
 using Content.Server.Database;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Presets;
-using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Maps;
 using Content.Server.RoundEnd;
-using Content.Shared.Administration.Managers;
 using Content.Shared.Administration; // Frontier
 using Content.Shared.CCVar;
 using Content.Shared.Database;

@@ -154,7 +154,7 @@ namespace Content.Server._DV.StationEvents.GameRules
                 while (!targetingSafe && targetingAttempts <= 3); // attempt to avoid the protected areas a few times
 
                 var meteor = Spawn(proto, spawnPosition);
-                var physics = EntityManager.GetComponent<PhysicsComponent>(meteor);
+                var physics = Comp<PhysicsComponent>(meteor);
                 _physics.SetBodyStatus(meteor, physics, BodyStatus.InAir);
                 _physics.SetLinearDamping(meteor, physics, 0f);
                 _physics.SetAngularDamping(meteor, physics, 0f);
