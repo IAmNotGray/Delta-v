@@ -87,6 +87,7 @@ namespace Content.IntegrationTests.Tests
             "CentComm",
             "MeteorArena",
             "Academy", //DeltaV
+            "Anvil", //DeltaV
             "Arena", // DeltaV
             "ArenaMedieval", //DeltaV
             "Asterisk", // DeltaV
@@ -100,7 +101,6 @@ namespace Content.IntegrationTests.Tests
             "Lighthouse", // DeltaV
             "Micro", // DeltaV
             "Ovni", //DeltaV
-            "Anvil", //DeltaV
             "Pebble", // DeltaV
             "PebbleHiring", // DeltaV
             "Shoukou", // DeltaV
