@@ -280,8 +280,8 @@
     - Critical
     - Dead
     damage:
-      groups:
-        Electronic: -0.5
+      types:
+        Shock: -0.5
   - type: SiliconEmp # DeltaV - EMP damage
   - type: BypassLock
     openWiresPanel: true
