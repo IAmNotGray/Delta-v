@@ -6,7 +6,7 @@ using Content.Shared.Damage;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Revenant.Components;
-using Content.Shared.StatusEffect;
+using Content.Shared.StatusEffectNew;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 
@@ -20,7 +20,6 @@ public abstract class SharedDispelPowerSystem : BasePsionicPowerSystem<DispelPow
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
-    [Dependency] private readonly StatusEffectNew.StatusEffectsSystem _statusEffectsNew = default!;
 
 
     public override void Initialize()
@@ -77,7 +76,7 @@ public abstract class SharedDispelPowerSystem : BasePsionicPowerSystem<DispelPow
     /// <param name="args">The event.</param>
     private void OnPsionicShieldingStopped(Entity<DispelPowerComponent> psionic, ref PsionicStoppedShieldedEvent args)
     {
-        if (_statusEffectsNew.HasStatusEffect(psionic, "StatusEffectPsionicsDisabled"))
+        if (_statusEffects.HasStatusEffect(psionic, "StatusEffectPsionicsDisabled"))
             return;
         // Losing the shielding causes you to lose vision of the invisible. This is to prevent that.
         Psionic.SetCanSeePsionicInvisiblity(args.Shielded, true);
@@ -116,7 +115,7 @@ public abstract class SharedDispelPowerSystem : BasePsionicPowerSystem<DispelPow
     {
         DealDispelDamage(revenant, dispeller: args.Dispeller);
         // TODO: Port over the new StatusEffectSystem when upstream ports over the Corporeal status effect to the new system.
-        _statusEffects.TryAddStatusEffect(revenant, "Corporeal", TimeSpan.FromSeconds(30), false, "Corporeal");
+        _statusEffects.TryAddStatusEffectDuration(revenant, "Corporeal", out _, TimeSpan.FromSeconds(30));
         args.Handled = true;
     }
 

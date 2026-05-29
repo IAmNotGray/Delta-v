@@ -42,7 +42,7 @@ public sealed class WeatherSchedulerSystem : EntitySystem
                     ending += SharedWeatherSystem.ShutdownTime;
                 if (HasWeather(comp, comp.Stage + 1))
                     ending += SharedWeatherSystem.StartupTime;
-                _weather.TrySetWeather(mapId, weather, out _, ending);
+                _weather.TrySetWeather(mapId, weather.Id, out _, ending);
             }
 
             if (stage.Message is {} message)

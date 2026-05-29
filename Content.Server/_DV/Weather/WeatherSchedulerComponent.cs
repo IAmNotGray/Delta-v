@@ -22,7 +22,7 @@ public sealed partial class WeatherSchedulerComponent : Component
     /// The index of <see cref="Stages"/> to use next, wraps back to the start.
     /// </summary>
     [DataField]
-    public int Stage = 0;
+    public int Stage;
 
     /// <summary>
     /// When to go to the next step of the schedule.
