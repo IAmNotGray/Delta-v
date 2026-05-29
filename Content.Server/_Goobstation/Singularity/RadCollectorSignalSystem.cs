@@ -55,6 +55,6 @@ public sealed class RadCollectorSignalSystem : EntitySystem
         RadCollectorState.Empty => EmptyPort,
         RadCollectorState.Low => LowPort,
         RadCollectorState.Full => FullPort,
-        _ => throw new ArgumentOutOfRangeException(nameof(state), state, null)
+        _ => EmptyPort,
     };
 }

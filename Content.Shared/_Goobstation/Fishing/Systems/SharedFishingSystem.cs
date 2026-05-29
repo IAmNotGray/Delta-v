@@ -33,6 +33,7 @@ public abstract class SharedFishingSystem : EntitySystem
     [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
+    [Dependency] private readonly IRobustRandom _random = default!; // Delta V - Build Errors
 
     protected EntityQuery<ActiveFisherComponent> FisherQuery;
     protected EntityQuery<ActiveFishingSpotComponent> ActiveFishSpotQuery;
@@ -347,10 +348,10 @@ public abstract class SharedFishingSystem : EntitySystem
             var attachedEnt = lureComp.AttachedEntity.Value;
             var targetCoords = Xform.GetMapCoordinates(Transform(attachedEnt));
             var playerCoords = Xform.GetMapCoordinates(Transform(player));
-            var rand = new System.Random((int) Timing.CurTick.Value); // evil random prediction hack
+            // var rand = new System.Random((int) Timing.CurTick.Value); // evil random prediction hack // Delta V - No idea, commenting out for now
 
             // Calculate throw direction
-            var direction = (playerCoords.Position - targetCoords.Position) * rand.NextFloat(0.2f, 0.85f);
+            var direction = (playerCoords.Position - targetCoords.Position) * _random.NextFloat(0.2f, 0.85f);
 
             // Yeet
             Throwing.TryThrow(attachedEnt, direction, 4f, player);

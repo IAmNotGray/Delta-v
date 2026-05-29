@@ -110,7 +110,7 @@ public sealed class ReverseEngineeringSystem : SharedReverseEngineeringSystem
             ReverseEngineeringTickResult.SuccessAverage => 25,
             ReverseEngineeringTickResult.SuccessMajor => 40,
             ReverseEngineeringTickResult.InstantSuccess => 100,
-            _ => throw new ArgumentOutOfRangeException()
+            _ => 0,
         };
 
         rev.Progress = Math.Clamp(rev.Progress + bonus, 0, 100);
