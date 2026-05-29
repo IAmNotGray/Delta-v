@@ -12,7 +12,7 @@ using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Popups;
 using Content.Shared.Random.Helpers;
-using Content.Shared.StatusEffect;
+using Content.Shared.StatusEffectNew;
 using Content.Shared.Verbs;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Prototypes;
@@ -34,6 +34,7 @@ public sealed class PreenableSystem : EntitySystem
     [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
     [Dependency] private readonly SharedChatSystem _chat = default!;
+    [Dependency] private readonly IRobustRandom _random = default!;
 
     public override void Initialize()
     {
@@ -108,16 +109,17 @@ public sealed class PreenableSystem : EntitySystem
 
     private void OnDamaged(Entity<PreenableComponent> ent, ref DamageChangedEvent args)
     {
-        if (args.DamageDelta == null || ent.Comp.ValidDamageGroups == null || !args.DamageIncreased)
+        if (args.DamageDelta == null || ent.Comp.ValidDamageTypes == null || !args.DamageIncreased)
             return;
 
         if (ent.Comp.CurrentFeathers <= 0)
             return;
 
         var totalApplicableDamage = FixedPoint2.Zero;
-        foreach (var (group, value) in args.DamageDelta.GetDamagePerGroup(_prototype))
+
+        foreach (var (type, value) in args.DamageDelta.DamageDict)
         {
-            if (!ent.Comp.ValidDamageGroups.Contains(group))
+            if (!ent.Comp.ValidDamageTypes.Contains(type))
                 continue;
 
             totalApplicableDamage += value;
@@ -138,9 +140,9 @@ public sealed class PreenableSystem : EntitySystem
         var feather = SpawnFeather(ent, true);
 
         // apply a random impulse so it's flying off the body. similar code to GibbingSystem
-        var scatterVector = rand.NextAngle().ToVec() * (rand.NextFloat(10, 40));
+        var scatterVector = _random.NextAngle().ToVec() * (_random.NextFloat(10, 40));
         _physics.ApplyLinearImpulse(feather, scatterVector);
-        _physics.ApplyAngularImpulse(feather, rand.NextFloat(-30, 30));
+        _physics.ApplyAngularImpulse(feather, _random.NextFloat(-30, 30));
 
         // update name/desc for increased validness
         var meta = MetaData(feather);
@@ -153,7 +155,7 @@ public sealed class PreenableSystem : EntitySystem
         _chat.TryEmoteWithoutChat(ent, ent.Comp.ScreamEmote);
 
         // old StatusEffects is obsolete, however Adrenaline has not been moved over to the new system yet
-        _statusEffects.TryAddStatusEffect(ent, "Adrenaline", TimeSpan.FromSeconds(3), true);
+        _statusEffects.TryAddStatusEffectDuration(ent, "Adrenaline", out _, TimeSpan.FromSeconds(3));
     }
 
     private void OnDamageModify(Entity<PreenableComponent> ent, ref DamageModifyEvent args)

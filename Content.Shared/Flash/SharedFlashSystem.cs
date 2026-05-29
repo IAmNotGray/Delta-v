@@ -9,7 +9,7 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory;
 using Content.Shared.Light;
 using Content.Shared.Popups;
-using Content.Shared.StatusEffect;
+using Content.Shared.StatusEffectNew; // Delta V - Build Warnings
 using Content.Shared.Stunnable;
 using Content.Shared.Tag;
 using Content.Shared.Timing;
@@ -45,14 +45,13 @@ public abstract class SharedFlashSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly UseDelaySystem _useDelay = default!;
 
-    private EntityQuery<StatusEffectsComponent> _statusEffectsQuery;
     private EntityQuery<DamagedByFlashingComponent> _damagedByFlashingQuery;
     private HashSet<EntityUid> _entSet = new();
 
     // The tag to add when a flash has no charges left.
     private static readonly ProtoId<TagPrototype> TrashTag = "Trash";
     // The key string for the status effect.
-    public ProtoId<StatusEffectPrototype> FlashedKey = "Flashed";
+    public readonly string FlashedKey = "Flashed";
 
     public override void Initialize()
     {
@@ -66,7 +65,6 @@ public abstract class SharedFlashSystem : EntitySystem
         Subs.SubscribeWithRelay<FlashImmunityComponent, FlashAttemptEvent>(OnFlashImmunityFlashAttempt, held: false);
         SubscribeLocalEvent<FlashImmunityComponent, ExaminedEvent>(OnExamine);
 
-        _statusEffectsQuery = GetEntityQuery<StatusEffectsComponent>();
         _damagedByFlashingQuery = GetEntityQuery<DamagedByFlashingComponent>();
     }
 
@@ -173,7 +171,7 @@ public abstract class SharedFlashSystem : EntitySystem
         // Goobstation end
 
         // don't paralyze, slowdown or convert to rev if the target is immune to flashes
-        if (!_statusEffectsSystem.TryAddStatusEffect<FlashedComponent>(target, FlashedKey, flashDuration, true) && !ignoreProtection) //DeltaV: allow flashing to ignore flash protection
+        if (!_statusEffectsSystem.TryAddStatusEffectDuration(target, FlashedKey, out _, flashDuration) && !ignoreProtection) //DeltaV: allow flashing to ignore flash protection
             return;
 
         if (stunDuration != null)
@@ -219,7 +217,7 @@ public abstract class SharedFlashSystem : EntitySystem
                 continue;
 
             // Is the entity affected by the flash either through status effects or by taking damage?
-            if (!_statusEffectsQuery.HasComponent(entity) && !_damagedByFlashingQuery.HasComponent(entity))
+            if (!_statusEffectsSystem.HasStatusEffect(entity, FlashedKey) && !_damagedByFlashingQuery.HasComponent(entity))
                 continue;
 
             // Check for entites in view.

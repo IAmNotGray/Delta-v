@@ -1,9 +1,8 @@
 using Content.Shared.Revenant.Components;
 using Content.Shared.Popups;
-using Content.Shared.StatusEffect;
+using Content.Shared.StatusEffectNew; // Delta V - Migrate to New
 using Content.Shared.Stunnable;
 using Robust.Shared.Physics.Events;
-using Robust.Shared.Timing;
 
 namespace Content.Shared.Revenant.EntitySystems;
 
@@ -14,9 +13,7 @@ public abstract class SharedRevealRevenantOnCollideSystem : EntitySystem
     [Dependency] private readonly SharedStunSystem _stun = default!;
     // [Dependency] private readonly IGameTiming _gameTiming = default!; // Delta V - Never used
 
-    [ValidatePrototypeId<StatusEffectPrototype>]
     private const string CorporealStatusId = "Corporeal";
-    [ValidatePrototypeId<StatusEffectPrototype>]
     private const string StunStatusId = "Stun";
 
     public override void Initialize()
@@ -38,7 +35,7 @@ public abstract class SharedRevealRevenantOnCollideSystem : EntitySystem
                 args.OtherEntity
             );
 
-        _status.TryAddStatusEffect<CorporealComponent>(args.OtherEntity, CorporealStatusId, comp.RevealTime, true);
+        _status.TryAddStatusEffectDuration(args.OtherEntity, CorporealStatusId, out _, comp.RevealTime);
 
         if (comp.StunTime != null && !_status.HasStatusEffect(args.OtherEntity, StunStatusId))
             _stun.TryUpdateStunDuration(args.OtherEntity, comp.StunTime.Value);

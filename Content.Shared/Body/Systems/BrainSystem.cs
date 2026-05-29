@@ -18,6 +18,7 @@ public sealed class BrainSystem : EntitySystem
         SubscribeLocalEvent<BrainComponent, OrganGotInsertedEvent>((uid, _, args) => HandleMind(args.Target, uid));
         SubscribeLocalEvent<BrainComponent, OrganGotRemovedEvent>((uid, _, args) => HandleMind(uid, args.Target));
         SubscribeLocalEvent<BrainComponent, PointAttemptEvent>(OnPointAttempt);
+        SubscribeLocalEvent<BrainComponent, MakeBrainUnborgableEvent>(OnMakeUnborgable);
     }
 
     private void HandleMind(EntityUid newEntity, EntityUid oldEntity)
@@ -41,4 +42,18 @@ public sealed class BrainSystem : EntitySystem
     {
         args.Cancel();
     }
+
+    // Delta V - Begin Unborgable
+    private void OnMakeUnborgable(Entity<BrainComponent> ent, ref MakeBrainUnborgableEvent args)
+    {
+        EnsureComp<MindContainerComponent>(ent);
+    }
+    // Delta V - End Unborgable
 }
+
+/// <summary>
+/// Delta V - Unborgable Trait Applier
+/// Raised on organ entity, when it is inserted into a body
+/// </summary>
+[ByRefEvent]
+public readonly record struct MakeBrainUnborgableEvent();
