@@ -22,11 +22,4 @@ public sealed partial class OrganComponent : Component
     /// </summary>
     [DataField]
     public ProtoId<OrganCategoryPrototype>? Category;
-
-    // Delta V - Organ Functionality
-    /// <summary>
-    /// When attached, the organ ensures that these components are added onto the entity
-    /// </summary>
-    [DataField]
-    public ComponentRegistry? OnAdd;
 }

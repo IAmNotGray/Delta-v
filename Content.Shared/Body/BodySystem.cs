@@ -33,9 +33,6 @@ public sealed partial class BodySystem : EntitySystem
         SubscribeLocalEvent<BodyComponent, EntInsertedIntoContainerMessage>(OnBodyEntInserted);
         SubscribeLocalEvent<BodyComponent, EntRemovedFromContainerMessage>(OnBodyEntRemoved);
 
-        SubscribeLocalEvent<BodyComponent, OrganInsertedIntoEvent>(OnOrganInserted);
-        SubscribeLocalEvent<BodyComponent, OrganRemovedFromEvent>(OnOrganRemoved);
-
         _bodyQuery = GetEntityQuery<BodyComponent>();
         _organQuery = GetEntityQuery<OrganComponent>();
 
@@ -100,39 +97,4 @@ public sealed partial class BodySystem : EntitySystem
     {
         args.Handled = true;
     }
-
-
-    // Delta V - Organ Functionality Solution
-    private void OnOrganInserted(Entity<BodyComponent> ent, ref OrganInsertedIntoEvent args)
-    {
-        if (!TryComp<OrganComponent>(args.Organ, out var organ) || organ.OnAdd == null)
-            return;
-
-        // Delta V - Begin Organ Functionality Solution
-        foreach (var (key, comp) in organ.OnAdd)
-        {
-            var compType = comp.Component.GetType();
-            if (HasComp(ent, compType))
-                continue;
-
-            AddComp(ent, comp.Component);
-        }
-    }
-
-    private void OnOrganRemoved(Entity<BodyComponent> ent, ref OrganRemovedFromEvent args)
-    {
-        if (!TryComp<OrganComponent>(args.Organ, out var organ) || organ.OnAdd == null)
-            return;
-
-        // Delta V - Begin Organ Functionality Solution
-        foreach (var (key, comp) in organ.OnAdd)
-        {
-            var compType = comp.Component.GetType();
-            if (!HasComp(ent, compType))
-                continue;
-
-            RemComp(ent, comp.Component);
-        }
-    }
-    // Delta V - End
 }

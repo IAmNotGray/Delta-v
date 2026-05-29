@@ -266,13 +266,6 @@
     data:
       sprite: _Starlight/Mobs/Species/Avali/parts.rsi
       state: eyes
-  - type: Organ
-    onAdd:
-    - type: EyeCursorOffset
-      maxOffset: 5
-      pvsIncrease: 0.5
-      enabled: false
-    - type: CursorOffsetAction
 
 - type: entity
   parent: [ OrganReptilianStomach, OrganAvaliInternal ]

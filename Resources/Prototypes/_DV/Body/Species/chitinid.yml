@@ -157,6 +157,13 @@
     needsHands: false
   - type: CosmicMarkVisuals
     subtleState: moth
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    radius: 3
+    softness: 5
+    color: "#2CFA1F"
+    autoRot: true
 
 - type: entity
   parent: OrganBase
@@ -291,15 +298,6 @@
   id: OrganChitinidLiver
   parent: [ OrganAnimalLiver, OrganChitinidInternal ]
   components:
-  - type: Organ
-    onAdd:
-    - type: UnpoweredFlashlight
-    - type: PointLight
-      enabled: false
-      radius: 3
-      softness: 5
-      color: "#2CFA1F"
-      autoRot: true
   - type: Metabolizer
     maxReagents: 1
     metabolizerTypes: [ Animal ]

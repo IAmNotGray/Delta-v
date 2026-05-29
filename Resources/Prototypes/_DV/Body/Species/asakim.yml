@@ -209,6 +209,11 @@
     accent: draconian
   - type: BlockWriting # can't speak common can't write common. better get an AAC tablet
   # End DeltaV Additions
+  - type: NightVision
+    isEquipment: false
+    color: "#ae65bf"
+    activateSound: null
+    deactivateSound: null
 
 - type: entity
   parent: OrganBase
@@ -311,10 +316,3 @@
   - type: VisualOrgan
     data:
       sprite: _Mono/Mobs/Customization/asakimeyes.rsi
-  - type: Organ
-    onAdd:
-    - type: NightVision
-      isEquipment: false
-      color: "#ae65bf"
-      activateSound: null
-      deactivateSound: null
