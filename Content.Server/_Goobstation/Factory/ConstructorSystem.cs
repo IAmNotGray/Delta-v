@@ -53,7 +53,7 @@ public sealed class ConstructorSystem : SharedConstructorSystem
         {
             ConstructionType.Structure => await _construction.TryStartStructureConstruction(uid, id, OutputPosition(ent), Angle.Zero),
             ConstructionType.Item => await _construction.TryStartItemConstruction(id, uid),
-            _ => throw new ArgumentOutOfRangeException()
+            _ => false,
         };
 
         if (completed)
