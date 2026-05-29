@@ -170,6 +170,35 @@
     allowedStates:
     - Dead
   - type: Rootable
+  - type: MovementSpeedModifier # DeltaV
+    baseWalkSpeed: 1.0
+    baseSprintSpeed: 3.0
+  - type: FTLKnockdownImmune # Frontier
+  - type: Rootable
+  - type: LightReactive # DeltaV
+    manual: true
+  - type: LightLevelHealth # DeltaV
+    darkThreshold: 0.4
+    lightThreshold: 1.2
+    darkDamage:
+      types:
+        Heat: 1.0
+    lightDamage:
+      groups:
+        Brute: -0.1
+        Burn: -0.1
+        Toxin: -0.1
+        Airloss: -0.1
+    darkMovementSpeedMultiplier: 0.7
+  # DeltaV additions - add rootsong
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Rootsong
+  - type: ActiveRadio
+    channels:
+    - Rootsong
+  # DeltaV changes end
 
 - type: entity
   parent: OrganBase

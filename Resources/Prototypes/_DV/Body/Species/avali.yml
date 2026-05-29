@@ -179,6 +179,11 @@
       240: 0.85
   - type: CosmicMarkVisuals
     subtleState: moth
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.5
+    enabled: false
+  - type: CursorOffsetAction
   - type: Preenable
     featherPrototype: AvaliFeather
   # End DeltaV additions
