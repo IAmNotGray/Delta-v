@@ -109,13 +109,13 @@ public sealed partial class BodySystem : EntitySystem
             return;
 
         // Delta V - Begin Organ Functionality Solution
-        foreach (var comp in organ.OnAdd)
+        foreach (var (key, comp) in organ.OnAdd)
         {
-            var compType = comp.GetType();
+            var compType = comp.Component.GetType();
             if (HasComp(ent, compType))
                 continue;
 
-            AddComp(ent, comp);
+            AddComp(ent, comp.Component);
         }
     }
 
@@ -125,13 +125,13 @@ public sealed partial class BodySystem : EntitySystem
             return;
 
         // Delta V - Begin Organ Functionality Solution
-        foreach (var comp in organ.OnAdd)
+        foreach (var (key, comp) in organ.OnAdd)
         {
-            var compType = comp.GetType();
+            var compType = comp.Component.GetType();
             if (!HasComp(ent, compType))
                 continue;
 
-            RemComp(ent, comp);
+            RemComp(ent, comp.Component);
         }
     }
     // Delta V - End
