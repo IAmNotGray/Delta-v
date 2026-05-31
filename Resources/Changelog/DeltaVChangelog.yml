@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: MantasDab360
-  changes:
-  - message: Ore Box can now dump out ores!
-    type: Add
-  id: 1867
-  time: '2025-11-27T18:29:04.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4786
 - author: Proxysseia
   changes:
   - message: Security Hardsuits are no longer insulated
@@ -4383,4 +4376,24 @@
   id: 2367
   time: '2026-05-31T16:45:18.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5893
+- author: AeraAulin, Sowelipililimute
+  changes:
+  - message: Added the claridisol synth, a new tool for the mantis to produce pure
+      oil and psion crystals
+    type: Add
+  - message: Added pure oil, a less effective but non-hallucinogenic alternative to
+      loto oil
+    type: Add
+  - message: Added psion crystals and psionic implanters. Guaranteed psionic powers
+      for those with nothing to hide
+    type: Add
+  - message: The Mantis knife now does shadow damage, allowing it to actually be effective
+      against psionic users.
+    type: Tweak
+  - message: Mindbreaker ammo is now Lernaea ammo, and no longer removes but disables
+      psionics for an extended period of time instead.
+    type: Tweak
+  id: 2368
+  time: '2026-05-31T20:39:00.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5757
 Order: 1
