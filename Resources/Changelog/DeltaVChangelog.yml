@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Proxysseia
-  changes:
-  - message: Security Hardsuits are no longer insulated
-    type: Remove
-  id: 1868
-  time: '2025-11-27T22:25:28.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4724
 - author: MantasDab360
   changes:
   - message: Borgs can pick up metal rods!
@@ -4396,4 +4389,11 @@
   id: 2368
   time: '2026-05-31T20:39:00.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5757
+- author: DarkenedSynergy
+  changes:
+  - message: NT now ships security cyborgs in corporate blue.
+    type: Add
+  id: 2369
+  time: '2026-06-01T14:11:39.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5936
 Order: 1
