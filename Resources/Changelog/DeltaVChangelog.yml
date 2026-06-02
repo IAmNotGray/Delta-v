@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: MantasDab360
-  changes:
-  - message: Borgs can pick up metal rods!
-    type: Fix
-  id: 1869
-  time: '2025-11-28T00:03:51.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4787
 - author: juniwoofs, Vapetastic-Gaming
   changes:
   - message: OVINIA ARE SPOTTED IN THE DELTA-V SECTOR
@@ -4396,4 +4389,15 @@
   id: 2369
   time: '2026-06-01T14:11:39.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5936
+- author: Halo3moth
+  changes:
+  - message: Hos and Warden's winter coats have been buffed to match their upstream
+      version!
+    type: Tweak
+  - message: Detective long coat has been refitted to better handle station shoot
+      outs and less effective against maints stabbings.
+    type: Tweak
+  id: 2370
+  time: '2026-06-02T03:24:11.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5939
 Order: 1
