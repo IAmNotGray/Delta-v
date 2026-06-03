@@ -75,9 +75,9 @@
       types:
         Blunt: 15
     openSound:
-      path: /Audio/Machines/airlock_open.ogg
+      path: /Audio/_DV/Machines/airlock_open.ogg # DeltaV - Audio Change
     closeSound:
-      path: /Audio/_ES/Machines/airlock_close.ogg # Ephemeral Space - better door timings
+      path: /Audio/_DV/Machines/airlock_close.ogg # DeltaV - Audio Change,  was  "/Audio/_ES/Machines/airlock_close.ogg # Ephemeral Space - better door timings"
     denySound:
       path: /Audio/Machines/airlock_deny.ogg
   - type: ContainerContainer
