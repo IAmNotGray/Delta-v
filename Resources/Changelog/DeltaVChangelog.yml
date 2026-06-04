@@ -1,13 +1,6 @@
 ﻿Entries:
 - author: Toby222
   changes:
-  - message: Cardboard boxes are now affected by gravity
-    type: Fix
-  id: 1872
-  time: '2025-11-28T08:47:19.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4794
-- author: Toby222
-  changes:
   - message: Skimmer now does its one and only job again, lazy bugger
     type: Fix
   id: 1873
@@ -4400,4 +4393,11 @@
   id: 2372
   time: '2026-06-03T18:43:56.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5898
+- author: AeraAuling
+  changes:
+  - message: Holy and Shadow have been renamed to be a bit less good and evil
+    type: Tweak
+  id: 2373
+  time: '2026-06-04T10:58:56.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5952
 Order: 1
