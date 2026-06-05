@@ -13,13 +13,6 @@
     state: floortextdeposit
 
 - type: decal
-  id: FloorTextDeposit
-  tags: ["floor", "markings", "text"]
-  sprite:
-    sprite: _DV/Decals/markings.rsi
-    state: floortextdeposit
-
-- type: decal
   id: FloorTextSurface
   tags: ["floor", "markings", "text"]
   sprite:
@@ -74,13 +67,6 @@
   sprite:
     sprite: _DV/Decals/markings.rsi
     state: floortextevac
-
-- type: decal
-  id: FloorTextEvac
-  tags: ["floor", "markings", "text"]
-  sprite:
-    sprite: _DV/Decals/markings.rsi
-    state: floortextevac
  
 - type: decal
   id: FloorTextArrivals
@@ -125,12 +111,6 @@
     sprite: _DV/Decals/markings.rsi
     state: floortextdeposit_greyscale
 
-- type: decal
-  id: FloorTextDepositGreyscale
-  tags: ["floor", "markings", "text"]
-  sprite:
-    sprite: _DV/Decals/markings.rsi
-    state: floortextdeposit_greyscale
 
 - type: decal
   id: FloorTextSurfaceGreyscale
@@ -180,13 +160,6 @@
   sprite:
     sprite: _DV/Decals/markings.rsi
     state: floortextspace_greyscale
-
-- type: decal
-  id: FloorTextEvacGreyscale
-  tags: ["floor", "markings", "text"]
-  sprite:
-    sprite: _DV/Decals/markings.rsi
-    state: floortextevac_greyscale
 
 - type: decal
   id: FloorTextEvacGreyscale
