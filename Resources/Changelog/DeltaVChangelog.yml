@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Vapetastic-Gaming
-  changes:
-  - message: Submarine Playtest Fixes and Tweaks, it is now in current rotation, with
-      a minimum 80 population !!
-    type: Tweak
-  id: 1877
-  time: '2025-11-29T03:30:17.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4554
 - author: snowywinters
   changes:
   - message: Now normal command turrets alert the AI to an intruder
@@ -4403,4 +4395,12 @@
   id: 2377
   time: '2026-06-05T15:17:50.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5937
+- author: rebe83
+  changes:
+  - message: Nuclear operatives, listening post operators, and ninjas now have randomized
+      appearances.
+    type: Tweak
+  id: 2378
+  time: '2026-06-05T15:26:25.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5922
 Order: 1
