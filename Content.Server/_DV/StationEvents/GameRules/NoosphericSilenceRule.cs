@@ -5,7 +5,7 @@ using Content.Shared._DV.Psionics.Systems;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
-using Content.Shared.StatusEffectNew;
+using Content.Shared.StatusEffect;
 using Robust.Shared.Random;
 
 namespace Content.Server._DV.StationEvents.GameRules;
@@ -40,9 +40,10 @@ internal sealed class NoosphericSilenceRule : StationEventSystem<NoosphericSilen
         var duration = _robustRandom.Next(ruleComp.MinDuration, ruleComp.MaxDuration);
 
         // TODO Replace with statusEffectSystemNew when Upstream makes a muted prototype.
-        _statusEffectsSystem.TryAddStatusEffectDuration(potPsion,
+        _statusEffectsSystem.TryAddStatusEffect(potPsion,
             "Muted",
-            out _,
-            duration);
+            duration,
+            false,
+            "Muted");
     }
 }
