@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Toby222
-  changes:
-  - message: Removed the invisible, intangible bear inside all fishing crates that
-      was trying to steal your fish
-    type: Fix
-  id: 1875
-  time: '2025-11-28T09:49:21.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4797
 - author: SirWarock
   changes:
   - message: The faithful rejoice! Your deity has chosen to to protect you as long
@@ -4402,4 +4394,14 @@
   id: 2375
   time: '2026-06-05T13:33:57.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5836
+- author: Stxcking
+  changes:
+  - message: 'Reverted and Rework Upstream Medical Borg Changes. Media provided in
+      PR:'
+    type: Tweak
+  - message: Medical Borg can now see Triage Icons.
+    type: Fix
+  id: 2376
+  time: '2026-06-05T15:05:53.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5656
 Order: 1
