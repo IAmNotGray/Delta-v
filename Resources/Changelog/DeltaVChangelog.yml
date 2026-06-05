@@ -1,13 +1,6 @@
 ﻿Entries:
 - author: Toby222
   changes:
-  - message: Flintlock is now craftable as intended
-    type: Fix
-  id: 1874
-  time: '2025-11-28T09:41:03.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4796
-- author: Toby222
-  changes:
   - message: Removed the invisible, intangible bear inside all fishing crates that
       was trying to steal your fish
     type: Fix
@@ -4402,4 +4395,11 @@
   id: 2374
   time: '2026-06-05T12:46:01.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5933
+- author: sowelipililimute
+  changes:
+  - message: Dionaea now have a new name generation algorithim.
+    type: Tweak
+  id: 2375
+  time: '2026-06-05T13:33:57.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5836
 Order: 1
