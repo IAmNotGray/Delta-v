@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: kotobdev
-  changes:
-  - message: The FG13 Xiuhcoatl is now substantially more deadly. It also costs less!
-    type: Tweak
-  id: 1879
-  time: '2025-11-29T22:27:08.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4749
 - author: ShepardToTheStars
   changes:
   - message: While trying to stand-up, you can now press your Toggle Crawling keybind
@@ -4404,4 +4397,12 @@
   id: 2379
   time: '2026-06-05T15:28:44.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5946
+- author: Stxcking
+  changes:
+  - message: Added Small Nuclear Reactor (7,500) and Small Gas Turbine (5,000) Flatpacks
+      for Purchase!
+    type: Add
+  id: 2380
+  time: '2026-06-05T15:32:57.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5945
 Order: 1
