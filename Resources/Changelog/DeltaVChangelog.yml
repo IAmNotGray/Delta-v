@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: SirWarock
-  changes:
-  - message: The faithful rejoice! Your deity has chosen to to protect you as long
-      as you hold your religious tome!
-    type: Tweak
-  id: 1876
-  time: '2025-11-28T19:03:43.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4726
 - author: Vapetastic-Gaming
   changes:
   - message: Submarine Playtest Fixes and Tweaks, it is now in current rotation, with
@@ -4404,4 +4396,11 @@
   id: 2376
   time: '2026-06-05T15:05:53.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5656
+- author: Stxcking
+  changes:
+  - message: Added the No Paradox Clone Trait!
+    type: Add
+  id: 2377
+  time: '2026-06-05T15:17:50.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5937
 Order: 1
