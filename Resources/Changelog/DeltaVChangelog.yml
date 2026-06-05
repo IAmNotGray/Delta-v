@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: snowywinters
-  changes:
-  - message: Now normal command turrets alert the AI to an intruder
-    type: Fix
-  id: 1878
-  time: '2025-11-29T19:57:59.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4803
 - author: kotobdev
   changes:
   - message: The FG13 Xiuhcoatl is now substantially more deadly. It also costs less!
@@ -4403,4 +4396,12 @@
   id: 2378
   time: '2026-06-05T15:26:25.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5922
+- author: Stxcking
+  changes:
+  - message: Added RGB plushies, gay wackpack, LGBT handheld flags, and more pride
+      theme items to the Pride-o-Mat!
+    type: Tweak
+  id: 2379
+  time: '2026-06-05T15:28:44.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5946
 Order: 1
