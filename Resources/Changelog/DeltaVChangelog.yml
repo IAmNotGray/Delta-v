@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: TheGrimbeeper
-  changes:
-  - message: Artifacts can now be triggered by ambient radiation, not just uranium
-      spears
-    type: Fix
-  id: 1881
-  time: '2025-11-30T16:30:34.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4817
 - author: pootslap
   changes:
   - message: Characters must now be 40 to be considered middle-aged and 70 to be considered
@@ -4403,4 +4395,12 @@
   id: 2381
   time: '2026-06-05T17:34:10.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5921
+- author: sowelipililimute
+  changes:
+  - message: NT Cyborgs now have a wire panel that allow enabling/disabling the transponder,
+      law 0, and AI PDA access.
+    type: Add
+  id: 2382
+  time: '2026-06-05T21:13:49.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5948
 Order: 1
