@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: While trying to stand-up, you can now press your Toggle Crawling keybind
-      to get up faster at the cost of stamina. Of course, you still still need a free
-      hand to do this.
-    type: Tweak
-  id: 1880
-  time: '2025-11-30T16:24:25.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4802
 - author: TheGrimbeeper
   changes:
   - message: Artifacts can now be triggered by ambient radiation, not just uranium
@@ -4405,4 +4396,11 @@
   id: 2380
   time: '2026-06-05T15:32:57.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5945
+- author: einknusprigestoast
+  changes:
+  - message: Added a Chameleon armored Vest for Syndicate Agents
+    type: Add
+  id: 2381
+  time: '2026-06-05T17:34:10.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5921
 Order: 1
