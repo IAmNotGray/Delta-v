@@ -1,13 +1,6 @@
 ﻿Entries:
 - author: Toby222
   changes:
-  - message: Skimmer now does its one and only job again, lazy bugger
-    type: Fix
-  id: 1873
-  time: '2025-11-28T09:36:55.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4795
-- author: Toby222
-  changes:
   - message: Flintlock is now craftable as intended
     type: Fix
   id: 1874
@@ -4400,4 +4393,13 @@
   id: 2373
   time: '2026-06-04T10:58:56.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5952
+- author: sowelipililimute
+  changes:
+  - message: Interaction particles are now less energetic.
+    type: Tweak
+  - message: Interaction particles no longer spawn when opening the strip menu.
+    type: Fix
+  id: 2374
+  time: '2026-06-05T12:46:01.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5933
 Order: 1
