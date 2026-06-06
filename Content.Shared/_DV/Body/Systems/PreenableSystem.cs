@@ -12,7 +12,7 @@ using Content.Shared.Humanoid;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Popups;
 using Content.Shared.Random.Helpers;
-using Content.Shared.StatusEffectNew;
+using Content.Shared.StatusEffect;
 using Content.Shared.Verbs;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Prototypes;
@@ -155,7 +155,7 @@ public sealed class PreenableSystem : EntitySystem
         _chat.TryEmoteWithoutChat(ent, ent.Comp.ScreamEmote);
 
         // old StatusEffects is obsolete, however Adrenaline has not been moved over to the new system yet
-        _statusEffects.TryAddStatusEffectDuration(ent, "Adrenaline", out _, TimeSpan.FromSeconds(3));
+        _statusEffects.TryAddStatusEffect(ent, "Adrenaline", TimeSpan.FromSeconds(3), true);
     }
 
     private void OnDamageModify(Entity<PreenableComponent> ent, ref DamageModifyEvent args)
