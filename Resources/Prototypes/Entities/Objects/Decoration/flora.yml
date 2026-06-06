@@ -372,11 +372,12 @@
           Log:
             min: 2
             max: 8
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MobChristmasKobold:
-            min: 4
-            max: 8
+            # Delta V Commented out until we need it again (currently tests hate it)
+#      - !type:SpawnEntitiesBehavior
+#        spawn:
+#          MobChristmasKobold:
+#            min: 4
+#            max: 8
       # End Delta V - Spawn Christmas kobold.
 
 - type: entity
