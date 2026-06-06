@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Proxysseia
-  changes:
-  - message: Crew of legally docked foreign vessels now has rights
-    type: Add
-  id: 1883
-  time: '2025-11-30T16:37:35.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4763
 - author: verybigman311
   changes:
   - message: Rejoice! Four new cocktails utilizing the long-neglected Angobitters
@@ -4403,4 +4396,11 @@
   id: 2383
   time: '2026-06-06T09:53:19.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5787
+- author: IAmNotGray
+  changes:
+  - message: Added a new jukebox song called "Waiting Room Above The Stars."
+    type: Add
+  id: 2384
+  time: '2026-06-06T12:07:56.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5620
 Order: 1
