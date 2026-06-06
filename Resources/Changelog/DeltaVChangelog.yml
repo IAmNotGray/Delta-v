@@ -1,24 +1,6 @@
 ﻿Entries:
 - author: verybigman311
   changes:
-  - message: Rejoice! Four new cocktails utilizing the long-neglected Angobitters
-      are now available.
-    type: Add
-  - message: You can now ask for Mliko (glorified beer foam) at your local bar.
-    type: Add
-  - message: Famous drinks such as Pilk, Moonshine, and Hooch have been given new
-      sprites.
-    type: Add
-  - message: Alterations have been made to the Grog, Posca, and Gin Fizz recipes.
-    type: Tweak
-  - message: Numerous beverages will now form puddles of the correct color when thrown
-      violently against the ground.
-    type: Fix
-  id: 1884
-  time: '2025-11-30T16:41:31.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4780
-- author: verybigman311
-  changes:
   - message: Lava Fountains are now an available decoration.
     type: Add
   - message: Drinking from fountains has become much easier.
@@ -4403,4 +4385,14 @@
   id: 2384
   time: '2026-06-06T12:07:56.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5620
+- author: DisposableCrewmember42
+  changes:
+  - message: The SSD indicator now changes color depending on duration.
+    type: Add
+  - message: The examine text of SSD players now includes the SSD duration and information
+      on what (not) to do with them.
+    type: Add
+  id: 2385
+  time: '2026-06-06T19:14:04.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5699
 Order: 1
