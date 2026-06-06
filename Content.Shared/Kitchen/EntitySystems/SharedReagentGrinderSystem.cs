@@ -399,4 +399,34 @@ public abstract class SharedReagentGrinderSystem : EntitySystem
 
         return ent.Comp.JuiceSolution is not null;
     }
+
+
+    // Begin Imp Changes - DeltaV - Updated for reagent grinder moving to shared
+    private Solution? TryGrindSolution(
+        EntityUid uid,
+        Solution? solution,
+        Entity<ReagentGrinderComponent> grinder,
+        IReadOnlyList<EntityUid> contents)
+    {
+        var ev = new GrindAttemptEvent(grinder, contents);
+        RaiseLocalEvent(uid, ev);
+
+        if (ev.Cancelled)
+            return null;
+
+        return solution;
+    }
+
+    public sealed partial class GrindAttemptEvent : CancellableEntityEventArgs
+    {
+        public Entity<ReagentGrinderComponent> Grinder;
+        public IReadOnlyList<EntityUid> Reagents;
+
+        public GrindAttemptEvent(Entity<ReagentGrinderComponent> grinder, IReadOnlyList<EntityUid> reagents)
+        {
+            Grinder = grinder;
+            Reagents = reagents;
+        }
+    }
+    // End Imp Changes - DeltaV - Updated for reagent grinder moving to shared
 }
