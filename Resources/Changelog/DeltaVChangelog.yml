@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: pootslap
-  changes:
-  - message: Characters must now be 40 to be considered middle-aged and 70 to be considered
-      old.
-    type: Tweak
-  id: 1882
-  time: '2025-11-30T16:31:43.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4783
 - author: Proxysseia
   changes:
   - message: Crew of legally docked foreign vessels now has rights
@@ -4403,4 +4395,12 @@
   id: 2382
   time: '2026-06-05T21:13:49.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5948
+- author: Stxcking
+  changes:
+  - message: Radiation Barrier Projectors Actually Creates Holo Radiation Barriers
+      Instead of Holo Wet Floor Signs !
+    type: Fix
+  id: 2383
+  time: '2026-06-06T09:53:19.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5787
 Order: 1
