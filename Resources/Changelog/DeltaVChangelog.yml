@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: cmorley191
-  changes:
-  - message: Artifact node effects are sometimes hidden or unpredictable until after
-      you trigger them for the first time. Be careful!
-    type: Tweak
-  id: 1890
-  time: '2025-11-30T18:10:16.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4748
 - author: ShepardToTheStars, slarticodefast
   changes:
   - message: Crawling speed now depends on the number of free hands you have.
@@ -4393,4 +4385,11 @@
   id: 2390
   time: '2026-06-07T19:46:18.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5964
+- author: rebe83
+  changes:
+  - message: Entropic mobs now deal a small amount of blunt damage.
+    type: Tweak
+  id: 2391
+  time: '2026-06-07T20:48:50.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5962
 Order: 1
