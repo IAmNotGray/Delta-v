@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: TehFlaminTaco
-  changes:
-  - message: Fractured Form can now be mindbreaker'd without perma-sleeping
-    type: Fix
-  - message: Fractured Form will no-longer spawn an IPC body.
-    type: Tweak
-  id: 1889
-  time: '2025-11-30T18:00:34.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4582
 - author: cmorley191
   changes:
   - message: Artifact node effects are sometimes hidden or unpredictable until after
@@ -4395,4 +4386,11 @@
   id: 2389
   time: '2026-06-07T19:33:59.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5976
+- author: MantasDab360
+  changes:
+  - message: Removes duplicates of yellow and white towels in loadout.
+    type: Fix
+  id: 2390
+  time: '2026-06-07T19:46:18.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5964
 Order: 1
