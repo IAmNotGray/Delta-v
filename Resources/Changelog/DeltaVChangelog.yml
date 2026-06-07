@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: SirWarock
-  changes:
-  - message: Buffed the Advanced Truncheon to actually.. be better than the normal
-      Truncheon.
-    type: Tweak
-  id: 1886
-  time: '2025-11-30T16:46:38.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4736
 - author: cmorley191
   changes:
   - message: psychokinetic scream now works with "psionic disturbance" arti trigger
@@ -4395,4 +4387,13 @@
   id: 2386
   time: '2026-06-07T16:22:57.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5956
+- author: biddygelson
+  changes:
+  - message: 'Academy: Department faxes and Poppy'
+    type: Add
+  - message: 'Academy: RED sec NO, BLU sec YES.'
+    type: Tweak
+  id: 2387
+  time: '2026-06-07T18:13:12.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5972
 Order: 1
