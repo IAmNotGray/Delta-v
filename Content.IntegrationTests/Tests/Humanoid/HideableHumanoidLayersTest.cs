@@ -45,6 +45,7 @@ public sealed class HideableHumanoidLayersTest : InteractionTest
             {
                 ["Head"] = new()
                 {
+                    [HumanoidVisualLayers.Snout] = new List<Marking>() {new("VulpSnout", 1)}, // Delta V - Added since our Vulp have no default Snout
                     [HumanoidVisualLayers.SnoutCover] = new List<Marking>() { new("VulpSnoutNose", 1) },
                 },
             });
@@ -59,8 +60,8 @@ public sealed class HideableHumanoidLayersTest : InteractionTest
         await Client.WaitAssertion(() =>
         {
             var spriteSystem = CEntMan.System<SpriteSystem>();
-            var snoutIndex = spriteSystem.LayerMapGet(CPlayer, "VulpSnout-snout");
-            var snoutCoverIndex = spriteSystem.LayerMapGet(CPlayer, "VulpSnoutNose-snout-nose");
+            var snoutIndex = spriteSystem.LayerMapGet(CPlayer, "VulpSnout-muzzle"); // Delta V - Fit to our Markings
+            var snoutCoverIndex = spriteSystem.LayerMapGet(CPlayer, "VulpSnoutNose-nose"); // Delta V - Fit to our Markings
             var spriteComp = CEntMan.GetComponent<SpriteComponent>(CPlayer);
 
             Assert.That(spriteComp[snoutIndex].Visible, Is.False);
@@ -77,8 +78,8 @@ public sealed class HideableHumanoidLayersTest : InteractionTest
         await Client.WaitAssertion(() =>
         {
             var spriteSystem = CEntMan.System<SpriteSystem>();
-            var snoutIndex = spriteSystem.LayerMapGet(CPlayer, "VulpSnout-snout");
-            var snoutCoverIndex = spriteSystem.LayerMapGet(CPlayer, "VulpSnoutNose-snout-nose");
+            var snoutIndex = spriteSystem.LayerMapGet(CPlayer, "VulpSnout-muzzle"); // Delta V - Fit to our Markings
+            var snoutCoverIndex = spriteSystem.LayerMapGet(CPlayer, "VulpSnoutNose-nose"); // Delta V - Fit to our Markings
             var spriteComp = CEntMan.GetComponent<SpriteComponent>(CPlayer);
 
             Assert.That(spriteComp[snoutIndex].Visible, Is.True);
