@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: verybigman311
-  changes:
-  - message: Lava Fountains are now an available decoration.
-    type: Add
-  - message: Drinking from fountains has become much easier.
-    type: Fix
-  id: 1885
-  time: '2025-11-30T16:44:24.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4792
 - author: SirWarock
   changes:
   - message: Buffed the Advanced Truncheon to actually.. be better than the normal
@@ -4395,4 +4386,13 @@
   id: 2385
   time: '2026-06-06T19:14:04.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5699
+- author: SirRequiem
+  changes:
+  - message: 'Terra: Sec is now properly blue!'
+    type: Tweak
+  - message: 'Terra: Medbay got a lil remodel'
+    type: Tweak
+  id: 2386
+  time: '2026-06-07T16:22:57.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5956
 Order: 1
