@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: cmorley191
-  changes:
-  - message: psychokinetic scream now works with "psionic disturbance" arti trigger
-    type: Fix
-  id: 1887
-  time: '2025-11-30T17:00:04.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4816
 - author: Coryler
   changes:
   - message: The minor mass mind swap glimmer event has been added. If glimmer is
@@ -4396,4 +4389,11 @@
   id: 2387
   time: '2026-06-07T18:13:12.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5972
+- author: Stxcking
+  changes:
+  - message: Glowsticks can now be use for glow in the dark stars wall decals!
+    type: Fix
+  id: 2388
+  time: '2026-06-07T19:05:16.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5970
 Order: 1
