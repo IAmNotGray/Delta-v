@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Cepelinas1
-  changes:
-  - message: Possession charges no longer stack. The highest offending category is
-      now charged.
-    type: Tweak
-  id: 1892
-  time: '2025-12-01T13:33:46.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4808
 - author: Apachit0
   changes:
   - message: Buffed the Makeshift Fishing rod
@@ -4392,4 +4384,11 @@
   id: 2392
   time: '2026-06-08T04:35:21.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5967
+- author: Eternally-Confused
+  changes:
+  - message: The nuclear fabricator now announces when it receives new recipes.
+    type: Tweak
+  id: 2393
+  time: '2026-06-08T05:29:56.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5985
 Order: 1
