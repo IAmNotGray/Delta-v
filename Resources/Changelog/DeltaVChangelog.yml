@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars, slarticodefast
-  changes:
-  - message: Crawling speed now depends on the number of free hands you have.
-    type: Tweak
-  id: 1891
-  time: '2025-12-01T07:57:02.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4772
 - author: Cepelinas1
   changes:
   - message: Possession charges no longer stack. The highest offending category is
@@ -4392,4 +4385,11 @@
   id: 2391
   time: '2026-06-07T20:48:50.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5962
+- author: rebe83
+  changes:
+  - message: Ninja's EMP ability now has a 5 second cooldown
+    type: Tweak
+  id: 2392
+  time: '2026-06-08T04:35:21.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5967
 Order: 1
