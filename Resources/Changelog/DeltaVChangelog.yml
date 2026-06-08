@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Apachit0
-  changes:
-  - message: Buffed the Makeshift Fishing rod
-    type: Tweak
-  id: 1893
-  time: '2025-12-01T21:20:35.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4827
 - author: BunglesnortBoss
   changes:
   - message: Enabled Cyborg's to weld themselves! Takes a lot of time but at least
@@ -4391,4 +4384,13 @@
   id: 2393
   time: '2026-06-08T05:29:56.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5985
+- author: Vapetastic-Gaming
+  changes:
+  - message: Submarine has received nuclear power. Sub has also gained a VOX BOX and
+      a new janitor closet. Due to how the reactor was transported on station, the
+      station has been left a mess, enjoy.
+    type: Tweak
+  id: 2394
+  time: '2026-06-08T19:36:02.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5760
 Order: 1
