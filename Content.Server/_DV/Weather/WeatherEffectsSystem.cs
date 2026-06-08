@@ -40,10 +40,13 @@ public sealed partial class WeatherEffectsSystem : EntitySystem
         var query = EntityQueryEnumerator<WeatherSchedulerComponent>();
         while (query.MoveNext(out var map, out var weatherSchedulerComponent))
         {
-            if (now < weatherSchedulerComponent.NextUpdate)
+            if (now < weatherSchedulerComponent.NextDamageUpdate)
                 continue;
 
-            var weatherStage = weatherSchedulerComponent.Stages[weatherSchedulerComponent.Stage];
+            weatherSchedulerComponent.NextDamageUpdate = now + UpdateDelay;
+
+            var currentStage = weatherSchedulerComponent.Stage > 0 ? weatherSchedulerComponent.Stage - 1 : 0;
+            var weatherStage = weatherSchedulerComponent.Stages[currentStage];
 
             UpdateDamage(map, weatherStage);
         }

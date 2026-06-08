@@ -8,7 +8,7 @@ namespace Content.Server._DV.Weather;
 /// <summary>
 /// Makes weather randomly happen every so often.
 /// </summary>
-[RegisterComponent, Access(typeof(WeatherSchedulerSystem))]
+[RegisterComponent, Access(typeof(WeatherSchedulerSystem), typeof(WeatherEffectsSystem))]
 [AutoGenerateComponentPause]
 public sealed partial class WeatherSchedulerComponent : Component
 {
@@ -25,10 +25,16 @@ public sealed partial class WeatherSchedulerComponent : Component
     public int Stage;
 
     /// <summary>
-    /// When to go to the next step of the schedule.
+    /// When to go and apply the next weather transition.
     /// </summary>
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
     public TimeSpan NextUpdate;
+
+    /// <summary>
+    /// When to go and apply the next damage update.
+    /// </summary>
+    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
+    public TimeSpan NextDamageUpdate;
 }
 
 /// <summary>

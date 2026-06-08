@@ -32,6 +32,7 @@ public sealed class WeatherSchedulerSystem : EntitySystem
             var stage = comp.Stages[comp.Stage++];
             var duration = TimeSpan.FromSeconds(stage.Duration.Next(_random));
             comp.NextUpdate = now + duration;
+            comp.NextDamageUpdate = now;
 
             var mapId = Comp<MapComponent>(map).MapId;
             if (stage.Weather is {} weather)
@@ -42,7 +43,7 @@ public sealed class WeatherSchedulerSystem : EntitySystem
                     ending += SharedWeatherSystem.ShutdownTime;
                 if (HasWeather(comp, comp.Stage + 1))
                     ending += SharedWeatherSystem.StartupTime;
-                _weather.TrySetWeather(mapId, weather.Id, out _, ending);
+                _weather.TrySetWeather(mapId, weather, out _, ending);
             }
 
             if (stage.Message is {} message)
