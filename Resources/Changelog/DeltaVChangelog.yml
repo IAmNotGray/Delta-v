@@ -1,17 +1,4 @@
 ﻿Entries:
-- author: BunglesnortBoss
-  changes:
-  - message: Enabled Cyborg's to weld themselves! Takes a lot of time but at least
-      you can weld up those scratches!
-    type: Tweak
-  - message: Cyborg's power draw rate lowered! Still get the TEG up fast however!
-    type: Tweak
-  - message: Increased Weightless Acceleration, Should feel a bit faster for the Cyborg's
-      in space, Congrats Salvage!
-    type: Tweak
-  id: 1894
-  time: '2025-12-02T00:13:08.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4819
 - author: Deltanedas, Bonktrauma
   changes:
   - message: Added Ovni Station.
@@ -4393,4 +4380,14 @@
   id: 2394
   time: '2026-06-08T19:36:02.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5760
+- author: Velcroboy
+  changes:
+  - message: Added an evac pod in north maints; and Poppy the engineering possum!
+    type: Add
+  - message: Security is blu; botany soil beds come prefilled now; and epi locker
+      area moved into the back.
+    type: Tweak
+  id: 2395
+  time: '2026-06-08T19:50:31.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5965
 Order: 1
