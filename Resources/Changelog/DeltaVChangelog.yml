@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Vapetastic-Gaming
-  changes:
-  - message: Patreon link in game has been updated
-    type: Tweak
-  id: 1896
-  time: '2025-12-02T14:20:38.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4833
 - author: ShepardToTheStars
   changes:
   - message: Healing from breathing miasma with rat lungs no longer scales by quantity
@@ -4390,4 +4383,15 @@
   id: 2396
   time: '2026-06-09T13:45:27.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5977
+- author: Cepelinas1
+  changes:
+  - message: Added 22 new tips!
+    type: Add
+  - message: Added missing commas on certain weapon descriptions.
+    type: Tweak
+  - message: Added missing scope descriptions to Laser Cannons and Vulcans.
+    type: Tweak
+  id: 2397
+  time: '2026-06-09T18:10:02.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6004
 Order: 1
