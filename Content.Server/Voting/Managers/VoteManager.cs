@@ -90,6 +90,11 @@ namespace Content.Server.Voting.Managers
 
         private void PlayerManagerOnPlayerStatusChanged(object? sender, SessionStatusEventArgs e)
         {
+            // Delta V - Begin checking and blocking Dummy Sessions or just Empty User Names
+            if (e.Session.Channel.UserName.Length is 0)
+                return;
+            // Delta V - Begin checking and blocking Dummy Sessions
+
             if (e.NewStatus == SessionStatus.InGame)
             {
                 // Send current votes to newly connected players.
