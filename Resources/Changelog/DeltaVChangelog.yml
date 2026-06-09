@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: Healing from breathing miasma with rat lungs no longer scales by quantity
-      of the gas in the air.
-    type: Tweak
-  id: 1897
-  time: '2025-12-02T22:26:27.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4836
 - author: Eternally-Confused
   changes:
   - message: Aroace cloaks can now be found in the Pride-o-mat!
@@ -4394,4 +4386,12 @@
   id: 2397
   time: '2026-06-09T18:10:02.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6004
+- author: rebe83
+  changes:
+  - message: Meatspikes now take 5 seconds to build instead of 30. He's right behind
+      me, isn't he?
+    type: Tweak
+  id: 2398
+  time: '2026-06-09T18:48:35.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5999
 Order: 1
