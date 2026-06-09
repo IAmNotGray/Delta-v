@@ -90,10 +90,10 @@ namespace Content.Server.Voting.Managers
 
         private void PlayerManagerOnPlayerStatusChanged(object? sender, SessionStatusEventArgs e)
         {
-            // Delta V - Begin checking and blocking Dummy Sessions or just Empty User Names
-            if (e.Session.Channel.UserName.Length is 0)
+            // Delta V - Begin checking and blocking Dummy Sessions (or a certain stupid name)
+            if (e.Session.Channel.UserName.Contains("integration_dummy_"))
                 return;
-            // Delta V - Begin checking and blocking Dummy Sessions
+            // Delta V - End... Yes it's not good looking, but got no access to DummySession
 
             if (e.NewStatus == SessionStatus.InGame)
             {
