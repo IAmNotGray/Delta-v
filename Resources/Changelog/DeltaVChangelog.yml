@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Deltanedas, Bonktrauma
-  changes:
-  - message: Added Ovni Station.
-    type: Add
-  id: 1895
-  time: '2025-12-02T04:42:19.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4602
 - author: Vapetastic-Gaming
   changes:
   - message: Patreon link in game has been updated
@@ -4390,4 +4383,11 @@
   id: 2395
   time: '2026-06-08T19:50:31.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5965
+- author: rebe83
+  changes:
+  - message: Shadow cats can no longer attack. They can now pounce though.
+    type: Tweak
+  id: 2396
+  time: '2026-06-09T13:45:27.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5977
 Order: 1
