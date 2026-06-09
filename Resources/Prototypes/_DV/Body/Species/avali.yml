@@ -1,6 +1,6 @@
 - type: markingsGroup
   id: Avali
-  onlyWhitelisted: true
+  onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Hair:
       limit: 1
