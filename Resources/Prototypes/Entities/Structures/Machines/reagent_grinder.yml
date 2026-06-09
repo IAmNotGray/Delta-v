@@ -40,7 +40,7 @@
   - type: ApcPowerReceiver
     powerLoad: 300
   - type: PowerState
-    idlePowerDraw: 0
+    idlePowerDraw: 300 # Delta V - Tests Cry, needs to be the same as the APCPowerReceiver Value
     workingPowerDraw: 750 # medium power blender
   - type: AutomationSlots # Goobstation
     slots:
