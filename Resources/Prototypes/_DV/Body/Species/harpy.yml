@@ -1,27 +1,27 @@
 - type: markingsGroup
   parent: Undergarments
   id: Harpy
+  onlyGroupWhitelisted: true
   limits:
     enum.HumanoidVisualLayers.Hair:
       limit: 1
       required: false
+      onlyGroupWhitelisted: false
     enum.HumanoidVisualLayers.FacialHair:
       limit: 1
       required: false
+      onlyGroupWhitelisted: false
     enum.HumanoidVisualLayers.Tail:
       limit: 1
       required: true
-      onlyGroupWhitelisted: true
       default: [ HarpyTailPhoenix ]
     enum.HumanoidVisualLayers.HeadTop:
       limit: 1
       required: true
-      onlyGroupWhitelisted: true
       default: [ HarpyEarsDefault ]
     enum.HumanoidVisualLayers.Chest:
       limit: 2
       required: true
-      onlyGroupWhitelisted: true
       default: [ HarpyChestDefault ]
     enum.HumanoidVisualLayers.LLeg:
       limit: 2
@@ -32,12 +32,10 @@
     enum.HumanoidVisualLayers.LArm:
       limit: 1
       required: false
-      onlyGroupWhitelisted: true
       default: [ HarpyWingDefaultHuescale ]
     enum.HumanoidVisualLayers.RArmExtension:
       limit: 1
       required: true
-      onlyGroupWhitelisted: true
       default: [ HarpyWingDefaultHuescale ]
 
 - type: entity
@@ -156,6 +154,8 @@
           True: {visible: true}
   - type: MovementSpeedModifier
     weightlessAcceleration: 2.5
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 5
   - type: HarpyVisuals
   - type: UltraVision
   - type: Tag
@@ -223,20 +223,11 @@
   id: OrganHarpyArmLeft
 
 - type: entity
-  parent: [ OrganHarpyExternal ]
-  id: OrganHarpyLeg
-  abstract: true
-  components:
-  - type: MovementBodyPart
-    walkSpeed: 2.5
-    sprintSpeed: 5
-
-- type: entity
-  parent: [ OrganBaseFootLeft, OrganHarpyLeg ]
+  parent: [ OrganBaseFootLeft, OrganHarpyExternal ]
   id: OrganHarpyFootLeft
 
 - type: entity
-  parent: [ OrganBaseLegRight, OrganHarpyLeg ]
+  parent: [ OrganBaseLegRight, OrganHarpyExternal ]
   id: OrganHarpyLegRight
 
 - type: entity

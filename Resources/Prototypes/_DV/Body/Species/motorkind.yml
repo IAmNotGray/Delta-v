@@ -292,22 +292,12 @@
   name: "back-left wheel"
   description: "Motorkind wheels are unfortunately not universal, this was done intentionally for capitalism reasons."
   parent: [ OrganBaseLegLeft, OrganMotorkindExternal ]
-  components:
-  - type: MovementBodyPart
-    walkSpeed: 5
-    sprintSpeed: 10
-    acceleration: 1
 
 - type: entity
   id: OrganMotorkindBackRight
   name: "back-right wheel"
   description: "Motorkind wheels are unfortunately not universal, this was done intentionally for capitalism reasons."
   parent: [ OrganBaseLegRight, OrganMotorkindExternal ]
-  components:
-  - type: MovementBodyPart
-    walkSpeed: 5
-    sprintSpeed: 10
-    acceleration: 1
 
 - type: entity
   id: OrganMotorkindHead
