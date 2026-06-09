@@ -433,7 +433,7 @@
     proto: Pulse
     fireCost: 100
   - type: Battery
-  # Begin DeltaV modifications - smaller battery and self recharge 
+  # Begin DeltaV modifications - smaller battery and self recharge
     maxCharge: 4000 # DeltaV -  was 40000
     startingCharge: 4000 # DeltaV -  was 40000
   - type: BatterySelfRecharger
