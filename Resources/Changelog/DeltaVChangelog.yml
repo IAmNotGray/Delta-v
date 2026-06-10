@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: Eternally-Confused
-  changes:
-  - message: Aroace cloaks can now be found in the Pride-o-mat!
-    type: Add
-  - message: Pride-o-mat restocks now cost slightly more
-    type: Tweak
-  id: 1898
-  time: '2025-12-03T05:01:47.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4847
 - author: Stxcking
   changes:
   - message: Syndicat Returns! with some tweaks
@@ -4394,4 +4385,11 @@
   id: 2398
   time: '2026-06-09T18:48:35.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5999
+- author: Vapetastic-Gaming
+  changes:
+  - message: Xenos are now much scarier, and should look familiar too !!
+    type: Tweak
+  id: 2399
+  time: '2026-06-10T18:21:14.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5891
 Order: 1
