@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: Stasicillin should once again force the target to fall asleep if they
-      have over 11u.
-    type: Fix
-  id: 1901
-  time: '2025-12-03T16:08:27.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4823
 - author: Stxcking
   changes:
   - message: Syndicat description fixed
@@ -4389,4 +4381,11 @@
   id: 2401
   time: '2026-06-13T02:29:04.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6003
+- author: rebe83
+  changes:
+  - message: The psionic power Fractured Form was removed.
+    type: Remove
+  id: 2402
+  time: '2026-06-13T19:29:04.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6011
 Order: 1
