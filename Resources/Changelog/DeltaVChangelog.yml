@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Stxcking
-  changes:
-  - message: Syndicat description fixed
-    type: Fix
-  id: 1902
-  time: '2025-12-03T20:25:52.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4854
 - author: FieldCommand
   changes:
   - message: All ships from the shipyard cost 1000 more spesos due to inflation.
@@ -4388,4 +4381,11 @@
   id: 2402
   time: '2026-06-13T19:29:04.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6011
+- author: stormyatt
+  changes:
+  - message: ghost role hitman variant
+    type: Add
+  id: 2403
+  time: '2026-06-13T20:03:15.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5848
 Order: 1
