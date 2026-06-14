@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: FieldCommand
-  changes:
-  - message: All ships from the shipyard cost 1000 more spesos due to inflation.
-    type: Tweak
-  id: 1903
-  time: '2025-12-03T22:34:59.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4858
 - author: verybigman311
   changes:
   - message: Christmas lamps now display the correct rotation
@@ -4388,4 +4381,11 @@
   id: 2403
   time: '2026-06-13T20:03:15.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5848
+- author: CarolCuchara
+  changes:
+  - message: Secborgs now leave blue fibers behind. Red is no more!
+    type: Fix
+  id: 2404
+  time: '2026-06-14T04:12:58.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6025
 Order: 1
