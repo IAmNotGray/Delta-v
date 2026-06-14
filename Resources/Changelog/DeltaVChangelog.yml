@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Woljif
-  changes:
-  - message: Gave the dragon a wide-sweep attack, more damage, and faster fireballs.
-    type: Tweak
-  id: 1905
-  time: '2025-12-04T08:27:37.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4781
 - author: ShepardToTheStars, Niomi
   changes:
   - message: Borg ID chips from the exofab now have the same access as round-start
@@ -4392,4 +4385,11 @@
   id: 2405
   time: '2026-06-14T08:13:25.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5581
+- author: CarolCuchara
+  changes:
+  - message: Pager linking now only works when in range of the fax or holopad!
+    type: Fix
+  id: 2406
+  time: '2026-06-14T18:30:35.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6032
 Order: 1
