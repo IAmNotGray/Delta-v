@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: verybigman311
-  changes:
-  - message: Christmas lamps now display the correct rotation
-    type: Fix
-  id: 1904
-  time: '2025-12-04T03:26:40.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4865
 - author: Woljif
   changes:
   - message: Gave the dragon a wide-sweep attack, more damage, and faster fireballs.
@@ -4388,4 +4381,15 @@
   id: 2404
   time: '2026-06-14T04:12:58.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6025
+- author: Stop-Signs
+  changes:
+  - message: WT550 fire rate has been reduced by 0.5
+    type: Tweak
+  - message: WT550 Magazine size has been reduced 30->20
+    type: Tweak
+  - message: WT550 is slightly less accurate
+    type: Tweak
+  id: 2405
+  time: '2026-06-14T08:13:25.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5581
 Order: 1
