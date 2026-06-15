@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: kontakt, ShepardToTheStars
-  changes:
-  - message: The ninja's spider clan charge can now be placed on walls and windows
-      again.
-    type: Fix
-  id: 1911
-  time: '2025-12-05T01:44:35.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4861
 - author: ShepardToTheStars
   changes:
   - message: The nukie agent's visor can finally see silicon health.
@@ -4385,4 +4377,12 @@
   id: 2411
   time: '2026-06-15T16:46:35.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5819
+- author: CarolCuchara
+  changes:
+  - message: Zombified crew and other entities like Laika will drop headsets which
+      are in their pockets. No more listening to survivor comms!
+    type: Fix
+  id: 2412
+  time: '2026-06-15T17:27:01.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6030
 Order: 1
