@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Nesoryo, Nikovnik, kotobdev
-  changes:
-  - message: Added alternative typing indicators for whispering, emoting, using the
-      radio, and (L)OOC-ing!
-    type: Add
-  id: 1908
-  time: '2025-12-04T16:59:08.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4679
 - author: verybigman311
   changes:
   - message: Every single wieldable gun now has wielded sprites.
@@ -4382,4 +4374,24 @@
   id: 2408
   time: '2026-06-15T15:10:00.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6031
+- author: StarboundSolaris
+  changes:
+  - message: Pitbulls and their genetically modified subspecies, Ventbulls, have been
+      re introduced to the Delta Sector!
+    type: Add
+  - message: NanoTrasen is now deploying Ventbulls into station ventilation systems
+      as a method of quick and inexpensive pest control! Don't be surprised if they
+      crawl out of a vent while chasing a horde of mice!
+    type: Add
+  - message: Departments may sometimes come equipped with a unique pitbull!
+    type: Add
+  - message: Pitbulls no longer maul couriers and felinids!
+    type: Tweak
+  - message: Pitbulls are now more tolerant to being pet!
+    type: Tweak
+  - message: Pitbulls now come with an even greater variety of ridiculous names!
+    type: Tweak
+  id: 2409
+  time: '2026-06-15T16:02:07.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5915
 Order: 1
