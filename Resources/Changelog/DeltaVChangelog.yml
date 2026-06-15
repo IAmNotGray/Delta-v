@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: verybigman311
-  changes:
-  - message: Frag Grenades now have shrapnel!
-    type: Add
-  id: 1910
-  time: '2025-12-04T22:28:59.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4856
 - author: kontakt, ShepardToTheStars
   changes:
   - message: The ninja's spider clan charge can now be placed on walls and windows
@@ -4385,4 +4378,11 @@
   id: 2410
   time: '2026-06-15T15:51:39.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6001
+- author: keekee38
+  changes:
+  - message: NT no longer stores guns with loaded chambers
+    type: Tweak
+  id: 2411
+  time: '2026-06-15T16:46:35.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5819
 Order: 1
