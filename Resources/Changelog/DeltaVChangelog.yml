@@ -1,26 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars, Niomi
-  changes:
-  - message: Borg ID chips from the exofab now have the same access as round-start
-      borgs.
-    type: Tweak
-  - message: SRNs can no longer print normal borg ID chips.
-    type: Tweak
-  - message: Syndicate borg ID chips now cost a bit less to make.
-    type: Tweak
-  - message: Agent IDs can no longer copy access from borg ID chips.
-    type: Tweak
-  - message: The new derelict borgs now have the intended borg access to the station!
-    type: Fix
-  - message: Derelict syndicate borgs don't have usual borg access, but has enough
-      to get into the station.
-    type: Tweak
-  - message: Derelict syndicate borgs can be unlocked by people with Robotics access
-      (so they can get their access updated).
-    type: Tweak
-  id: 1906
-  time: '2025-12-04T11:18:07.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4821
 - author: Dorragon
   changes:
   - message: Space dragons welcome sharkminnows in their family
@@ -4392,4 +4370,16 @@
   id: 2406
   time: '2026-06-14T18:30:35.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6032
+- author: sowelipililimute
+  changes:
+  - message: Pulling now has a unique particle effect
+    type: Add
+  - message: Interaction particles now only spawn on UIs if the UIs have an associated
+      open sound
+    type: Tweak
+  - message: Interaction particles no longer spawn on closing a UI
+    type: Fix
+  id: 2407
+  time: '2026-06-15T15:05:30.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6033
 Order: 1
