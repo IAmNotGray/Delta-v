@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Dorragon
-  changes:
-  - message: Space dragons welcome sharkminnows in their family
-    type: Add
-  id: 1907
-  time: '2025-12-04T13:27:57.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4826
 - author: Nesoryo, Nikovnik, kotobdev
   changes:
   - message: Added alternative typing indicators for whispering, emoting, using the
@@ -4382,4 +4375,11 @@
   id: 2407
   time: '2026-06-15T15:05:30.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6033
+- author: CarolCuchara
+  changes:
+  - message: Throwing glasses while wearing beer googles no longer spills the contents!
+    type: Fix
+  id: 2408
+  time: '2026-06-15T15:10:00.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6031
 Order: 1
