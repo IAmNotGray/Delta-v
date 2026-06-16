@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: cmorley191
-  changes:
-  - message: Rock anom won't make unbreakable rocks anymore
-    type: Fix
-  id: 1913
-  time: '2025-12-05T02:04:53.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4873
 - author: Stxcking
   changes:
   - message: Security, medical, and roboticist's loadouts now have prescription glasses
@@ -4386,4 +4379,13 @@
   id: 2413
   time: '2026-06-16T14:16:08.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6012
+- author: DisposableCrewmember42
+  changes:
+  - message: The midround Entropic Colossus has been reworked! It will now be buffed
+      by effigies going supercritical and die when they decay. After the colossus
+      places three effigies, it can roam the station freely.
+    type: Add
+  id: 2414
+  time: '2026-06-16T17:09:33.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5565
 Order: 1
