@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: The nukie agent's visor can finally see silicon health.
-    type: Fix
-  id: 1912
-  time: '2025-12-05T01:58:46.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4864
 - author: cmorley191
   changes:
   - message: Rock anom won't make unbreakable rocks anymore
@@ -4385,4 +4378,12 @@
   id: 2412
   time: '2026-06-15T17:27:01.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6030
+- author: JustTNE
+  changes:
+  - message: Don't display SSD duration when examining dead players or untaken ghost
+      roles
+    type: Fix
+  id: 2413
+  time: '2026-06-16T14:16:08.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6012
 Order: 1
