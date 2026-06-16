@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Stxcking
-  changes:
-  - message: Security, medical, and roboticist's loadouts now have prescription glasses
-      counterparts. (Security players make sure to save your option.)
-    type: Tweak
-  id: 1914
-  time: '2025-12-05T02:14:01.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4871
 - author: verybigman311
   changes:
   - message: A large plethora of melee weapons now have the correct wideswing rotation.
@@ -4388,4 +4380,14 @@
   id: 2414
   time: '2026-06-16T17:09:33.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5565
+- author: CarolCuchara
+  changes:
+  - message: Rat Kings raise army ability is now dynamically priced. The first servants
+      are cheaper, allowing for an easier early game and bounce back. Too many servants
+      will increase the price drastically, with giant swarms killing the performance
+      very hard to achieve!
+    type: Tweak
+  id: 2415
+  time: '2026-06-16T17:43:10.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6017
 Order: 1
