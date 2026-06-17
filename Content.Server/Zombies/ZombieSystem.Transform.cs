@@ -26,6 +26,8 @@ using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Movement.Pulling.Components;
 using Content.Shared.Movement.Systems;
+using Content.Shared.Movement.Components; // DeltaV
+using Content.Shared._DV.Movement.Components; // DeltaV
 using Content.Shared.NameModifier.EntitySystems;
 using Content.Shared.NPC.Components; // DeltaV
 using Content.Shared.NPC.Systems;
@@ -74,6 +76,7 @@ public sealed partial class ZombieSystem
     [Dependency] private readonly TagSystem _tag = default!;
     [Dependency] private readonly ISharedPlayerManager _player = default!;
     [Dependency] private readonly PsionicSystem _psionic = default!; // DeltaV
+    [Dependency] private readonly SharedJetpackSystem _jetpack = default!; // DeltaV - Prevent Jetpacks on Zombies
 
     private static readonly ProtoId<TagPrototype> InvalidForGlobalSpawnSpellTag = "InvalidForGlobalSpawnSpell";
     private static readonly ProtoId<TagPrototype> CannotSuicideTag = "CannotSuicide";
@@ -152,6 +155,14 @@ public sealed partial class ZombieSystem
         if (HasComp<PsionicComponent>(target))
             _psionic.MindBreakEntity(target, false, true);
         // DeltaV End - Prevent Psionic Zombies
+        // DeltaV Start - Prevent Jetpacks on Zombies
+        if (TryComp<JetpackUserComponent>(target, out var jetpackUser))
+        {
+            if(TryComp<JetpackComponent>(jetpackUser.Jetpack, out var jetpack))
+                _jetpack.SetEnabled(jetpackUser.Jetpack, jetpack, false, target);
+        }
+        RemComp<AutomaticJetpackUserComponent>(target);
+        // DeltaV End - Prevent Jetpacks on Zombies
 
         //funny voice
         var accentType = "zombie";
