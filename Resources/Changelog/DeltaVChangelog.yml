@@ -1,14 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: Silvia, the CMO's pet, can now equip medhuds and PDAs! No more dragging
-      them around.
-    type: Add
-  - message: Silvia can no longer slip.
-    type: Fix
-  id: 1916
-  time: '2025-12-05T02:40:36.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4867
 - author: HTMLSystem
   changes:
   - message: Chitnids will now use moth sprites for their glasses
@@ -4386,4 +4376,17 @@
   id: 2416
   time: '2026-06-17T01:06:56.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6046
+- author: rebe83
+  changes:
+  - message: .25 caseless poison ammo now uses lexorin and is faster acting.
+    type: Tweak
+  - message: The estoc once again shoots in 3 round bursts, but still faster than
+      before.
+    type: Tweak
+  - message: Knuckledusters are now made of REAL plastitanium and deal 14 blunt per
+      hit. Nanotrasen noggins can be rattled in 4 punches.
+    type: Tweak
+  id: 2417
+  time: '2026-06-17T13:36:02.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5991
 Order: 1
