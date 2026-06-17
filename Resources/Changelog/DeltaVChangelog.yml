@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: Stxcking
-  changes:
-  - message: 'Fishing vendor: Exchange fish for fishing points!'
-    type: Add
-  - message: Fishing basket to easily store caught fish.
-    type: Add
-  id: 1918
-  time: '2025-12-05T02:58:57.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4862
 - author: kotobdev
   changes:
   - message: Nukie commanders are now ~~threatened~~ *encouraged* to use the war declarator
@@ -4391,4 +4382,11 @@
   id: 2418
   time: '2026-06-17T13:56:26.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5776
+- author: Proxysseia
+  changes:
+  - message: Breaking and Entering now means what you think it does
+    type: Tweak
+  id: 2419
+  time: '2026-06-17T14:07:48.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6050
 Order: 1
