@@ -1,17 +1,4 @@
 ﻿Entries:
-- author: verybigman311
-  changes:
-  - message: A large plethora of melee weapons now have the correct wideswing rotation.
-    type: Fix
-  - message: Drills and Saws now function similarly in combat to Mining Drills.
-    type: Tweak
-  - message: Electric and Bass guitars can now be used as weapons.
-    type: Tweak
-  - message: Numerous other tweaks have been made to melee weapons. Too many to list.
-    type: Tweak
-  id: 1915
-  time: '2025-12-05T02:37:20.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4806
 - author: ShepardToTheStars
   changes:
   - message: Silvia, the CMO's pet, can now equip medhuds and PDAs! No more dragging
@@ -4390,4 +4377,13 @@
   id: 2415
   time: '2026-06-16T17:43:10.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6017
+- author: ShepardToTheStars
+  changes:
+  - message: Pitbulls no longer fit under doors.
+    type: Fix
+  - message: Pitbulls will now retaliate if you hit them. Be nice!
+    type: Fix
+  id: 2416
+  time: '2026-06-17T01:06:56.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6046
 Order: 1
