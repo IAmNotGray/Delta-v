@@ -1,14 +1,4 @@
 ﻿Entries:
-- author: kotobdev
-  changes:
-  - message: Nukie commanders are now ~~threatened~~ *encouraged* to use the war declarator
-      properly.
-    type: Add
-  - message: Nukies now have 8 minutes to declare war, up from 6.
-    type: Tweak
-  id: 1919
-  time: '2025-12-05T04:48:30.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4876
 - author: ShepardToTheStars, Jakumba
   changes:
   - message: Holofans are no longer infinite duration. They last 5 minutes but also
@@ -4389,4 +4379,12 @@
   id: 2419
   time: '2026-06-17T14:07:48.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6050
+- author: ShepardToTheStars
+  changes:
+  - message: The biomasser is fixed and will now again properly biomass entities with
+      0% blood.
+    type: Fix
+  id: 2420
+  time: '2026-06-17T15:32:34.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6042
 Order: 1
