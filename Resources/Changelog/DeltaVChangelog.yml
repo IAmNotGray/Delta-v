@@ -1,15 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars, Jakumba
-  changes:
-  - message: Holofans are no longer infinite duration. They last 5 minutes but also
-      recharge over time. They can still be picked up.
-    type: Tweak
-  - message: All holoprojectors function the same way now. You can pick up janitor
-      holosigns, security holobarriers, and they all recharge over time.
-    type: Tweak
-  id: 1920
-  time: '2025-12-05T12:56:10.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4734
 - author: PureBreadBagel, Cepelinas1
   changes:
   - message: Guidebook has got new entries! The guidebook now contains Entries relating
@@ -4387,4 +4376,11 @@
   id: 2420
   time: '2026-06-17T15:32:34.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6042
+- author: sowelipililimute
+  changes:
+  - message: Fax machines no longer need to be refreshed before their first use.
+    type: Tweak
+  id: 2421
+  time: '2026-06-18T16:22:15.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6058
 Order: 1
