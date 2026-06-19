@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: beck-thompson
-  changes:
-  - message: Respawn timer now works when observing
-    type: Fix
-  id: 1926
-  time: '2025-12-07T18:02:52.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4895
 - author: zelezniciar, ArtisticRoomba
   changes:
   - message: Atmospherics Delta-Pressure now has a short guidebook entry. You can
@@ -4371,4 +4364,12 @@
   id: 2426
   time: '2026-06-19T16:05:49.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6062
+- author: rebe83
+  changes:
+  - message: Security radio color has been tweaked for legibility. Looking a little
+      burple... maybe even laughender?
+    type: Tweak
+  id: 2427
+  time: '2026-06-19T16:15:59.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6016
 Order: 1
