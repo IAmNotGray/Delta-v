@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: IAmNotGray
-  changes:
-  - message: 'Elegance: Who changed the thermostat on Elegance? The pool froze over,
-      dude!'
-    type: Tweak
-  id: 1928
-  time: '2025-12-08T05:30:18.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4903
 - author: Velcroboy
   changes:
   - message: 'Hive: Added snow!'
@@ -4373,4 +4365,12 @@
   id: 2428
   time: '2026-06-19T17:48:59.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6000
+- author: rebe83
+  changes:
+  - message: You are no longer able to identify bomb pens based on damage values in
+      the examine box. Because they don't do damage. Trust.
+    type: Tweak
+  id: 2429
+  time: '2026-06-19T17:52:44.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6010
 Order: 1
