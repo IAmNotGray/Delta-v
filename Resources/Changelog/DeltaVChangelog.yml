@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: BunglesnortBoss
-  changes:
-  - message: Salvage Cyborg's now have new laws! Give em' a read! Credit to AirlineFood
-      for the actual laws.
-    type: Tweak
-  id: 1934
-  time: '2025-12-08T14:37:23.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4866
 - author: cmorley191
   changes:
   - message: '"Impossible" arti trigger combinations (like low+high pressure) will
@@ -4391,4 +4383,15 @@
   id: 2434
   time: '2026-06-19T21:42:45.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6053
+- author: ShepardToTheStars
+  changes:
+  - message: The syndicate hardsuits now have 15% more aura when you turn the light
+      on in the dark.
+    type: Tweak
+  - message: The vulpkanin syndicate suits have had a facelift and now match better
+      with other syndicate hardsuits.
+    type: Add
+  id: 2435
+  time: '2026-06-19T21:53:47.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6060
 Order: 1
