@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: verybigman311
-  changes:
-  - message: Tinted windows can now be reinforced.
-    type: Add
-  id: 1930
-  time: '2025-12-08T09:01:15.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4875
 - author: SirSmith148
   changes:
   - message: Incorporated Glimmer within the new Xenoarchaeology system
@@ -4374,4 +4367,19 @@
   id: 2430
   time: '2026-06-19T17:59:46.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5968
+- author: DisposableCrewmember42, neomoth
+  changes:
+  - message: Melee screenshake for the attacker now has a heavy and light damage variant.
+      The heavy damage variant is also triggered by two-handed weapons being wielded.
+    type: Tweak
+  - message: Melee screenshake only occurs for the target if total damage > 4
+    type: Tweak
+  - message: Explosion screenshake now includes a directional camera kick that falls
+      off with distance
+    type: Tweak
+  - message: Explosion screenshake now falls off with distance
+    type: Tweak
+  id: 2431
+  time: '2026-06-19T18:12:00.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6059
 Order: 1
