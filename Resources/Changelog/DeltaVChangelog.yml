@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Stxcking
-  changes:
-  - message: Added chemical, surgeon, and paramedic wall lockers for mappers
-    type: Add
-  id: 1925
-  time: '2025-12-07T17:54:34.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4899
 - author: beck-thompson
   changes:
   - message: Respawn timer now works when observing
@@ -4371,4 +4364,11 @@
   id: 2425
   time: '2026-06-19T15:52:36.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6063
+- author: EmberAstra
+  changes:
+  - message: Purifying salts now fit into medical belts and medkits.
+    type: Tweak
+  id: 2426
+  time: '2026-06-19T16:05:49.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6062
 Order: 1
