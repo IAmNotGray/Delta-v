@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars, gluesniffler
-  changes:
-  - message: Harpies can now take flight!
-    type: Add
-  id: 1932
-  time: '2025-12-08T13:58:53.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4888
 - author: Dorragon
   changes:
   - message: Rat kings and xenos now see in the dark
@@ -4383,4 +4376,12 @@
   id: 2432
   time: '2026-06-19T18:35:33.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6026
+- author: rebe83
+  changes:
+  - message: Felinids can now use their claws to try and hold fast against space wind.
+      or the warden.
+    type: Add
+  id: 2433
+  time: '2026-06-19T19:26:22.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5996
 Order: 1
