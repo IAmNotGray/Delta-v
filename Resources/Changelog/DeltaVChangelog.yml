@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: zelezniciar, ArtisticRoomba
-  changes:
-  - message: Atmospherics Delta-Pressure now has a short guidebook entry. You can
-      find it in Jobs > Engineering > Atmospherics > Atmospheric Upsets > Delta Pressure.
-    type: Add
-  id: 1927
-  time: '2025-12-08T00:03:47.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4906
 - author: IAmNotGray
   changes:
   - message: 'Elegance: Who changed the thermostat on Elegance? The pool froze over,
@@ -4372,4 +4364,13 @@
   id: 2427
   time: '2026-06-19T16:15:59.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6016
+- author: Halo3moth
+  changes:
+  - message: Nanotrasen high command as released a statement on the existance of chameleon
+      gear, syndicate operatives remember to lock your gear (chameleon gear is no
+      longer metashielded)
+    type: Tweak
+  id: 2428
+  time: '2026-06-19T17:48:59.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6000
 Order: 1
