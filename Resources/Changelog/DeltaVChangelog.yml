@@ -1,14 +1,6 @@
 ﻿Entries:
 - author: cmorley191
   changes:
-  - message: '"Impossible" arti trigger combinations (like low+high pressure) will
-      no longer appear on artifacts.'
-    type: Tweak
-  id: 1935
-  time: '2025-12-08T14:47:08.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4740
-- author: cmorley191
-  changes:
   - message: The handheld Node Scanner tool has new artifact information available
     type: Add
   id: 1936
@@ -4394,4 +4386,14 @@
   id: 2435
   time: '2026-06-19T21:53:47.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6060
+- author: ShepardToTheStars
+  changes:
+  - message: SRN-made borgs no longer have borg AA as soon as they are made. No more
+      walking into the AI core.
+    type: Fix
+  - message: SRNs can print batteries in their exosuit fabricator again.
+    type: Fix
+  id: 2436
+  time: '2026-06-19T22:06:51.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6045
 Order: 1
