@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Halo3moth
-  changes:
-  - message: Feroxis can now thump! Sharks have tails too!
-    type: Tweak
-  id: 1924
-  time: '2025-12-07T11:45:45.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4877
 - author: Stxcking
   changes:
   - message: Added chemical, surgeon, and paramedic wall lockers for mappers
@@ -4370,4 +4363,12 @@
   id: 2424
   time: '2026-06-19T15:48:58.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6065
+- author: DisposableCrewmember42
+  changes:
+  - message: Ghosts will now see chat messages prepended with clickable follow links.
+      These can be turned off in the General settings. [upstream cherry-pick]
+    type: Add
+  id: 2425
+  time: '2026-06-19T15:52:36.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6063
 Order: 1
