@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: SirSmith148
-  changes:
-  - message: Incorporated Glimmer within the new Xenoarchaeology system
-    type: Tweak
-  id: 1931
-  time: '2025-12-08T04:11:00.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4486
 - author: ShepardToTheStars, gluesniffler
   changes:
   - message: Harpies can now take flight!
@@ -4382,4 +4375,12 @@
   id: 2431
   time: '2026-06-19T18:12:00.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6059
+- author: Proxysseia
+  changes:
+  - message: '"Cosmic Cultists want to end the world" is now common knowledge. Their
+      metashield has been removed.'
+    type: Remove
+  id: 2432
+  time: '2026-06-19T18:35:33.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6026
 Order: 1
