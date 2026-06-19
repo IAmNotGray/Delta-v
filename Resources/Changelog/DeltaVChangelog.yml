@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Proxysseia
-  changes:
-  - message: Removed Speedboots
-    type: Remove
-  id: 1923
-  time: '2025-12-07T09:47:14.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4883
 - author: Halo3moth
   changes:
   - message: Feroxis can now thump! Sharks have tails too!
@@ -4370,4 +4363,11 @@
   id: 2423
   time: '2026-06-18T16:37:33.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6005
+- author: keekee38
+  changes:
+  - message: SV-213 pistols now come standard with medium power cells
+    type: Tweak
+  id: 2424
+  time: '2026-06-19T15:48:58.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6065
 Order: 1
