@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Dorragon
-  changes:
-  - message: Rat kings and xenos now see in the dark
-    type: Add
-  id: 1933
-  time: '2025-12-08T14:34:58.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4881
 - author: BunglesnortBoss
   changes:
   - message: Salvage Cyborg's now have new laws! Give em' a read! Credit to AirlineFood
@@ -4384,4 +4377,18 @@
   id: 2433
   time: '2026-06-19T19:26:22.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5996
+- author: ShepardToTheStars
+  changes:
+  - message: Cats and other animals will no longer attack players who were cloned
+      after becoming a zombie.
+    type: Fix
+  - message: The Pacifism trait is now properly re-applied to players who were cloned
+      after becoming a zombie.
+    type: Fix
+  - message: Cloned Initial Infected now get an escape and live objective after being
+      cloned.
+    type: Tweak
+  id: 2434
+  time: '2026-06-19T21:42:45.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6053
 Order: 1
