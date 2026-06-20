@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: verybigman311
-  changes:
-  - message: Plastic is now obtainable from deconstructing a reinforced tinted window.
-    type: Fix
-  id: 1939
-  time: '2025-12-08T19:34:23.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4918
 - author: MantasDab360
   changes:
   - message: Ninja visor now has Night Vision!
@@ -4394,4 +4387,13 @@
   id: 2439
   time: '2026-06-20T14:24:36.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6057
+- author: RoboBozu, SalDragonsNOA
+  changes:
+  - message: NanoTrasen corporate has decided to celebrate the increased productivity
+      of the Delta Sector with ice cream! Recipes for various frozen treats have been
+      added to Bartenders' handbooks to facilitate the celebration!
+    type: Add
+  id: 2440
+  time: '2026-06-20T15:02:14.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5943
 Order: 1
