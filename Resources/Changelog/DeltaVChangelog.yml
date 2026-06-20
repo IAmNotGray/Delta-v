@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: cmorley191
-  changes:
-  - message: The handheld Node Scanner tool has new artifact information available
-    type: Add
-  id: 1936
-  time: '2025-12-08T14:48:49.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4814
 - author: ShepardToTheStars
   changes:
   - message: All syndicate cyborg ghost roles now spawn with a neuroling rather than
@@ -4396,4 +4389,11 @@
   id: 2436
   time: '2026-06-19T22:06:51.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6045
+- author: stormyatt
+  changes:
+  - message: hitman card implant to hitmans. cause calling cards are fun!
+    type: Add
+  id: 2437
+  time: '2026-06-20T10:46:03.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5896
 Order: 1
