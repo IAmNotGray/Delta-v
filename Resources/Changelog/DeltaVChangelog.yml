@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: Feroxi now can sense containers and puddles of blood, and people who
-      are bleeding, except Diona and Slime people, since they bleed sap and slime
-      respectively (and that's not blood!).
-    type: Add
-  id: 1938
-  time: '2025-12-08T15:34:22.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4902
 - author: verybigman311
   changes:
   - message: Plastic is now obtainable from deconstructing a reinforced tinted window.
@@ -4395,4 +4386,12 @@
   id: 2438
   time: '2026-06-20T14:20:04.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6069
+- author: sowelipililimute
+  changes:
+  - message: NanoChat now uses the same methods as the radio system to determine reachability.
+      In other words, cross-grid NanoChat works now.
+    type: Tweak
+  id: 2439
+  time: '2026-06-20T14:24:36.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6057
 Order: 1
