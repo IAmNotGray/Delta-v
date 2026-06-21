@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: snowywinters
-  changes:
-  - message: Station AI can now use traffic comms. Your secrets are no longer safe.
-    type: Add
-  - message: Station AI can now see silicon health, just like diagnostic HUDs.
-    type: Add
-  id: 1941
-  time: '2025-12-09T17:56:16.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4905
 - author: Stxcking
   changes:
   - message: Syndicat ghost role description doesn't mention microbomb implant.
@@ -4394,4 +4385,12 @@
   id: 2441
   time: '2026-06-20T17:14:12.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6049
+- author: Velcroboy
+  changes:
+  - message: 'The Hive: Epistemics now has a public thoroughfare through the center
+      where a new chapel and robotics lab are located. Also security is blue.'
+    type: Tweak
+  id: 2442
+  time: '2026-06-21T13:48:13.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6018
 Order: 1
