@@ -1,13 +1,6 @@
 ﻿Entries:
 - author: Stxcking
   changes:
-  - message: Syndicat ghost role description doesn't mention microbomb implant.
-    type: Fix
-  id: 1942
-  time: '2025-12-09T18:31:07.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4889
-- author: Stxcking
-  changes:
   - message: Added more festive headwear, an elf costume, and holiday red dress to
       the AutoDrobe!
     type: Add
@@ -4393,4 +4386,11 @@
   id: 2442
   time: '2026-06-21T13:48:13.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6018
+- author: Halo3moth
+  changes:
+  - message: Pitbulls now spawn from vents less often
+    type: Tweak
+  id: 2443
+  time: '2026-06-22T04:23:12.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6081
 Order: 1
