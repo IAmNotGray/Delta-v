@@ -42,8 +42,8 @@ public abstract class SharedScaleVisualsSystem : EntitySystem
         Dirty(uid, comp);
 
         // Delta V - Begin Species Scaling
-        var diff = scale - Vector2.One;
-        var newScale = comp.SpeciesScale + diff;
+        // 120% species scale => add 0.2 to scale
+        var newScale = scale + comp.SpeciesScale - Vector2.One;
         // Delta V - End Species Scaling
 
         var appearanceComponent = EnsureComp<AppearanceComponent>(uid);

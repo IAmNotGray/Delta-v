@@ -57,7 +57,7 @@ public sealed class PlanetSystem : EntitySystem
     {
         var map = SpawnPlanet(id, runMapInit: false);
         var mapId = Comp<MapComponent>(map).MapId;
-        if (!_mapLoader.TryLoadGrid(mapId, path, out var grid, offset: new Vector2(150,150)))
+        if (!_mapLoader.TryLoadGrid(mapId, path, out var grid, offset: new Vector2(150, 150)))
         {
             Log.Error($"Failed to load planet grid {path} for planet {id}!");
             Del(map);

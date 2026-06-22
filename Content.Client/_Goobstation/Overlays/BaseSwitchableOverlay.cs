@@ -27,7 +27,7 @@ public sealed class BaseSwitchableOverlay<TComp> : Overlay where TComp : Switcha
 
     public bool IsActive = true;
 
-    private const string NightVisionName = "NightVision";
+    private static readonly ProtoId<ShaderPrototype> NightVisionName = "NightVision";
 
     public BaseSwitchableOverlay()
     {

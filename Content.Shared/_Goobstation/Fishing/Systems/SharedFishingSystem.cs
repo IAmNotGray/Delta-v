@@ -9,8 +9,10 @@
 using Content.Shared._Goobstation.Fishing.Components;
 using Content.Shared._Goobstation.Fishing.Events;
 using Content.Shared.Actions;
+using Content.Shared.GameTicking;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Popups;
+using Content.Shared.Random.Helpers;
 using Content.Shared.Throwing;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
@@ -33,7 +35,6 @@ public abstract class SharedFishingSystem : EntitySystem
     [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly IRobustRandom _random = default!; // Delta V - Build Errors
 
     protected EntityQuery<ActiveFisherComponent> FisherQuery;
     protected EntityQuery<ActiveFishingSpotComponent> ActiveFishSpotQuery;
@@ -349,9 +350,10 @@ public abstract class SharedFishingSystem : EntitySystem
             var targetCoords = Xform.GetMapCoordinates(Transform(attachedEnt));
             var playerCoords = Xform.GetMapCoordinates(Transform(player));
             // var rand = new System.Random((int) Timing.CurTick.Value); // evil random prediction hack // Delta V - No idea, commenting out for now
+            var rand = SharedRandomExtensions.PredictedRandom(Timing, GetNetEntity(ent));
 
             // Calculate throw direction
-            var direction = (playerCoords.Position - targetCoords.Position) * _random.NextFloat(0.2f, 0.85f);
+            var direction = (playerCoords.Position - targetCoords.Position) * rand.NextFloat(0.2f, 0.85f);
 
             // Yeet
             Throwing.TryThrow(attachedEnt, direction, 4f, player);

@@ -46,7 +46,7 @@ public sealed class MonumentPlacementPreviewOverlay : Overlay
 
     private const string SaturationShuffleName = "SaturationShuffle";
     private const string MonumentPulseName = "MonumentPulse";
-    private const string UnshadedName = "unschaded";
+    private const string UnshadedName = "unshaded";
 
 
     //todo arbitrary sprite drawing overlay at some point

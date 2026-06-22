@@ -50,7 +50,6 @@ public abstract class SharedImplanterSystem : EntitySystem
         _itemSlots.AddItemSlot(uid, ImplanterComponent.ImplanterSlotId, component.ImplanterSlot);
 
         // DeltaV - don't use deimplant chosing
-        // return;
         // component.DeimplantChosen ??= component.DeimplantWhitelist.FirstOrNull();
         //
         // Dirty(uid, component);

@@ -21,7 +21,7 @@ using Content.Shared.Inventory.Events;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Polymorph;
 using Content.Shared.Speech.Components;
-using Content.Shared.StatusEffectNew;
+using Content.Shared.StatusEffect;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.EntitySerialization.Systems;
@@ -67,7 +67,7 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
     private readonly ResPath _mapPath = new("Maps/_DV/Nonstations/cosmicvoid.yml");
 
     private static readonly EntProtoId CosmicEchoVfx = "CosmicEchoVfx";
-    private static readonly string EntropicDegen = "EntropicDegen";
+    private static readonly ProtoId<StatusEffectPrototype> EntropicDegen = "EntropicDegen";
     private static readonly ProtoId<RadioChannelPrototype> CosmicRadio = "CosmicRadio";
 
     public override void Initialize()
@@ -173,7 +173,7 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
     {
         if (!EntityIsCultist(args.Equipee))
         {
-            _statusEffects.TryAddStatusEffectDuration(args.Equipee, EntropicDegen, out _, TimeSpan.FromDays(1)); // TimeSpan.MaxValue causes a crash here, so we use FromDays(1) instead.
+            _statusEffects.TryAddStatusEffect<CosmicEntropyDebuffComponent>(args.Equipee, EntropicDegen, TimeSpan.FromDays(1), true); // TimeSpan.MaxValue causes a crash here, so we use FromDays(1) instead.
             if (TryComp<CosmicEntropyDebuffComponent>(args.Equipee, out var comp)) comp.Degen = new(){DamageDict = new(){{"Cold", 0.5}, {"Asphyxiation", 1.5}, {"Ion", 1.5}}};
         }
     }
@@ -187,7 +187,7 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
     {
         if (!EntityIsCultist(args.User))
         {
-            _statusEffects.TryAddStatusEffectDuration(args.User, EntropicDegen, out _, TimeSpan.FromDays(1));
+            _statusEffects.TryAddStatusEffect<CosmicEntropyDebuffComponent>(args.User, EntropicDegen, TimeSpan.FromDays(1), true);
             if (TryComp<CosmicEntropyDebuffComponent>(args.User, out var comp)) comp.Degen = new(){DamageDict = new(){{"Cold", 0.5}, {"Asphyxiation", 1.5}, {"Ion", 1.5}}};
             _popup.PopupEntity(Loc.GetString("cosmiccult-gear-pickup", ("ITEM", args.Equipped)), args.User, args.User, PopupType.MediumCaution);
         }

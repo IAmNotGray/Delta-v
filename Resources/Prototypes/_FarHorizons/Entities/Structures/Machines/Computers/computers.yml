@@ -6,11 +6,11 @@
   components:
   - type: ApcPowerReceiver
     powerLoad: 500
-  # Delta V - Begin Changing PowerState here
+  # Delta V - Begin Changing PowerState here for Tests. IdlePowerDraw can't be less than APCPowerReceiver.
   - type: PowerState
     idlePowerDraw: 500
     workingPowerDraw: 1000
-  # Delta V - End Changing PowerState here
+  # Delta V - End
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -55,11 +55,11 @@
   components:
   - type: ApcPowerReceiver
     powerLoad: 500
-  # Delta V - Begin Changing PowerState here
+  # Delta V - Begin Changing PowerState here for Tests. IdlePowerDraw can't be less than APCPowerReceiver.
   - type: PowerState
     idlePowerDraw: 500
     workingPowerDraw: 1000
-  # Delta V - End Changing PowerState here
+  # Delta V - End
   - type: PointLight
     radius: 1.5
     energy: 1.6

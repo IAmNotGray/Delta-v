@@ -167,8 +167,4 @@ public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSys
         _charInfoIsAttach = false;
     }*/
     // Delta V - Complains it needs an invoker. Though we moved it into the client.
-    private void OnHighlightsUpdated(string obj)
-    {
-        HighlightsUpdated?.Invoke(obj);
-    }
 }

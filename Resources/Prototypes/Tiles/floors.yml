@@ -107,7 +107,7 @@
   id: FloorSteelOffset
   parent: BaseStationTile
   name: tiles-steel-floor-offset
-  sprite: /Textures/Tiles/steel_offset.png
+  sprite: /Textures/_DV/Tiles/steel_offset.png # Delta V - Resprite Tile
   itemDrop: FloorTileItemSteelOffset
 
 - type: tile

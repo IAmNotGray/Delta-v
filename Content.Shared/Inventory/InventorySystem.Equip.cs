@@ -255,7 +255,6 @@ public abstract partial class InventorySystem
                         return false;
 
                     // DeltaV - ignore suit storage whitelist
-                    // continue;
                     // if (TryComp<AllowSuitStorageComponent>(slotEntity, out var comp) &&
                     //     _whitelistSystem.IsWhitelistFailOrNull(comp.Whitelist, itemUid))
                     //     return false;

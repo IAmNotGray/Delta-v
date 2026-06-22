@@ -20,8 +20,8 @@ public sealed partial class SophicScribeSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
 
-    private const string ScienceEncryptName = "Science";
-    private const string CommonEncryptName = "Common";
+    private static readonly ProtoId<RadioChannelPrototype> ScienceEncryptName = "Science";
+    private static readonly ProtoId<RadioChannelPrototype> CommonEncryptName = "Common";
 
     public override void Update(float frameTime)
     {

@@ -4,7 +4,7 @@ using Content.Shared.Actions.Events;
 using Content.Shared.DoAfter;
 using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Movement.Systems;
-using Content.Shared.StatusEffectNew;
+using Content.Shared.StatusEffect;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -36,7 +36,7 @@ public abstract class SharedPrecognitionPowerSystem : BasePsionicPowerSystem<Pre
         // A custom shader for seeing visions would be nice but this will do for now.
         // TODO: Port over the TemporaryBlindness effect to the new StatusEffectSystem.
         // When Upstream ports it over, replace this with it.
-        StatusEffects.TryAddStatusEffectDuration(psionic, "TemporaryBlindness", out _, psionic.Comp.UseDelay);
+        StatusEffects.TryAddStatusEffect<TemporaryBlindnessComponent>(psionic, "TemporaryBlindness", psionic.Comp.UseDelay, true);
         Movement.TryUpdateMovementSpeedModDuration(args.Performer, PrecognitionSlowdown, psionic.Comp.UseDelay, 0.5f);
 
         psionic.Comp.SaveDoAfterId(doAfterId.Value);

@@ -17,7 +17,7 @@ public sealed partial class UltraVisionOverlay : Overlay
     public override bool RequestScreenTexture => true;
     public override OverlaySpace Space => OverlaySpace.WorldSpace;
     private readonly ShaderInstance _ultraVisionShader;
-    private const string UltraVisionName = "UltraVision";
+    private static readonly ProtoId<ShaderPrototype> UltraVisionName = "UltraVision";
 
     public UltraVisionOverlay()
     {

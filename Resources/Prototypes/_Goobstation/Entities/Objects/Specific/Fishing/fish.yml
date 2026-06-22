@@ -27,7 +27,7 @@
   - type: PassiveDamage
     allowedStates:
     - Alive
-#    damageCap: 20 # Delta V - No more damage cap
+    damageCap: 20
     damage:
       types:
         Asphyxiation: 1

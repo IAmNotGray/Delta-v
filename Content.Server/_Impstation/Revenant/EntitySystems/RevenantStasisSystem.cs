@@ -40,8 +40,8 @@ public sealed partial class RevenantStasisSystem : EntitySystem
     [ValidatePrototypeId<StatusEffectPrototype>]
     private const string RevenantStasisId = "Stasis";
 
-    private const string HolyId = "Holy"; // DV - Fix Errors
-    private const string SaltId = "Salt"; // DV - Fix Errors
+    private ProtoId<TagPrototype> HolyId = "Holy"; // DV - Fix Errors
+    private ProtoId<TagPrototype> SaltId = "Salt"; // DV - Fix Errors
 
     public override void Initialize()
     {

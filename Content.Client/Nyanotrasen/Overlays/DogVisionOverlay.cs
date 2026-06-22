@@ -18,7 +18,7 @@ public sealed partial class DogVisionOverlay : Overlay
     public override OverlaySpace Space => OverlaySpace.WorldSpace;
     private readonly ShaderInstance _dogVisionShader;
 
-    private const string DogVisionName = "DogVision";
+    private static readonly ProtoId<ShaderPrototype> DogVisionName = "DogVision";
 
     public DogVisionOverlay()
     {

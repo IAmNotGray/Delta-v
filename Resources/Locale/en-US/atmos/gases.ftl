@@ -12,7 +12,6 @@ gas-water-vapor = Water Vapor
 gas-water-vapor-abbreviation = H₂O
 gas-ammonia = Ammonia
 gas-ammonia-abbreviation = NH₃
-gas-miasma = Miasma # Delta V - Add Miasma
 gas-nitrous-oxide = Nitrous Oxide
 gas-nitrous-oxide-abbreviation = N₂O
 gas-frezon = Frezon

@@ -13,6 +13,7 @@ using Content.Server.Medical;
 using Content.Server.Medical.Components;
 using Content.Server.Nutrition.Components;
 using Content.Shared._Mono.CorticalBorer;
+using Content.Shared.Actions.Components;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Alert;
 using Content.Shared.Body.Components;
@@ -51,8 +52,8 @@ public sealed partial class CorticalBorerSystem : SharedCorticalBorerSystem
     [Dependency] private readonly AlertsSystem _alerts = default!;
     [Dependency] private readonly GhostRoleSystem _ghost  = default!;
 
-    private const string ActionEndControlHostName = "ActionEndControlHost";
-    private const string ActionLayEggHostName = "ActionLayEggHost";
+    private static readonly EntProtoId<ActionComponent> ActionEndControlHostName = "ActionEndControlHost";
+    private static readonly EntProtoId<ActionComponent> ActionLayEggHostName = "ActionLayEggHost";
 
     public override void Initialize()
     {
