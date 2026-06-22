@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: verybigman311
-  changes:
-  - message: Mowed Astro-Snow can now be crafted and utilized
-    type: Add
-  id: 1946
-  time: '2025-12-10T14:59:27.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4921
 - author: pootslap
   changes:
   - message: New caw sounds for harpies!
@@ -4400,4 +4393,11 @@
   id: 2446
   time: '2026-06-22T11:36:51.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6070
+- author: rebe83
+  changes:
+  - message: Slugs are made out of lead and do 100 structural.
+    type: Tweak
+  id: 2447
+  time: '2026-06-22T16:48:31.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6068
 Order: 1
