@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: Entropic Degen should no longer last forever.
-    type: Fix
-  id: 1944
-  time: '2025-12-10T08:12:42.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4931
 - author: SirWarock
   changes:
   - message: Fixed Rollerbeds getting annihilated by mouse traps!
@@ -4394,4 +4387,17 @@
   id: 2444
   time: '2026-06-22T08:46:38.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6084
+- author: wesk
+  changes:
+  - message: The Traits UI now shows a visual indicator when you have selected the
+      max amount of traits in a category.
+    type: Tweak
+  - message: The Traits UI now indicates if you do not have enough points for a trait.
+    type: Tweak
+  - message: The Traits UI now indicates if a trait is conflicting with another trait,
+      or is requiring another trait in order to be used/equipped by your character.
+    type: Tweak
+  id: 2445
+  time: '2026-06-22T11:11:35.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6082
 Order: 1
