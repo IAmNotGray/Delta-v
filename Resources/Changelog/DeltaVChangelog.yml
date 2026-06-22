@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: SirWarock
-  changes:
-  - message: Fixed Rollerbeds getting annihilated by mouse traps!
-    type: Fix
-  id: 1945
-  time: '2025-12-10T14:57:38.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4933
 - author: verybigman311
   changes:
   - message: Mowed Astro-Snow can now be crafted and utilized
@@ -4400,4 +4393,11 @@
   id: 2445
   time: '2026-06-22T11:11:35.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6082
+- author: Proxysseia
+  changes:
+  - message: Shields are now not allowed to be carried on code Green (again)
+    type: Tweak
+  id: 2446
+  time: '2026-06-22T11:36:51.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6070
 Order: 1
