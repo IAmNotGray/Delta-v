@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: verybigman311
-  changes:
-  - message: Saws are now a little more lethal
-    type: Tweak
-  id: 1948
-  time: '2025-12-10T21:59:39.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4886
 - author: Eternally-Confused
   changes:
   - message: The Crime Assist PDA app has been updated to match Space Law.
@@ -4398,4 +4391,15 @@
   id: 2448
   time: '2026-06-22T18:05:48.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6035
+- author: ShepardToTheStars
+  changes:
+  - message: Nuke and Cosmic Cult finale music and SFX will always play, even if you're
+      jetpacking around the station.
+    type: Tweak
+  - message: If a cultist converts a borg off-station, it will properly announce that
+      it is happening.
+    type: Fix
+  id: 2449
+  time: '2026-06-23T10:40:17.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5918
 Order: 1
