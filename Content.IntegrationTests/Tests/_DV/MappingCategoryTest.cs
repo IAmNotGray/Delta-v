@@ -11,22 +11,29 @@ using Robust.Shared.Serialization.Markdown.Value;
 using Robust.Shared.Utility;
 using System.Collections.Generic;
 using System.Linq;
+using Content.IntegrationTests.Fixtures;
 
 namespace Content.IntegrationTests.Tests._DV;
 
 /// <summary>
 /// Checks that every mapped entity with <see cref="MappingCategoriesComponent"/> is allowed to be mapped.
 /// </summary>
-public sealed class MappingCategoryTest
+public sealed class MappingCategoryTest : GameTest
 {
     private const string MapsPath = "/Maps";
     // dev map doesn't matter and don't want to change it
     private readonly List<string> _ignoredMapsPath = ["/Maps/Test/", "/Maps/Shuttles/AdminSpawn"];
 
+    [TearDown]
+    public async Task Teardown()
+    {
+        await Pair.CleanReturnAsync();
+    }
+
     [Test]
     public async Task NonGameMapsLoadableTest()
     {
-        await using var pair = await PoolManager.GetServerClient();
+        var pair = Pair;
         var server = pair.Server;
         var entMan = server.ResolveDependency<IEntityManager>();
         var resMan = server.ResolveDependency<IResourceManager>();
@@ -87,8 +94,6 @@ public sealed class MappingCategoryTest
         });
 
         await server.WaitRunTicks(1);
-
-        await pair.CleanReturnAsync();
     }
 
     // me when engine doesnt have this
