@@ -1,3 +1,4 @@
+#nullable enable
 using System.Collections.Generic;
 using System.Reflection;
 using Content.IntegrationTests.Fixtures;
@@ -585,8 +586,9 @@ public sealed partial class TraitSystemTest : GameTest
             var method = typeof(TraitSystem).GetMethod("ValidateTraits",
                 BindingFlags.NonPublic | BindingFlags.Instance);
 
-            var validTraits = (HashSet<ProtoId<TraitPrototype>>)method?.Invoke(traitSys,
-                new object[] { player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>() });
+            var validTraits = (HashSet<ProtoId<TraitPrototype>>)(method?.Invoke(traitSys,
+                [player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>()]) ?? new HashSet<ProtoId<TraitPrototype>>());
+            Assert.That(validTraits, Is.Not.Null, "Should not be null");
 
             Assert.Multiple(() =>
             {
@@ -625,8 +627,8 @@ public sealed partial class TraitSystemTest : GameTest
             var method = typeof(TraitSystem).GetMethod("ValidateTraits",
                 BindingFlags.NonPublic | BindingFlags.Instance);
 
-            var validTraits = (HashSet<ProtoId<TraitPrototype>>)method?.Invoke(traitSys,
-                new object[] { player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>()});
+            var validTraits = (HashSet<ProtoId<TraitPrototype>>)(method?.Invoke(traitSys,
+                [player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>()])??new HashSet<ProtoId<TraitPrototype>>());
 
             Assert.That(validTraits?.Count, Is.EqualTo(2), "Should respect category maxTraits limit");
 
@@ -658,8 +660,8 @@ public sealed partial class TraitSystemTest : GameTest
             var method = typeof(TraitSystem).GetMethod("ValidateTraits",
                 BindingFlags.NonPublic | BindingFlags.Instance);
 
-            var validTraits = (HashSet<ProtoId<TraitPrototype>>)method?.Invoke(traitSys,
-                new object[] { player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>() });
+            var validTraits = (HashSet<ProtoId<TraitPrototype>>)(method?.Invoke(traitSys,
+                [player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>()])??new HashSet<ProtoId<TraitPrototype>>());
 
             Assert.That(validTraits?.Count, Is.EqualTo(2), "Should respect category maxPoints limit");
 
@@ -690,8 +692,8 @@ public sealed partial class TraitSystemTest : GameTest
             var method = typeof(TraitSystem).GetMethod("ValidateTraits",
                 BindingFlags.NonPublic | BindingFlags.Instance);
 
-            var validTraits = (HashSet<ProtoId<TraitPrototype>>)method?.Invoke(traitSys,
-                new object[] { player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>() });
+            var validTraits = (HashSet<ProtoId<TraitPrototype>>)(method?.Invoke(traitSys,
+                [player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>()])??new HashSet<ProtoId<TraitPrototype>>());
 
             Assert.That(validTraits?.Contains("TestTraitHasComp"), Is.True, "Trait with met condition should be valid");
 
@@ -722,8 +724,8 @@ public sealed partial class TraitSystemTest : GameTest
             var method = typeof(TraitSystem).GetMethod("ValidateTraits",
                 BindingFlags.NonPublic | BindingFlags.Instance);
 
-            var validTraits = (HashSet<ProtoId<TraitPrototype>>)method?.Invoke(traitSys,
-                new object[] { player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>() });
+            var validTraits = (HashSet<ProtoId<TraitPrototype>>)(method?.Invoke(traitSys,
+                [player, selectedTraits, null, null, null, null, new Dictionary<ProtoId<TraitPrototype>, List<string>>()])??new HashSet<ProtoId<TraitPrototype>>());
 
             Assert.That(validTraits?.Contains("TestTraitHasComp"),
                 Is.False,
