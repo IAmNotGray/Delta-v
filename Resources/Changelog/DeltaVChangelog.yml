@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: AeraAuling
-  changes:
-  - message: Adds purifying salt to allow for healing of metaphysical damage
-    type: Add
-  id: 1951
-  time: '2025-12-11T22:39:23.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4682
 - author: Halo3moth
   changes:
   - message: Lawyers now spawn with a forensic scanner.
@@ -4403,4 +4396,13 @@
   id: 2451
   time: '2026-06-23T15:27:08.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6092
+- author: RoboBozu, SalDragonsNOA
+  changes:
+  - message: NanoTrasen corporate has decided to celebrate the increased productivity
+      of the Delta Sector with ice cream! Recipes for various frozen treats have been
+      added to Bartenders' handbooks to facilitate the celebration!
+    type: Add
+  id: 2452
+  time: '2026-06-20T15:02:14.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5943
 Order: 1
