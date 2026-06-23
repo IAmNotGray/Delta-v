@@ -39,7 +39,7 @@ public sealed partial class ThavenMoodsSystem : SharedThavenMoodSystem
     private const string NoAndDataset = "ThavenMoodsNoAnd";
     private const string WildcardDataset = "ThavenMoodsWildcard";
     private const string ActionViewMoods = "ActionViewMoods";
-    private static readonly ProtoId<DatasetPrototype> RandomThavenMoodDataset = "RandomThavenMoodDataset";
+    private static readonly ProtoId<WeightedRandomPrototype> RandomThavenMoodDataset = "RandomThavenMoodDataset";
 
     public override void Initialize()
     {
