@@ -30,11 +30,12 @@ namespace Content.Server._Goobstation.Religion;
 public sealed class WeakToHolySystem : EntitySystem
 {
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
-    // [Dependency] private readonly InventorySystem _inventorySystem = default!; // Delta V - Never used
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly GoobBibleSystem _goobBible = default!;
-    // [Dependency] private readonly BodySystem _body = default!; // Delta V - Never used
     [Dependency] private readonly UseDelaySystem _useDelay = default!;
+
+    private static readonly ProtoId<DamageContainerPrototype> DamageContainerId = "BiologicalMetaphysical"; // Delta V - Metaphysical Biological for Holy Damage
+
     public override void Initialize()
     {
         base.Initialize();
@@ -52,12 +53,7 @@ public sealed class WeakToHolySystem : EntitySystem
             return;
 
         var dmg = _damageableSystem.GetPositiveDamage((ent, damageable));
-        if (dmg.DamageDict.ContainsKey("Holy"))
-        {
-            ent.Comp.HadHolyWeakness = true;
-            return;
-        }
-        dmg.DamageDict["Holy"] = 0;
+        _damageableSystem.ChangeDamageContainer((ent, damageable), DamageContainerId); // Delta V - Changes the DamageContainer of the Entity from (presumably) Biological to BiologicalMetaphysical.
     }
 
     private void OnRemove(Entity<WeakToHolyComponent> ent, ref ComponentRemove args)
