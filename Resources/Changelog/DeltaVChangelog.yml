@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Eternally-Confused
-  changes:
-  - message: The Crime Assist PDA app has been updated to match Space Law.
-    type: Fix
-  id: 1949
-  time: '2025-12-11T14:58:57.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4937
 - author: SirWarock
   changes:
   - message: Truncheons can now be selected instead of a firearm in Security Loadouts!
@@ -4402,4 +4395,12 @@
   id: 2449
   time: '2026-06-23T10:40:17.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5918
+- author: wesk
+  changes:
+  - message: Fixed required traits from not being detected by the Trait System, causing
+      a false positive of traits not being met, even if you have them equipped already.
+    type: Fix
+  id: 2450
+  time: '2026-06-23T12:49:52.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6097
 Order: 1
