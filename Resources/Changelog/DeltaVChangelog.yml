@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: SirWarock
-  changes:
-  - message: Truncheons can now be selected instead of a firearm in Security Loadouts!
-    type: Tweak
-  id: 1950
-  time: '2025-12-11T22:05:22.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4838
 - author: AeraAuling
   changes:
   - message: Adds purifying salt to allow for healing of metaphysical damage
@@ -4403,4 +4396,11 @@
   id: 2450
   time: '2026-06-23T12:49:52.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6097
+- author: rebe83
+  changes:
+  - message: Broken glass bottles can cut and slice things. Yay?
+    type: Tweak
+  id: 2451
+  time: '2026-06-23T15:27:08.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6092
 Order: 1
