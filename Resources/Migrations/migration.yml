@@ -767,7 +767,7 @@ RightLegSkeleton: null
 OrganRatStomach: null
 TorsoHuman: null
 BoxBuildABuddyHuman: null
-LeftLegSpider: null
+LeftLegSpider: OrganArachnidLegLeft
 
 # 2026-01-14
 HeadHuman: OrganHumanHead

@@ -81,7 +81,6 @@ public sealed class MappingCategoryTest : GameTest
 
                     foreach (var uid in maps)
                     {
-                        maps.Remove(uid);
                         entMan.DeleteEntity(uid);
                     }
                 }
