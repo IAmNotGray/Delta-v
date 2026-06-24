@@ -6,7 +6,7 @@
   components:
   - type: ApcPowerReceiver
     powerLoad: 500
-  # Delta V - Begin Changing PowerState here for Tests. IdlePowerDraw can't be less than APCPowerReceiver.
+  # Delta V - Begin Set idlePowerDraw to initial Powerload
   - type: PowerState
     idlePowerDraw: 500
     workingPowerDraw: 1000
@@ -55,7 +55,7 @@
   components:
   - type: ApcPowerReceiver
     powerLoad: 500
-  # Delta V - Begin Changing PowerState here for Tests. IdlePowerDraw can't be less than APCPowerReceiver.
+  # Delta V - Begin Set idlePowerDraw to initial Powerload
   - type: PowerState
     idlePowerDraw: 500
     workingPowerDraw: 1000

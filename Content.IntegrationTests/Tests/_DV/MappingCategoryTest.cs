@@ -78,11 +78,12 @@ public sealed class MappingCategoryTest : GameTest
                         var ent = (uid, comp);
                         Assert.That(catSys.CanMap(ent, allowed), $"Entity {entMan.ToPrettyString(uid)} cannot be mapped on {rootedPath}");
                     }
-                    //
-                    // foreach (var uid in maps)
-                    // {
-                    //     entMan.DeleteEntity(uid);
-                    // }
+
+                    foreach (var uid in maps)
+                    {
+                        maps.Remove(uid);
+                        entMan.DeleteEntity(uid);
+                    }
                 }
             });
         });

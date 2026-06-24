@@ -350,7 +350,7 @@ public abstract class SharedFishingSystem : EntitySystem
             var targetCoords = Xform.GetMapCoordinates(Transform(attachedEnt));
             var playerCoords = Xform.GetMapCoordinates(Transform(player));
             // var rand = new System.Random((int) Timing.CurTick.Value); // evil random prediction hack // Delta V - No idea, commenting out for now
-            var rand = SharedRandomExtensions.PredictedRandom(Timing, GetNetEntity(ent));
+            var rand = SharedRandomExtensions.PredictedRandom(Timing, GetNetEntity(ent)); // Delta V - Replaced with SharedRandomExtensions
 
             // Calculate throw direction
             var direction = (playerCoords.Position - targetCoords.Position) * rand.NextFloat(0.2f, 0.85f);

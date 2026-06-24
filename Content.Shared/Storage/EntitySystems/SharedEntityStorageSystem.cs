@@ -415,11 +415,6 @@ public abstract class SharedEntityStorageSystem : EntitySystem
 
     public bool CanOpen(EntityUid user, EntityUid target, bool silent = false, EntityStorageComponent? component = null)
     {
-        // Delta V - Begin premature stop in case we try to open a person or entity
-        if (!HasComp<EntityStorageComponent>(target))
-            return false;
-        // Delta V - End premature stop in case we try to open a person or entity
-
         if (!Resolve(target, ref component))
             return false;
 
