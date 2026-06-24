@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: EmberAstra
-  changes:
-  - message: forensic pads used to scan gloves now also show the fiber's ID.
-    type: Tweak
-  id: 1954
-  time: '2025-12-12T19:21:56.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4932
 - author: TheShuEd, Spielern
   changes:
   - message: The Christmas Anomaly is back in rotation!
@@ -4411,4 +4404,11 @@
   id: 2454
   time: '2026-06-23T22:34:44.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6078
+- author: Stxcking
+  changes:
+  - message: AAC tablet buttons have colors again!
+    type: Tweak
+  id: 2455
+  time: '2026-06-24T13:08:20.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5567
 Order: 1
