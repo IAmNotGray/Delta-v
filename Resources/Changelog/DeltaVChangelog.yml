@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: TheShuEd, Spielern
-  changes:
-  - message: The Christmas Anomaly is back in rotation!
-    type: Add
-  id: 1955
-  time: '2025-12-12T22:23:47.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4957
 - author: AirlineFood001
   changes:
   - message: Adjusted the armor values on the Advanced Plate Carrier to make it all
@@ -4411,4 +4404,12 @@
   id: 2455
   time: '2026-06-24T13:08:20.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5567
+- author: ShepardToTheStars
+  changes:
+  - message: Stealth borg modules are now working as intended and no longer provide
+      infinite duration cloaking.
+    type: Fix
+  id: 2456
+  time: '2026-06-24T13:15:02.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6085
 Order: 1
