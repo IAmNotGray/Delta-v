@@ -24,12 +24,6 @@ public sealed class MappingCategoryTest : GameTest
     // dev map doesn't matter and don't want to change it
     private readonly List<string> _ignoredMapsPath = ["/Maps/Test/", "/Maps/Shuttles/AdminSpawn"];
 
-    [TearDown]
-    public async Task Teardown()
-    {
-        await Pair.CleanReturnAsync();
-    }
-
     [Test]
     public async Task NonGameMapsLoadableTest()
     {
@@ -84,11 +78,11 @@ public sealed class MappingCategoryTest : GameTest
                         var ent = (uid, comp);
                         Assert.That(catSys.CanMap(ent, allowed), $"Entity {entMan.ToPrettyString(uid)} cannot be mapped on {rootedPath}");
                     }
-
-                    foreach (var uid in maps)
-                    {
-                        entMan.DeleteEntity(uid);
-                    }
+                    //
+                    // foreach (var uid in maps)
+                    // {
+                    //     entMan.DeleteEntity(uid);
+                    // }
                 }
             });
         });
