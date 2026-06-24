@@ -22,7 +22,8 @@ public sealed partial class PowerCellSystem
         {
             _battery.RefreshChargeRate(existingBattery.AsNullable());
 
-            if (ent.Comp.PauseRecharging) _battery.TrySetChargeCooldown(existingBattery.Owner);
+            if (ent.Comp != null && ent.Comp.PauseRecharging)
+                _battery.TrySetChargeCooldown(existingBattery.Owner);
         }
         // END DeltaV
     }
