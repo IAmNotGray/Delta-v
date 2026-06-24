@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: AirlineFood001
-  changes:
-  - message: Adjusted the armor values on the Advanced Plate Carrier to make it all
-      around stronger.
-    type: Tweak
-  id: 1956
-  time: '2025-12-12T22:40:34.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4942
 - author: Velcroboy
   changes:
   - message: Reconfigurated the TEG tentacles
@@ -4412,4 +4404,12 @@
   id: 2456
   time: '2026-06-24T13:15:02.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6085
+- author: ShepardToTheStars
+  changes:
+  - message: You can now change common radio channel colors to the colors of your
+      choice in the Radio tab in the Options menu!
+    type: Add
+  id: 2457
+  time: '2026-06-24T22:02:59.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6101
 Order: 1
