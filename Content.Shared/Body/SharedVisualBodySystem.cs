@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Numerics;
+using Content.Shared._DV.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid;
 using Content.Shared.Sprite;
@@ -145,7 +146,13 @@ public abstract partial class SharedVisualBodySystem : EntitySystem
         ent.Comp.Profile = data;
 
         if (ent.Comp.Layer.Equals(HumanoidVisualLayers.Eyes))
+        {
+            // Delta V - Begin Add AppearanceLoaded Event
+            var appearanceLoaded = new AppearanceLoadedEvent(ent.Comp.Profile.EyeColor);
+            RaiseLocalEvent(args.Body.Owner, ref appearanceLoaded);
+            // Delta V - End
             SetOrganColor(ent, ent.Comp.Profile.EyeColor);
+        }
         else
             SetOrganColor(ent, ent.Comp.Profile.SkinColor);
 

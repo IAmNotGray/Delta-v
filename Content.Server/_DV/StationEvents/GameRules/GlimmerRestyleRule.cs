@@ -73,7 +73,7 @@ public sealed class GlimmerRestyleRule : StationEventSystem<GlimmerRestyleRuleCo
             return false;
 
         if (_random.Prob(noMarkingsChance))
-            return false; //Do not show the popup if you go from no markings to no markings.
+            return _markingManager.MarkingsByLayer(visualLayer).Count > 0; //Do not show the popup if you go from no markings to no markings.
 
         var newMarking = _random.Pick(availableMarkings.Values.ToList()).AsMarking();
         newMarking.WithColor(newMarkingColor);
