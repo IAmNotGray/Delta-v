@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Velcroboy
-  changes:
-  - message: Reconfigurated the TEG tentacles
-    type: Tweak
-  id: 1957
-  time: '2025-12-13T19:18:53.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4965
 - author: kotobdev
   changes:
   - message: The Redshirt trait has been added, which causes you to immediately die
@@ -4412,4 +4405,11 @@
   id: 2457
   time: '2026-06-24T22:02:59.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6101
+- author: ManuDemoen
+  changes:
+  - message: Fixed certain entities from not metabolizing alcohol
+    type: Fix
+  id: 2458
+  time: '2026-06-25T02:28:27.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6104
 Order: 1
