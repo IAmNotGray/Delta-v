@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: kotobdev
-  changes:
-  - message: The Redshirt trait has been added, which causes you to immediately die
-      instead of going crit.
-    type: Add
-  id: 1958
-  time: '2025-12-16T01:34:03.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4974
 - author: Stxcking
   changes:
   - message: Courier, Boxer, Gladiator, and Prisoner have the option to choose glasses
@@ -4412,4 +4404,12 @@
   id: 2458
   time: '2026-06-25T02:28:27.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6104
+- author: Tmanzxd
+  changes:
+  - message: Removed the Surgeon time requirement for Chief Medical Officer, since
+      surgery is once again a week away.
+    type: Remove
+  id: 2459
+  time: '2026-06-25T13:10:38.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6112
 Order: 1
