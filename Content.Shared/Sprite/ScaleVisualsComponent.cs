@@ -27,7 +27,7 @@ public sealed partial class ScaleVisualsComponent : Component
 
     // Delta V Addition
     /// <summary>
-    /// Original Species Scale which each has it as a base
+    /// Base Scale of the Species, which we use to set a new height relative to this.
     /// </summary>
     [DataField, AutoNetworkedField]
     [ViewVariables]
