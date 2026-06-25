@@ -1,14 +1,4 @@
 ﻿Entries:
-- author: Stxcking
-  changes:
-  - message: Corpsman's inventory on spawn has been cleaned up. Most medical gear
-      has been moved to the corpsman. locker.
-    type: Tweak
-  - message: Corpsman uniforms are now available in the SecDrobe.
-    type: Tweak
-  id: 1962
-  time: '2025-12-16T13:24:57.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4979
 - author: marigauge
   changes:
   - message: IPCs now leave behind steel fibers when touching stuff.
@@ -4410,4 +4400,16 @@
   id: 2462
   time: '2026-06-25T15:37:34.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6099
+- author: wesk
+  changes:
+  - message: Synthetics can now use borg emotes!
+    type: Add
+  - message: Synthetics now has an option of being susceptible to Ion Storms.
+    type: Add
+  - message: Synthetics can now be purely mechanical! (cosmetical function only; you
+      spark when damaged.)
+    type: Add
+  id: 2463
+  time: '2026-06-25T16:17:27.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6090
 Order: 1
