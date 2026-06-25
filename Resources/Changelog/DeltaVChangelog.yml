@@ -1,13 +1,6 @@
 ﻿Entries:
 - author: marigauge
   changes:
-  - message: IPCs now leave behind steel fibers when touching stuff.
-    type: Tweak
-  id: 1963
-  time: '2025-12-16T13:41:33.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4968
-- author: marigauge
-  changes:
   - message: Cybernetic eyes are no longer edible.
     type: Fix
   id: 1964
@@ -4412,4 +4405,16 @@
   id: 2463
   time: '2026-06-25T16:17:27.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6090
+- author: sowelipililimute
+  changes:
+  - message: Suit sensors now report their location, even while in space
+    type: Add
+  - message: Crew monitoring computers now have a radar UI when you're off-station
+    type: Add
+  - message: Due to suit sensors now working in space, salvage no longer needs deathrattles
+      for recovery, hence, they have been removed.
+    type: Remove
+  id: 2464
+  time: '2026-06-25T17:59:50.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6054
 Order: 1
