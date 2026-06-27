@@ -45,7 +45,7 @@
     graph: WeaponTurretSyndicateDisposable
     node: disposableTurret
   - type: Repairable
-    qualities: # Monolith - Converted to Array
+    qualityNeeded: # Monolith - Converted to Array
     - Anchoring
     doAfterDelay: 3
   - type: TriggerOnEmptyGunshot

@@ -45,7 +45,7 @@
   - type: ExaminableDamage
     messages: WindowMessages
   - type: Repairable
-    qualities: # Monolith - Nanite Applicators
+    qualityNeeded: # Monolith - Nanite Applicators
     - Welding
     - Applicating
   - type: RCDDeconstructable
@@ -174,7 +174,7 @@
         layer:
         - GlassLayer
   - type: Repairable
-    qualities: # Monolith - Added qualities to override base
+    qualityNeeded: # Monolith - Added qualities to override base
     - Welding
     - Applicating
   - type: Damageable

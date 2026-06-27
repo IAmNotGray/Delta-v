@@ -31,7 +31,7 @@
     messages: BaseStructureMessages
   # END DeltaV
   - type: Repairable # Monolith - Nanite Applicator
-    qualities:
+    qualityNeeded:
     - Applicating
 
 - type: entity
