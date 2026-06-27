@@ -45,6 +45,9 @@
   - type: ExaminableDamage
     messages: WindowMessages
   - type: Repairable
+    qualities: # Monolith - Nanite Applicators
+    - Welding
+    - Applicating
   - type: RCDDeconstructable
     cost: 6
     delay: 4
