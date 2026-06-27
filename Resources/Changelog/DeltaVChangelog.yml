@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: Brains are no longer edible.
-    type: Fix
-  id: 1965
-  time: '2025-12-16T15:23:50.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4992
 - author: marigauge
   changes:
   - message: Ifrit requires 4 hours of Epistemics now.
@@ -4417,4 +4410,12 @@
   id: 2465
   time: '2026-06-26T17:23:37.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6125
+- author: Vapetastic-Gaming
+  changes:
+  - message: Harpy movement speed now has the 10% buff, as this was a bug and wasnt
+      present. Moths and Harpies now have equal Low-Gravity speed.
+    type: Tweak
+  id: 2466
+  time: '2026-06-27T20:18:07.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6131
 Order: 1
