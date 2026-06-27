@@ -171,6 +171,9 @@
         layer:
         - GlassLayer
   - type: Repairable
+    qualities: # Monolith - Added qualities to override base
+    - Welding
+    - Applicating
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Glass

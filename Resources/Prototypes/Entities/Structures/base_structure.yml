@@ -30,6 +30,9 @@
   - type: ExaminableDamage
     messages: BaseStructureMessages
   # END DeltaV
+  - type: Repairable # Monolith - Nanite Applicator
+    qualities:
+    - Applicating
 
 - type: entity
   # This means that it's not anchored on spawn.

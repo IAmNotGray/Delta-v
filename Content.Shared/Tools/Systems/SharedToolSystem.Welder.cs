@@ -134,6 +134,19 @@ public abstract partial class SharedToolSystem
             && _whitelist.IsWhitelistPass(tank.FuelWhitelist, entity.Owner) //imp
             && SolutionContainerSystem.TryGetSolution(entity.Owner, entity.Comp.FuelSolutionName, out var solutionComp, out var welderSolution))
         {
+            // BEGIN Monolith - Nanite Applicators
+            foreach (var reagent in targetSolution.Contents)
+            {
+                if (reagent.Reagent.Prototype != entity.Comp.FuelReagent.Id)
+                {
+                    _popup.PopupClient(
+                        Loc.GetString("welder-component-incompatible-fuel", ("owner", args.Target)), entity, args.User);
+
+                    return;
+                }
+            }
+            // END Monolith
+
             var trans = FixedPoint2.Min(welderSolution.AvailableVolume, targetSolution.Volume);
             if (trans > 0)
             {
