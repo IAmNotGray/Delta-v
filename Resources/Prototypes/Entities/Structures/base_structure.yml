@@ -26,11 +26,11 @@
   - type: Tag
     tags:
       - Structure
-  # BEGIN DeltaV
-  - type: ExaminableDamage
+  
+  - type: ExaminableDamage # DeltaV
     messages: BaseStructureMessages
-  # END DeltaV
   - type: Repairable # Monolith - Nanite Applicator
+    doAfterDelay: 3
     qualityNeeded:
     - Applicating
 

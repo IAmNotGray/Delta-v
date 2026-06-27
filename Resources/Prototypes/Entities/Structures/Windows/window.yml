@@ -45,6 +45,7 @@
   - type: ExaminableDamage
     messages: WindowMessages
   - type: Repairable
+    doAfterDelay: 2 # DeltaV
     qualityNeeded: # Monolith - Nanite Applicators
     - Welding
     - Applicating
@@ -174,6 +175,7 @@
         layer:
         - GlassLayer
   - type: Repairable
+    doAfterDelay: 2 # DeltaV
     qualityNeeded: # Monolith - Added qualities to override base
     - Welding
     - Applicating
