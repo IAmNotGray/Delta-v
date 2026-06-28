@@ -73,8 +73,11 @@ public sealed class GlimmerRestyleRule : StationEventSystem<GlimmerRestyleRuleCo
         if (availableMarkings.Count == 0)
             return false;
 
+        var markings = new Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>>();
+        var markingsToApply = new Dictionary<HumanoidVisualLayers, List<Marking>>();
         var layerHashSet = new HashSet<HumanoidVisualLayers>();
         layerHashSet.Add(visualLayer);
+        _visualBodySystem.ApplyMarkings(ent.Owner, markings);
         _visualBodySystem.TryGatherMarkingsData(ent.Owner, layerHashSet, out _, out _, out var applied);
         if (_random.Prob(noMarkingsChance))
             return applied is not null && applied.Count > 0; //Do not show the popup if you go from no markings to no markings.
@@ -82,9 +85,6 @@ public sealed class GlimmerRestyleRule : StationEventSystem<GlimmerRestyleRuleCo
         var newMarking = _random.Pick(availableMarkings.Values.ToList()).AsMarking();
         newMarking.WithColor(newMarkingColor);
 
-        // TODO: God has seen this and feels the same pain as I. There must be a better way.
-        var markings = new Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>>();
-        var markingsToApply = new Dictionary<HumanoidVisualLayers, List<Marking>>();
         markingsToApply.Add(visualLayer, new List<Marking> { newMarking });
         ProtoId<OrganCategoryPrototype> category = "Head";
         markings.Add(category, markingsToApply);
