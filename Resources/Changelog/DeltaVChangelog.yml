@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: AveriV2
-  changes:
-  - message: Festive lights are now longer and thus fit on neck and outer clothing
-      slots!
-    type: Tweak
-  id: 1967
-  time: '2025-12-16T19:15:09.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4972
 - author: kotobdev
   changes:
   - message: Arm amputee traits have been added. They're not very *hand*y.
@@ -4418,4 +4410,11 @@
   id: 2467
   time: '2026-06-28T00:38:42.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6134
+- author: Proxysseia
+  changes:
+  - message: Reduced Holoparasite price to 8 (from 14), and 4 on discount (was 8)
+    type: Tweak
+  id: 2468
+  time: '2026-06-28T12:18:57.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6115
 Order: 1
