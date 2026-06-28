@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Velcroboy
-  changes:
-  - message: Added Christmas Kobolds, Defenders of The Yule Tree, to combat any grinches
-      that decide to harm the trees.
-    type: Add
-  id: 1971
-  time: '2025-12-18T19:33:03.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4940
 - author: verybigman311
   changes:
   - message: All Syndieborg modules now have custom sprites and action icons.
@@ -4416,4 +4408,11 @@
   id: 2471
   time: '2026-06-28T16:42:35.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6114
+- author: sowelipililimute
+  changes:
+  - message: Ion law generation has been fully reworked.
+    type: Add
+  id: 2472
+  time: '2026-06-28T19:15:35.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6121
 Order: 1
