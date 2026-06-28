@@ -50,8 +50,9 @@ public sealed class GlimmerRestyleRule : StationEventSystem<GlimmerRestyleRuleCo
 
         foreach (var (entity, humanoid) in potentialTargets)
         {
-            if(HasComp<SSDIndicatorComponent>(entity))
-                continue;
+            // Due to this it never fired, since everyone has an SSDIndicatorComponent
+            // if(HasComp<SSDIndicatorComponent>(entity))
+            //     continue;
 
             if (targetsToRestyle-- <= 0)
                 break;
@@ -72,8 +73,11 @@ public sealed class GlimmerRestyleRule : StationEventSystem<GlimmerRestyleRuleCo
         if (availableMarkings.Count == 0)
             return false;
 
+        var layerHashSet = new HashSet<HumanoidVisualLayers>();
+        layerHashSet.Add(visualLayer);
+        _visualBodySystem.TryGatherMarkingsData(ent.Owner, layerHashSet, out _, out _, out var applied);
         if (_random.Prob(noMarkingsChance))
-            return _markingManager.MarkingsByLayer(visualLayer).Count > 0; //Do not show the popup if you go from no markings to no markings.
+            return applied is not null && applied.Count > 0; //Do not show the popup if you go from no markings to no markings.
 
         var newMarking = _random.Pick(availableMarkings.Values.ToList()).AsMarking();
         newMarking.WithColor(newMarkingColor);
