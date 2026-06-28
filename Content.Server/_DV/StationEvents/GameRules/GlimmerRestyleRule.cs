@@ -76,17 +76,24 @@ public sealed class GlimmerRestyleRule : StationEventSystem<GlimmerRestyleRuleCo
         var markings = new Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>>();
         var markingsToApply = new Dictionary<HumanoidVisualLayers, List<Marking>>();
         var layerHashSet = new HashSet<HumanoidVisualLayers>();
-        layerHashSet.Add(visualLayer);
-        _visualBodySystem.ApplyMarkings(ent.Owner, markings);
-        _visualBodySystem.TryGatherMarkingsData(ent.Owner, layerHashSet, out _, out _, out var applied);
-        if (_random.Prob(noMarkingsChance))
-            return applied is not null && applied.Count > 0; //Do not show the popup if you go from no markings to no markings.
+        ProtoId<OrganCategoryPrototype> category = "Head";
 
-        var newMarking = _random.Pick(availableMarkings.Values.ToList()).AsMarking();
-        newMarking.WithColor(newMarkingColor);
+        layerHashSet.Add(visualLayer);
+        _visualBodySystem.TryGatherMarkingsData(ent.Owner, layerHashSet, out _, out _, out var prevApplied);
+        markings.Add(category, markingsToApply);
+        markingsToApply.Add(visualLayer, new List<Marking>() );
+        _visualBodySystem.ApplyMarkings(ent.Owner, markings);
+
+        if (_random.Prob(noMarkingsChance))
+            return prevApplied is not null && prevApplied[category.ToString()].Keys.Contains(visualLayer)
+                                           && prevApplied[category.ToString()][visualLayer].Count > 0; //Do not show the popup if you go from no markings to no markings.
+
+        markings.Clear();
+        markingsToApply.Clear();
+
+        var newMarking = _random.Pick(availableMarkings.Values.ToList()).AsMarking().WithColor(newMarkingColor);
 
         markingsToApply.Add(visualLayer, new List<Marking> { newMarking });
-        ProtoId<OrganCategoryPrototype> category = "Head";
         markings.Add(category, markingsToApply);
 
         _visualBodySystem.ApplyMarkings(ent.Owner, markings);
