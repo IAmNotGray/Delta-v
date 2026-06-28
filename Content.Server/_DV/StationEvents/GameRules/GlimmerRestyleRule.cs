@@ -70,33 +70,24 @@ public sealed class GlimmerRestyleRule : StationEventSystem<GlimmerRestyleRuleCo
         var newMarkingColor = new Color(_random.NextFloat(), _random.NextFloat(), _random.NextFloat());
         var availableMarkings =
             _markingManager.MarkingsByLayerAndGroupAndSex(visualLayer, ent.Comp.Species.Id, ent.Comp.Sex);
+
         if (availableMarkings.Count == 0)
             return false;
 
+        var newMarking = _random.Pick(availableMarkings.Values.ToList()).AsMarking().WithColor(newMarkingColor);
         var markings = new Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>>();
         var markingsToApply = new Dictionary<HumanoidVisualLayers, List<Marking>>();
-        var layerHashSet = new HashSet<HumanoidVisualLayers>();
+        var visualLayerSet = new HashSet<HumanoidVisualLayers>(){ visualLayer };
         ProtoId<OrganCategoryPrototype> category = "Head";
 
-        layerHashSet.Add(visualLayer);
-        _visualBodySystem.TryGatherMarkingsData(ent.Owner, layerHashSet, out _, out _, out var prevApplied);
+        _visualBodySystem.TryGatherMarkingsData(ent.Owner, visualLayerSet, out _, out _, out var prevApplied);
+        var hadMarkings = prevApplied is not null && prevApplied[category.ToString()].ContainsKey(visualLayer) &&
+                          prevApplied[category.ToString()][visualLayer].Count > 0;
+        var noMarkings = _random.Prob(noMarkingsChance);
         markings.Add(category, markingsToApply);
-        markingsToApply.Add(visualLayer, new List<Marking>() );
-        _visualBodySystem.ApplyMarkings(ent.Owner, markings);
-
-        if (_random.Prob(noMarkingsChance))
-            return prevApplied is not null && prevApplied[category.ToString()].Keys.Contains(visualLayer)
-                                           && prevApplied[category.ToString()][visualLayer].Count > 0; //Do not show the popup if you go from no markings to no markings.
-
-        markings.Clear();
-        markingsToApply.Clear();
-
-        var newMarking = _random.Pick(availableMarkings.Values.ToList()).AsMarking().WithColor(newMarkingColor);
-
-        markingsToApply.Add(visualLayer, new List<Marking> { newMarking });
-        markings.Add(category, markingsToApply);
+        markingsToApply.Add(visualLayer, noMarkings ? [] : [newMarking]);
 
         _visualBodySystem.ApplyMarkings(ent.Owner, markings);
-        return true;
+        return hadMarkings || !noMarkings;
     }
 }
