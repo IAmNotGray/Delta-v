@@ -3,11 +3,13 @@
   id: ExperimentalNaniteApplicator
   result: NaniteApplicatorExperimental
   materials:
-    Steel: 500
+    Steel: 800
+    Plasma: 200
 
 - type: latheRecipe
   parent: BaseToolRecipe
   id: NaniteApplicatorSyndicate
   result: NaniteApplicatorSyndicate
   materials:
-    Steel: 500
+    Steel: 800
+    Plasma: 200
