@@ -44,6 +44,8 @@
   - type: GuideHelp
     guides:
     - Construction
+  - type: ESSparkOnItemToggle # Add some flare~
+
 
 - type: entity
   name: experimental nanite applicator
