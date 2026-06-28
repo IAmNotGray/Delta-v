@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: verybigman311
-  changes:
-  - message: Musket bayonets can now be used for stabbing.
-    type: Add
-  - message: Pipes will now make a clang when thrown against the floor.
-    type: Add
-  id: 1969
-  time: '2025-12-17T13:51:49.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4852
 - author: ShepardToTheStars
   changes:
   - message: Fixed sharkminnows from taking poison damage when drinking blood.
@@ -4418,4 +4409,11 @@
   id: 2469
   time: '2026-06-28T13:25:56.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6133
+- author: Stxcking
+  changes:
+  - message: Renamed the Hatsune Miku Day Bag to Virtual Performer Costume Bag
+    type: Tweak
+  id: 2470
+  time: '2026-06-28T16:42:02.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5790
 Order: 1
