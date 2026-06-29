@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: verybigman311
-  changes:
-  - message: Metal Pipes now make a cooler sound when you throw them at the floor.
-    type: Tweak
-  id: 1975
-  time: '2025-12-20T00:29:28.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5003
 - author: SirSmith148
   changes:
   - message: Nanotrasen has found scientists inflating their research evaluations.
@@ -4424,4 +4417,11 @@
   id: 2475
   time: '2026-06-29T09:45:57.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6122
+- author: MantasDab360
+  changes:
+  - message: The borgs have a wilhelm scream. Again.
+    type: Add
+  id: 2476
+  time: '2026-06-29T13:27:10.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6126
 Order: 1
