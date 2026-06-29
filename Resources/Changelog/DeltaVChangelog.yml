@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: SirSmith148
-  changes:
-  - message: Nanotrasen has found scientists inflating their research evaluations.
-      These scientists have been reprimanded by the company and re-educated on the
-      proper way to fill out the research logs
-    type: Fix
-  id: 1976
-  time: '2025-12-20T05:13:27.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4995
 - author: IAmNotGray
   changes:
   - message: Epistemics now has their own EVA suit. Try not to loose your arms while
@@ -4424,4 +4415,20 @@
   id: 2476
   time: '2026-06-29T13:27:10.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6126
+- author: portfiend, Stxcking
+  changes:
+  - message: Thirteen colors of lounge chairs can be constructed out of steel and
+      cloth.
+    type: Add
+  - message: Two new pool tiles can be produced at the cutter machine.
+    type: Add
+  - message: Logistics can now order a crate of bulk (6) swim rings, in 11 possible
+      colors!
+    type: Add
+  - message: New pool water tiles for mappers! Watch out, the pool does contain a
+      bit of chlorine!
+    type: Add
+  id: 2477
+  time: '2026-06-29T13:39:23.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6113
 Order: 1
