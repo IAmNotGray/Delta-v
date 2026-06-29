@@ -3809,6 +3809,8 @@
     spawned:
     - id: FoodMeat
       amount: 6
+    - id: FoodMeatBacon # DeltaV #Make Pigs drop bacon as well as meat
+      amount: 6
   - type: Grammar
     attributes:
       gender: epicene
