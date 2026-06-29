@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: The jukebox, ID card computer, and access config lists are now sorted.
-    type: Tweak
-  id: 1973
-  time: '2025-12-19T10:33:53.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4998
 - author: Halo3moth
   changes:
   - message: Cybersun factories are happy to announce the mass production of saboteur
@@ -4414,4 +4407,25 @@
   id: 2473
   time: '2026-06-29T00:54:09.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5830
+- author: Apachito, Killer Tamashi, stickycheZ101
+  changes:
+  - message: The paladin armor now makes you move 30% slower and it's now ginormous.
+    type: Tweak
+  - message: The forged vest now makes you move 10% slower.
+    type: Tweak
+  - message: Fully removed the ability to make the plading tower shield since it was
+      too powerful.
+    type: Tweak
+  - message: added a new crafting station used for mass producing forged gear
+    type: Add
+  - message: Made it so the forged and paladin set can only be made in the anvil.
+    type: Tweak
+  - message: Added Repeater Speedloader.
+    type: Add
+  - message: Fixed incorrect contraband tags (certain items being labeled sec contra
+      when it should be minor contra)
+    type: Fix
+  id: 2474
+  time: '2026-06-29T06:05:24.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5818
 Order: 1
