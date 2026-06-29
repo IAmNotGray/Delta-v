@@ -10,6 +10,7 @@ using Content.Server.Screens.Components;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Systems;
 using Content.Server.Station.Systems;
+using Content.Shared._DV.CCVars; // DeltaV - round end is an OOC vote
 using Content.Shared.Database;
 using Content.Shared.DeviceNetwork;
 using Content.Shared.GameTicking;
@@ -383,7 +384,12 @@ namespace Content.Server.RoundEnd
             {
                 if (!_shuttle.EmergencyShuttleArrived && ExpectedCountdownEnd is null)
                 {
-                    CallEvacuationVote(); // DeltaV - players vote on ending the round
+                    // Begin DeltaV - players vote on ending the round
+                    if (_cfg.GetCVar(DCCVars.RoundEndIsOOCVote))
+                        CallEvacuationVote();
+                    else
+                        RequestRoundEnd(checkCooldown: false, text: "round-end-system-shuttle-auto-called-announcement");
+                    // End DeltaV
                     _autoCalledBefore = true;
                 }
 
