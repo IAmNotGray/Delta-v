@@ -1,15 +1,4 @@
 ﻿Entries:
-- author: Halo3moth
-  changes:
-  - message: Cybersun factories are happy to announce the mass production of saboteur
-      cyborg units. Find them in your uplink!
-    type: Add
-  - message: Saboteur cyborg now actually comes with a cloaking module. Yes, you heard
-      that right.
-    type: Tweak
-  id: 1974
-  time: '2025-12-19T23:13:31.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4919
 - author: verybigman311
   changes:
   - message: Metal Pipes now make a cooler sound when you throw them at the floor.
@@ -4428,4 +4417,11 @@
   id: 2474
   time: '2026-06-29T06:05:24.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5818
+- author: ManuDemoen
+  changes:
+  - message: Pigs now give bacon when butchered!
+    type: Tweak
+  id: 2475
+  time: '2026-06-29T09:45:57.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6122
 Order: 1
