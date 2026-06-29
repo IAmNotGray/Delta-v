@@ -1,28 +1,4 @@
 ﻿Entries:
-- author: verybigman311
-  changes:
-  - message: Metal Pipes now make a cooler sound when you throw them at the floor.
-    type: Tweak
-  id: 1975
-  time: '2025-12-20T00:29:28.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5003
-- author: SirSmith148
-  changes:
-  - message: Nanotrasen has found scientists inflating their research evaluations.
-      These scientists have been reprimanded by the company and re-educated on the
-      proper way to fill out the research logs
-    type: Fix
-  id: 1976
-  time: '2025-12-20T05:13:27.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4995
-- author: IAmNotGray
-  changes:
-  - message: Epistemics now has their own EVA suit. Try not to loose your arms while
-      wearing it.
-    type: Add
-  id: 1977
-  time: '2025-12-21T00:35:52.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4908
 - author: Velcrobot
   changes:
   - message: 'Division/Chibi/Shoukou/Edge: Adds the Yule Tide'
@@ -4424,4 +4400,38 @@
   id: 2475
   time: '2026-06-29T09:45:57.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6122
+- author: MantasDab360
+  changes:
+  - message: The borgs have a wilhelm scream. Again.
+    type: Add
+  id: 2476
+  time: '2026-06-29T13:27:10.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6126
+- author: portfiend, Stxcking
+  changes:
+  - message: Thirteen colors of lounge chairs can be constructed out of steel and
+      cloth.
+    type: Add
+  - message: Two new pool tiles can be produced at the cutter machine.
+    type: Add
+  - message: Logistics can now order a crate of bulk (6) swim rings, in 11 possible
+      colors!
+    type: Add
+  - message: New pool water tiles for mappers! Watch out, the pool does contain a
+      bit of chlorine!
+    type: Add
+  id: 2477
+  time: '2026-06-29T13:39:23.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6113
+- author: ShepardToTheStars
+  changes:
+  - message: The crew monitor's UI should properly draw the map when changing grids,
+      deselecting tracked people, and switch the long-range view when tracking someone
+      off station.
+    type: Fix
+  - message: Fixed the admin and borg crew monitors.
+    type: Fix
+  id: 2478
+  time: '2026-06-29T14:06:18.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6139
 Order: 1
