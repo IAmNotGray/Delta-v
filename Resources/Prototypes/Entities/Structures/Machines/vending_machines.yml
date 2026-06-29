@@ -56,6 +56,9 @@
       - !type:EjectVendorItems
   - type: Repairable
     doAfterDelay: 8
+    qualityNeeded: # DeltaV - Nanite Applicators
+    - Welding
+    - Applicating
   - type: ActivatableUI
     key: enum.VendingMachineUiKey.Key
   - type: ActivatableUIRequiresPower
