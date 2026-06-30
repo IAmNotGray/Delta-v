@@ -162,8 +162,8 @@
       Welder:
         reagents:
         - ReagentId: WeldingFuel
-          Quantity: 100 # DeltaV - Experimental Welder Nerf
-        maxVol: 100 # DeltaV - Experimental Welder Nerf
+          Quantity: 200 # DeltaV - Experimental Welder Nerf
+        maxVol: 200 # DeltaV - Experimental Welder Nerf
   - type: PointLight
     enabled: false
     radius: 1.5
