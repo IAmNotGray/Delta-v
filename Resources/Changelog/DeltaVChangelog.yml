@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: pootslap
-  changes:
-  - message: Harpies can now quack, squawk, baa and moo!
-    type: Add
-  - message: The caw emote for harpies no longer randomly makes you quack.
-    type: Tweak
-  id: 1984
-  time: '2025-12-27T13:45:25.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5030
 - author: MantasDab360
   changes:
   - message: Warden's magboots are now in hardsuit locker/once in a locker.
@@ -4520,4 +4511,11 @@
   id: 2484
   time: '2026-06-30T15:19:19.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6150
+- author: Coryler
+  changes:
+  - message: Species Guidebooks
+    type: Fix
+  id: 2485
+  time: '2026-06-30T15:20:34.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6165
 Order: 1
