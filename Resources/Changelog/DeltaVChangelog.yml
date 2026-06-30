@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: MilonPL
-  changes:
-  - message: The engineering, CE's and paramed suit helmets will now use the correct
-      sprites for Vulpkanins.
-    type: Fix
-  id: 1986
-  time: '2025-12-28T17:51:01.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5038
 - author: PureBreadBagel
   changes:
   - message: New players rejoice! The guidebooks got some love! Starting with 'Medical
@@ -4518,4 +4510,12 @@
   id: 2486
   time: '2026-06-30T19:15:28.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6159
+- author: ShepardToTheStars
+  changes:
+  - message: The crew monitor will now show the station map again and it has buttons
+      to toggle between the two modes.
+    type: Fix
+  id: 2487
+  time: '2026-06-30T19:25:16.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6170
 Order: 1
