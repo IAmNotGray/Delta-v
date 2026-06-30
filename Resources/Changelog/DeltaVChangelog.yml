@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Dorragon
-  changes:
-  - message: Flesh anomalite no longer get damaged by meat kudzu
-    type: Fix
-  id: 1983
-  time: '2025-12-27T13:41:01.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5009
 - author: pootslap
   changes:
   - message: Harpies can now quack, squawk, baa and moo!
@@ -4516,4 +4509,15 @@
   id: 2483
   time: '2026-06-30T15:02:29.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6145
+- author: sowelipililimute
+  changes:
+  - message: Add hands back to ancestor mobs
+    type: Tweak
+  - message: Carpy has their tools again
+    type: Tweak
+  - message: The Ifrit has their hands again
+    type: Tweak
+  id: 2484
+  time: '2026-06-30T15:19:19.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6150
 Order: 1
