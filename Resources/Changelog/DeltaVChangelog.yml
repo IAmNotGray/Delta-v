@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: MantasDab360
-  changes:
-  - message: Warden's magboots are now in hardsuit locker/once in a locker.
-    type: Fix
-  id: 1985
-  time: '2025-12-27T13:46:10.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5006
 - author: MilonPL
   changes:
   - message: The engineering, CE's and paramed suit helmets will now use the correct
@@ -4518,4 +4511,11 @@
   id: 2485
   time: '2026-06-30T15:20:34.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6165
+- author: JustTNE
+  changes:
+  - message: Removed cyborg "crew icons", reverting behavior to pre-merge.
+    type: Remove
+  id: 2486
+  time: '2026-06-30T19:15:28.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6159
 Order: 1
