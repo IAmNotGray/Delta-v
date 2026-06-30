@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: kotobdev
-  changes:
-  - message: Two new lobby tracks have been added, espial and flying, by Oliver Buckland.
-    type: Add
-  id: 1982
-  time: '2025-12-27T13:28:05.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5018
 - author: Dorragon
   changes:
   - message: Flesh anomalite no longer get damaged by meat kudzu
@@ -4516,4 +4509,11 @@
   id: 2482
   time: '2026-06-30T15:01:50.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6140
+- author: Stxcking
+  changes:
+  - message: Nukie Mouse and Snails can use Vent Crawling!
+    type: Fix
+  id: 2483
+  time: '2026-06-30T15:02:29.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6145
 Order: 1
