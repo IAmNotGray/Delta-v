@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Coryler
-  changes:
-  - message: Crew Monitor cell size is now Medium
-    type: Tweak
-  id: 1980
-  time: '2025-12-26T05:44:52.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5029
 - author: Halo3moth
   changes:
   - message: Nanotrasen arms is proud to present their re envisioning of the adjustant,
@@ -4502,4 +4495,25 @@
   id: 2480
   time: '2026-06-29T19:59:36.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6147
+- author: Coryler
+  changes:
+  - message: Thaven Eye wear Distortion
+    type: Fix
+  - message: Moth now able to eat prepacked sustenance bar again
+    type: Fix
+  - message: Vulp are no sloppy drinkers
+    type: Fix
+  - message: I... gave reptiles hair again
+    type: Fix
+  - message: hidden species be hidden
+    type: Fix
+  - message: Add back Ovinia Neckfluff
+    type: Fix
+  - message: Add back Slime Person Eyes coloring
+    type: Fix
+  - message: missing changelog from upstream
+    type: Add
+  id: 2481
+  time: '2026-06-30T07:49:01.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6148
 Order: 1
