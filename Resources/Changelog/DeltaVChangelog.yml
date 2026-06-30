@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Halo3moth
-  changes:
-  - message: Nanotrasen arms is proud to present their re envisioning of the adjustant,
-      now accepting drum magazines
-    type: Tweak
-  id: 1981
-  time: '2025-12-27T13:26:52.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5014
 - author: kotobdev
   changes:
   - message: Two new lobby tracks have been added, espial and flying, by Oliver Buckland.
@@ -4516,4 +4508,12 @@
   id: 2481
   time: '2026-06-30T07:49:01.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6148
+- author: Proxysseia
+  changes:
+  - message: Increased Holoparasite TC cost to from 8 to 10 and its discounted cost
+      from 4 to 6
+    type: Tweak
+  id: 2482
+  time: '2026-06-30T15:01:50.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6140
 Order: 1
