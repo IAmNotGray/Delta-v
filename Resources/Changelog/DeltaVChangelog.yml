@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Toby222
-  changes:
-  - message: Prescription huds work like their non-prescription counter-parts now
-    type: Fix
-  id: 1992
-  time: '2025-12-30T12:57:05.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5067
 - author: Velcroboy
   changes:
   - message: Fixed curtains colliding with lockers and other structures.
@@ -4298,4 +4291,11 @@
   id: 2492
   time: '2026-07-01T21:31:55.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6182
+- author: ArionGekkota
+  changes:
+  - message: Chitinid have blood again.
+    type: Fix
+  id: 2493
+  time: '2026-07-01T21:52:45.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6183
 Order: 1
