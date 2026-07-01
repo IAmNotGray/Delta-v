@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: PureBreadBagel
-  changes:
-  - message: Fixed the bartender parser error for the guidebook!
-    type: Fix
-  id: 1991
-  time: '2025-12-30T02:01:47.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5058
 - author: Toby222
   changes:
   - message: Prescription huds work like their non-prescription counter-parts now
@@ -4298,4 +4291,11 @@
   id: 2491
   time: '2026-07-01T20:10:36.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6087
+- author: EmberAstra
+  changes:
+  - message: Avali have blood again.
+    type: Fix
+  id: 2492
+  time: '2026-07-01T21:31:55.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6182
 Order: 1
