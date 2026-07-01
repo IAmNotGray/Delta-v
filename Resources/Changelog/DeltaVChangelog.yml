@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: PureBreadBagel
-  changes:
-  - message: Removed mentions of taser ingame.
-    type: Remove
-  id: 1988
-  time: '2025-12-29T16:24:00.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5045
 - author: ShepardToTheStars
   changes:
   - message: September and October's upstream changes have been merged in!
@@ -4482,4 +4475,12 @@
   id: 2488
   time: '2026-07-01T03:34:23.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6123
+- author: rebe83
+  changes:
+  - message: Syndicate uplinks briefly had briefcases which did not come with ammo.
+      Dufflebag bundles with ammo have been restored.
+    type: Fix
+  id: 2489
+  time: '2026-07-01T04:16:13.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6158
 Order: 1
