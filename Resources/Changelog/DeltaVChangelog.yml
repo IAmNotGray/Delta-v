@@ -1,52 +1,6 @@
 ﻿Entries:
 - author: PureBreadBagel
   changes:
-  - message: New players rejoice! The guidebooks got some love! Starting with 'Medical
-      Doctor', it has been completely rewritten!
-    type: Add
-  - message: Psionics entry now has extra information on how to track Glimmer!
-    type: Add
-  - message: Highlighted some important text in some entries.
-    type: Add
-  - message: Added some extra information regarding some traits in the "Creating Characters"
-      entry.
-    type: Tweak
-  - message: Cloning now states that those with the unrevivable trait are uncloneable,
-      along with some rewording.
-    type: Tweak
-  - message: The "Surgery" entry now contains information about cleaning surgical
-      tools.
-    type: Add
-  - message: Added Umbroxol and Holy water to the Specialty medications in the Medicine
-      entry.
-    type: Add
-  - message: Organ Manipulation now has better information about how to get limbs.
-    type: Tweak
-  - message: Removed mentions about golemancy in the guidebook.
-    type: Remove
-  - message: Part Manipulation now contains information regarding the exosuit fabricator
-      and IPC heads and torsos.
-    type: Tweak
-  - message: Fixed the Cultist Deconversion entry. The entry should no longer state
-      that the Ardent Censer uses Holy Water; instead, it should specify Mindbreaker
-      Toxin, along with a recipe.
-    type: Fix
-  - message: Anomalous Research mentions about anomalies that hijack hosts. (Anomalies
-      can move when its attached to someone!)
-    type: Tweak
-  - message: The Justice entry in Jobs now links to the Hearings section of the guidebook.
-      And removed the outdated trial procedure.
-    type: Fix
-  - message: Fixed the Command role names. Quarter Master and Research Director should
-      now be MystaGouge and Logistics Officer.
-    type: Fix
-  - message: And more!
-    type: Add
-  id: 1987
-  time: '2025-12-28T18:51:12.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5004
-- author: PureBreadBagel
-  changes:
   - message: Removed mentions of taser ingame.
     type: Remove
   id: 1988
@@ -4518,4 +4472,14 @@
   id: 2487
   time: '2026-06-30T19:25:16.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6170
+- author: ManuDemoen
+  changes:
+  - message: Can now add smaller cartons to the booze and soda dispenser
+    type: Tweak
+  - message: Removed a double fail message when putting something that doesn't belong
+      in a dispenser
+    type: Fix
+  id: 2488
+  time: '2026-07-01T03:34:23.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6123
 Order: 1
