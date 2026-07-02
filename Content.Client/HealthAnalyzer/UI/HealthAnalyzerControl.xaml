@@ -22,6 +22,15 @@
             <Label Margin="0 0 5 0" HorizontalExpand="True" HorizontalAlignment="Right" VerticalExpand="True"
                    VerticalAlignment="Top" Name="ScanModeLabel"
                    Text="{Loc 'health-analyzer-window-entity-unknown-text'}" />
+            <!-- BEGIN DeltaV - MedTek Reports -->
+            <BoxContainer Orientation="Vertical"
+                Name="PrintButtonsContainer"
+                Margin="0 0 5 0" >
+                <Button Name="PrintReportButton" HorizontalExpand="True">
+                    <TextureButton TexturePath="/Textures/_DV/Interface/VerbIcons/print.png" MouseFilter="Ignore"/>
+                </Button>
+            </BoxContainer>
+            <!-- END DeltaV -->
         </BoxContainer>
 
         <PanelContainer StyleClasses="LowDivider" />
