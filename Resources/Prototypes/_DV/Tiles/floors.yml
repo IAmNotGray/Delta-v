@@ -155,7 +155,7 @@
     collection: FootstepTile
   itemDrop: SheetRUGlass1
   heatCapacity: 10000
- 
+
 # Squiggly tiles
 - type: tile
   id: FloorWhiteSquiggly

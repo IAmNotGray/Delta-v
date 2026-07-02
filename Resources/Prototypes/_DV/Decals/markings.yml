@@ -1,4 +1,4 @@
-﻿- type: decal
+- type: decal
   id: Arrow
   tags: ["floor", "markings", "arrow"]
   sprite:
@@ -67,7 +67,7 @@
   sprite:
     sprite: _DV/Decals/markings.rsi
     state: floortextevac
- 
+
 - type: decal
   id: FloorTextArrivals
   tags: ["floor", "markings", "text"]
@@ -167,7 +167,7 @@
   sprite:
     sprite: _DV/Decals/markings.rsi
     state: floortextevac_greyscale
- 
+
 - type: decal
   id: FloorTextArrivalsGreyscale
   tags: ["floor", "markings", "text"]
