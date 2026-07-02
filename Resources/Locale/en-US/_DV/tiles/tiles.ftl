@@ -12,3 +12,9 @@ tiles-grass-planet-floor-red = planet basalt grass
 tiles-grass-planet-floor-purple = planet chromite grass
 tiles-steel-squiggly = steel squiggly tile
 tiles-white-squiggly = white steel squiggly tile
+
+tiles-astro-snow-dug = astro dug snow
+tiles-mowed-astro-snow-dug = mowed astro dug snow
+
+tiles-pool = pool
+tiles-pool-dark = dark pool

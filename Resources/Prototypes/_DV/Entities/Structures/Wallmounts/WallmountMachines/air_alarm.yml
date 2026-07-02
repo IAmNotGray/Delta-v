@@ -7,3 +7,12 @@
   components:
   - type: AccessReader
     access: [["Research"]]
+# Syndicate
+
+- type: entity
+  parent: AirAlarm
+  id: AirAlarmSyndicate
+  suffix: Syndicate
+  components:
+  - type: AccessReader
+    access: [["SyndicateAgent"]]
