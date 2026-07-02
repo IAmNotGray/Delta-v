@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: EmberAstra
-  changes:
-  - message: Fixed the exposed harpy wings in salvage's hardsuits.
-    type: Fix
-  id: 2001
-  time: '2025-12-31T18:37:19.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5032
 - author: SubspaceEmber
   changes:
   - message: Added vox specific sprites for all security hardsuits, elite ERT hardsuits,
@@ -4289,4 +4282,18 @@
   id: 2501
   time: '2026-07-02T17:10:34.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6136
+- author: sowelipililimute
+  changes:
+  - message: Skias can now ventcrawl.
+    type: Tweak
+  - message: Skias and Rat Kings prefer to spawn over vents.
+    type: Tweak
+  - message: Vent crawling now takes 0.5s and harder to interrupt.
+    type: Tweak
+  - message: Vent crawling now gives you a small pocket of air from the room you're
+      in if you enter unsafe pipes, such as scrubbers.
+    type: Tweak
+  id: 2502
+  time: '2026-07-02T23:59:20.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6179
 Order: 1
