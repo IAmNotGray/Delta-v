@@ -157,10 +157,11 @@
             "directions": 4
         },
         {
-            "name": "direction_turbine",
+            "name": "direction_robo",
+            "directions": 4
         },
         {
-            "name": "direction_robo",
+            "name": "direction_turbine",
             "directions": 4
         }
     ]
