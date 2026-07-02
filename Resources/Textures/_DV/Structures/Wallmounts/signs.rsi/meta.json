@@ -158,6 +158,7 @@
         },
         {
             "name": "direction_turbine",
+        },
         {
             "name": "direction_robo",
             "directions": 4
