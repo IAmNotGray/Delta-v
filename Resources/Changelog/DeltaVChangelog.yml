@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Dorragon
-  changes:
-  - message: Vent xenonids are now more likely to be of higher tiers
-    type: Tweak
-  id: 2000
-  time: '2025-12-31T18:36:52.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5008
 - author: EmberAstra
   changes:
   - message: Fixed the exposed harpy wings in salvage's hardsuits.
@@ -4287,4 +4280,13 @@
   id: 2500
   time: '2026-07-02T16:32:00.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6047
+- author: weskified, ShepardToTheStars
+  changes:
+  - message: Fixed synthetic emotes for real this time.
+    type: Fix
+  - message: Non-synthetic characters can no longer make silicon noises.
+    type: Fix
+  id: 2501
+  time: '2026-07-02T17:10:34.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6136
 Order: 1
