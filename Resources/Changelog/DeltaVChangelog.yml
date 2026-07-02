@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Halo3moth
-  changes:
-  - message: The Warden's energy shotgun has regained its self-charging ability once
-      again.
-    type: Tweak
-  id: 1999
-  time: '2025-12-31T18:33:04.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5070
 - author: Dorragon
   changes:
   - message: Vent xenonids are now more likely to be of higher tiers
@@ -4286,4 +4278,13 @@
   id: 2499
   time: '2026-07-02T12:38:01.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6191
+- author: CarolCuchara
+  changes:
+  - message: Rejuvenating a Colossus or Space Dragon will no longer crash the server!
+    type: Fix
+  - message: Reduced Colossus and Space Dragon blood amount to 400!
+    type: Tweak
+  id: 2500
+  time: '2026-07-02T16:32:00.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6047
 Order: 1
