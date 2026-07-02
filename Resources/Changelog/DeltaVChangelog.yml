@@ -1,13 +1,6 @@
 ﻿Entries:
 - author: Toby222
   changes:
-  - message: Fixed the NanoChat Number Lookup UI
-    type: Fix
-  id: 1995
-  time: '2025-12-30T16:31:54.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5065
-- author: Toby222
-  changes:
   - message: The grinder no longer produces infinite resources
     type: Fix
   id: 1996
@@ -4286,4 +4279,11 @@
   id: 2495
   time: '2026-07-02T00:31:49.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6185
+- author: ArionGekkota
+  changes:
+  - message: Hitman's disguise kit now includes a full chameleon bag
+    type: Tweak
+  id: 2496
+  time: '2026-07-02T00:36:05.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6175
 Order: 1
