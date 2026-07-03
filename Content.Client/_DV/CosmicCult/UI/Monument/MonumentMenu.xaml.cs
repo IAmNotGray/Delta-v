@@ -76,8 +76,6 @@ public sealed partial class MonumentMenu : FancyWindow
         var crewToNextStage = (int)Math.Max(Math.Round((double)entropyToNextStage / _entropyPerCultist, MidpointRounding.ToPositiveInfinity), min); //force it to be at least one
 
         AvailableEntropy.Text = Loc.GetString("monument-interface-entropy-value", ("infused", availableEntropy));
-        EntropyUntilNextStage.Text = Loc.GetString("monument-interface-entropy-value", ("infused", entropyToNextStage.ToString()));
-        CrewToConvertUntilNextStage.Text = crewToNextStage.ToString();
     }
 
     // Update all the influence thingies
