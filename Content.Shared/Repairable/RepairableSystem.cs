@@ -120,10 +120,9 @@ public sealed partial class RepairableSystem : EntitySystem
         // If its a self-repair, ignore it since they've already been penalized.
         if (args.User != args.Target && TryComp<DamageableComponent>(args.Target, out var damageComp))
         {
-            var totalDamage = damageComp.Damage.GetTotal();
             // TODO: Scale with the destructible threshold if DestructibleSystem ever gets more prediction added.
             // For now, just scale up the delay per 100 damage, or reduce the delay if its less.
-            delay *= Math.Clamp((float)totalDamage / 100.0f, 0.5f, 3.0f);
+            delay *= Math.Clamp((float)damageComp.TotalDamage / 100.0f, 0.5f, 3.0f);
         }
 
         // END DeltaV
