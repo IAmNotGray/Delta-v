@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: SubspaceEmber
-  changes:
-  - message: Added vox specific sprites for all security hardsuits, elite ERT hardsuits,
-      and the mystagouge hardsuit.
-    type: Add
-  id: 2002
-  time: '2025-12-31T18:37:38.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5086
 - author: MantasDab360
   changes:
   - message: Cyborgs and Xenoborgs can now do a rare scream.
@@ -4296,4 +4288,17 @@
   id: 2502
   time: '2026-07-02T23:59:20.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6179
+- author: pixelkingliam
+  changes:
+  - message: Two new lever actions rifles. The L93 and the SKL93
+    type: Add
+  - message: Cowboy crate. Costs 7600$ and contains 2 L93's, 2 Inspectors, 2 Cowbow
+      Hats, 4 boxes of ammo
+    type: Add
+  - message: The SKL93 can be purchased from the Syndicate Uplink, comes with a cowboy
+      hat and a spare box
+    type: Add
+  id: 2503
+  time: '2026-07-03T01:18:58.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6146
 Order: 1
