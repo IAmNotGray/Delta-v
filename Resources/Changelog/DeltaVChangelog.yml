@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: verybigman311
-  changes:
-  - message: Frag rounds for the China Lake are now kinder to explosion-resistant
-      hardsuits.
-    type: Tweak
-  id: 2004
-  time: '2025-12-31T19:03:56.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5002
 - author: Coryler
   changes:
   - message: Add Blood Red Super Synth for Juke Ops
@@ -4302,4 +4294,17 @@
   id: 2504
   time: '2026-07-03T01:33:17.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6124
+- author: BriBrooo
+  changes:
+  - message: Added the pharmacologist clothing
+    type: Add
+  - message: Added chemist's stamp (can be found in the chemical locker)
+    type: Add
+  - message: Added a prescription folder to the chemists' and psychologist's lockers
+    type: Add
+  - message: Modified the chemist's tie icon
+    type: Tweak
+  id: 2505
+  time: '2026-07-03T14:24:57.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6178
 Order: 1
