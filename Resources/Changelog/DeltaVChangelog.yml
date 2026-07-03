@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: MantasDab360
-  changes:
-  - message: Cyborgs and Xenoborgs can now do a rare scream.
-    type: Tweak
-  id: 2003
-  time: '2025-12-31T18:38:16.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5035
 - author: verybigman311
   changes:
   - message: Frag rounds for the China Lake are now kinder to explosion-resistant
@@ -4301,4 +4294,12 @@
   id: 2503
   time: '2026-07-03T01:18:58.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6146
+- author: wesk
+  changes:
+  - message: Fixed spawncharacter command from not including character traits to the
+      spawned character.
+    type: Fix
+  id: 2504
+  time: '2026-07-03T01:33:17.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6124
 Order: 1
