@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Coryler
-  changes:
-  - message: Add Blood Red Super Synth for Juke Ops
-    type: Add
-  id: 2005
-  time: '2025-12-31T20:11:28.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5019
 - author: Apachit0
   changes:
   - message: Ported Starlight's Improvised Crafting of Various Things
@@ -4307,4 +4300,18 @@
   id: 2505
   time: '2026-07-03T14:24:57.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6178
+- author: Stxcking
+  changes:
+  - message: FunkyChems now properly heal all brutes types if they should instead
+      of just healing blunt damage.
+    type: Fix
+  - message: FunkyChems now properly heal all air loss types if they should instead
+      of just healing asphyxiation damage.
+    type: Fix
+  - message: Skia now properly heals all brute types instead of only healing blunt
+      damage while in the dark.
+    type: Fix
+  id: 2506
+  time: '2026-07-03T14:42:09.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6196
 Order: 1
