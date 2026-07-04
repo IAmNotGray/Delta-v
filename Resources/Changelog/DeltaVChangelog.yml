@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: cmorley191
-  changes:
-  - message: Fixed some id cards that were unable to be changed in the ID Card Console
-    type: Fix
-  id: 2011
-  time: '2026-01-02T00:37:21.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5103
 - author: ShepardToTheStars
   changes:
   - message: Fixed teach a lesson objectives from only choosing heads of staff.
@@ -4312,4 +4305,11 @@
   id: 2511
   time: '2026-07-04T13:09:24.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6184
+- author: Proxysseia
+  changes:
+  - message: Clarified that destroying a borg is sabotage and not grand sabotage.
+    type: Tweak
+  id: 2512
+  time: '2026-07-04T16:16:02.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6204
 Order: 1
