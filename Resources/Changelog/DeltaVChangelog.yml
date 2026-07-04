@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Stop-Signs
-  changes:
-  - message: Fixed sharp katana's being unable to fit into katana sheaths.
-    type: Fix
-  id: 2010
-  time: '2026-01-01T21:31:45.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5098
 - author: cmorley191
   changes:
   - message: Fixed some id cards that were unable to be changed in the ID Card Console
@@ -4311,4 +4304,12 @@
   id: 2510
   time: '2026-07-04T12:47:02.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6206
+- author: sowelipililimute
+  changes:
+  - message: (TEST MERGE) Doors now become solid when they begin closing, not when
+      they finish their close animation.
+    type: Tweak
+  id: 2511
+  time: '2026-07-04T13:09:24.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6184
 Order: 1
