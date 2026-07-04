@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: Fixed teach a lesson objectives from only choosing heads of staff.
-    type: Fix
-  id: 2012
-  time: '2026-01-02T07:02:13.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4996
 - author: Coryler
   changes:
   - message: Remove Telegnosis having a two minute cooldown to return
@@ -4312,4 +4305,12 @@
   id: 2512
   time: '2026-07-04T16:16:02.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6204
+- author: Malfaltto
+  changes:
+  - message: Increased Harpy height slider caps in both directions to 0.85 to 1.35
+      respectively.
+    type: Tweak
+  id: 2513
+  time: '2026-07-04T16:30:27.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6174
 Order: 1
