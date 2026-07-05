@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: Fixed a server-crashing bug where the server would crash if there were
-      zero cosmic cultists and it would try to hold a steward vote with zero options.
-    type: Fix
-  id: 2016
-  time: '2026-01-03T00:47:27.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5097
 - author: Velcroboy
   changes:
   - message: Fixed potted plants not being easy to grab
@@ -4317,4 +4309,12 @@
   id: 2516
   time: '2026-07-05T17:53:02.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6127
+- author: sowelipililimute
+  changes:
+  - message: Ghost players can now spawn as vent critters at will, instead of through
+      events adding ghostroles.
+    type: Add
+  id: 2517
+  time: '2026-07-05T18:29:38.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6187
 Order: 1
