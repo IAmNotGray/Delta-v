@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Halo3moth
-  changes:
-  - message: Advanced plate carrier's heat, slash, and blunt resistance nerfed from
-      40% to 30%. Shock nerfed from 30% to 20%
-    type: Tweak
-  id: 2015
-  time: '2026-01-03T00:42:07.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5081
 - author: ShepardToTheStars
   changes:
   - message: Fixed a server-crashing bug where the server would crash if there were
@@ -4316,4 +4308,13 @@
   id: 2515
   time: '2026-07-05T16:14:18.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6210
+- author: ShepardToTheStars
+  changes:
+  - message: If the crew defeats the major antag (Nukies, Cosmic Cult, Zombies), the
+      round will now automatically become survival after a bit of time until the crew
+      evacs.
+    type: Tweak
+  id: 2516
+  time: '2026-07-05T17:53:02.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6127
 Order: 1
