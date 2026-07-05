@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Velcroboy
-  changes:
-  - message: Fixed potted plants not being easy to grab
-    type: Fix
-  id: 2017
-  time: '2026-01-03T00:48:22.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5052
 - author: SirWarock
   changes:
   - message: Surgery now has a new, better UI!
@@ -4317,4 +4310,11 @@
   id: 2517
   time: '2026-07-05T18:29:38.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6187
+- author: sowelipililimute
+  changes:
+  - message: Mothroaches can vent crawl.
+    type: Tweak
+  id: 2518
+  time: '2026-07-05T19:25:08.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6222
 Order: 1
