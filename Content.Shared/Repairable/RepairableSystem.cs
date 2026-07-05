@@ -130,14 +130,11 @@ public sealed partial class RepairableSystem : EntitySystem
         // BEGIN Monolith - Nanite Applicators
         if (!TryComp<ToolComponent>(args.Used, out var tool))
             return;
-
-        // Run the repairing doafter
-        foreach (var quality in ent.Comp.QualityNeeded)
-        {
-            if (_toolSystem.HasQuality(args.Used, quality, tool))
-                args.Handled = _toolSystem.UseTool(args.Used, args.User, ent.Owner, delay, quality, new RepairDoAfterEvent(), ent.Comp.FuelCost);
-        }
         // END Monolith
+        
+        // Run the repairing doafter
+        args.Handled = _toolSystem.UseTool(args.Used, args.User, ent.Owner, delay, ent.Comp.QualityNeeded, new RepairDoAfterEvent(), ent.Comp.FuelCost);
+        
 
     }
 }

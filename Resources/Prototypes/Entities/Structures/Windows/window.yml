@@ -46,9 +46,7 @@
     messages: WindowMessages
   - type: Repairable
     doAfterDelay: 2 # DeltaV
-    qualityNeeded: # Monolith - Nanite Applicators
-    - Welding
-    - Applicating
+    qualityNeeded: Welding
   - type: RCDDeconstructable
     cost: 6
     delay: 4
@@ -176,9 +174,7 @@
         - GlassLayer
   - type: Repairable
     doAfterDelay: 2 # DeltaV
-    qualityNeeded: # Monolith - Added qualities to override base
-    - Welding
-    - Applicating
+    qualityNeeded: Welding
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Glass

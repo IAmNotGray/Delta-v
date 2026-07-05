@@ -120,9 +120,7 @@
   - type: Repairable
     fuelCost: 15
     doAfterDelay: 3
-    qualityNeeded: # DeltaV - Nanite Applicators
-    - Welding
-    - Applicating
+    qualityNeeded: Welding
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
@@ -218,9 +216,7 @@
   - type: Repairable
     fuelCost: 15
     doAfterDelay: 3
-    qualityNeeded: # DeltaV - Nanite Applicators
-    - Welding
-    - Applicating
+    qualityNeeded: Welding
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
