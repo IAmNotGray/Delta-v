@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Coryler
-  changes:
-  - message: Remove Telegnosis having a two minute cooldown to return
-    type: Fix
-  id: 2013
-  time: '2026-01-02T19:00:58.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5013
 - author: EmberAstra
   changes:
   - message: added Engineering Void Suits! Lighter but less protected than the standard
@@ -4313,4 +4306,12 @@
   id: 2513
   time: '2026-07-04T16:30:27.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6174
+- author: ShepardToTheStars
+  changes:
+  - message: Zombified vent-crawling mobs now take 2 seconds to enter a vent (4x as
+      long as normal).
+    type: Tweak
+  id: 2514
+  time: '2026-07-05T03:08:20.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6215
 Order: 1
