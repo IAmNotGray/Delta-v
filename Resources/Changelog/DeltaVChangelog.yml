@@ -1,19 +1,6 @@
 ﻿Entries:
 - author: EmberAstra
   changes:
-  - message: 'New Glimmer event: the Oracle and Sophic Grammateus will now occasionally
-      attract foxfire!'
-    type: Add
-  - message: 'New Glimmer event: the Noosphere is coming for your hair, and its fashion
-      sense is... random.'
-    type: Add
-  - message: Using barber scissors on kobolds no longer causes massive errors.
-    type: Fix
-  id: 2019
-  time: '2026-01-03T13:56:02.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5102
-- author: EmberAstra
-  changes:
   - message: Advanced Cleaning Modules now come with an Hydra again!
     type: Fix
   id: 2020
@@ -4321,4 +4308,12 @@
   id: 2519
   time: '2026-07-05T19:34:57.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6110
+- author: kipdotnet, sha-seng, rebe83, Halo3rat
+  changes:
+  - message: Security now has sticky tickets for issuing fines. Find them in the SecVend
+      or lockers!
+    type: Add
+  id: 2520
+  time: '2026-07-05T20:35:25.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6089
 Order: 1
