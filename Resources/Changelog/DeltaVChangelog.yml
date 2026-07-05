@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: SirWarock
-  changes:
-  - message: Surgery now has a new, better UI!
-    type: Tweak
-  id: 2018
-  time: '2026-01-03T13:27:35.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5107
 - author: EmberAstra
   changes:
   - message: 'New Glimmer event: the Oracle and Sophic Grammateus will now occasionally
@@ -4317,4 +4310,15 @@
   id: 2518
   time: '2026-07-05T19:25:08.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6222
+- author: zHonys, Princess-Cheeseballs
+  changes:
+  - message: Falling asleep while crit will no longer cause you to say whatever is
+      typed in your chatbox.
+    type: Fix
+  - message: You should no longer have your vision permanently darkened if you're
+      killed while sleeping.
+    type: Fix
+  id: 2519
+  time: '2026-07-05T19:34:57.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6110
 Order: 1
