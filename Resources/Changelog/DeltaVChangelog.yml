@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: EmberAstra
-  changes:
-  - message: Advanced Cleaning Modules now come with an Hydra again!
-    type: Fix
-  id: 2020
-  time: '2026-01-04T00:15:09.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5116
 - author: MilonPL
   changes:
   - message: Footprints will no longer despawn after 60 seconds.
@@ -4316,4 +4309,19 @@
   id: 2520
   time: '2026-07-05T20:35:25.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6089
+- author: ShepardToTheStars
+  changes:
+  - message: The doctor's rubber stamp and prescriptions can be found in medical personnel
+      lockers!
+    type: Add
+  - message: Spare doctor stamps, a chemist stamp, and a psychologist stamp have been
+      added to the CMO's locker, in case a station doesn't have enough.
+    type: Add
+  - message: Space Law and SoP have been updated to allow doctors, chemists, and pharmacists
+      to write perscriptions for less-dangerous controlled medications. Check out
+      the new section in the guidebook on Prescribing Medicine under Medical Regulations.
+    type: Tweak
+  id: 2521
+  time: '2026-07-05T21:35:31.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6189
 Order: 1
