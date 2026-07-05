@@ -7,7 +7,7 @@
     requiredSlipSpeed: 3.5
   flavor: bitter
   flavorMinimum: 0.01
-  color: "#0000FF"
+  color: "#5775f4"
   recognizable: true
   boilingPoint: 8000.6
   meltingPoint: 659.7
