@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: MilonPL
-  changes:
-  - message: Footprints will no longer despawn after 60 seconds.
-    type: Tweak
-  - message: Footprints are now limited to two per tile.
-    type: Tweak
-  id: 2021
-  time: '2026-01-04T16:37:08.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5111
 - author: ShepardToTheStars
   changes:
   - message: Fixed people getting randomly deleted when there were too many footprints.
@@ -4324,4 +4315,11 @@
   id: 2521
   time: '2026-07-05T21:35:31.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6189
+- author: keekee38
+  changes:
+  - message: AAC tablets got a small update
+    type: Tweak
+  id: 2522
+  time: '2026-07-06T01:35:10.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6193
 Order: 1
