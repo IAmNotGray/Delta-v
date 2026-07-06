@@ -1,13 +1,6 @@
 ﻿Entries:
 - author: Stxcking
   changes:
-  - message: Fixes electronic damage missing icon.
-    type: Fix
-  id: 2023
-  time: '2026-01-04T19:26:40.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5127
-- author: Stxcking
-  changes:
   - message: Medical borgs now have access to a crew monitor as part of the rescue
       cyborg module!
     type: Add
@@ -4322,4 +4315,13 @@
   id: 2523
   time: '2026-07-06T01:53:04.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6173
+- author: keekee38
+  changes:
+  - message: vulps can finally stop (or start) wagging their tails
+    type: Add
+  - message: vulps are messy drinkers
+    type: Tweak
+  id: 2524
+  time: '2026-07-06T01:55:41.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6177
 Order: 1
