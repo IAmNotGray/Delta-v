@@ -115,6 +115,10 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
         PrintReportButton.Disabled = state is { ScanMode: false }; // DeltaV
 
         // Patient Information
+        SpriteView.SetEntity(target.Value);
+        SpriteView.Visible = state.ScanMode.HasValue && state.ScanMode.Value;
+        NoDataTex.Visible = !SpriteView.Visible;
+
         var name = new FormattedMessage();
         name.PushColor(Color.White);
         name.AddText(_entityManager.HasComponent<MetaDataComponent>(target.Value)
@@ -259,7 +263,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
 
             var groupTitleText = $"{Loc.GetString(
                 "health-analyzer-window-damage-group-text",
-                ("damageGroup", _prototypes.Index<DamageGroupPrototype>(damageGroupId).LocalizedName),
+                ("damageGroup", _prototypes.Index(damageGroupId).LocalizedName),
                 ("amount", damageAmount)
             )}";
 
@@ -274,7 +278,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
             GroupsContainer.AddChild(groupContainer);
 
             // Show the damage for each type in that group.
-            var group = _prototypes.Index<DamageGroupPrototype>(damageGroupId);
+            var group = _prototypes.Index(damageGroupId);
 
             foreach (var type in group.DamageTypes)
             {
