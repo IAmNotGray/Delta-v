@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: Fixed people getting randomly deleted when there were too many footprints.
-    type: Fix
-  id: 2022
-  time: '2026-01-04T19:25:48.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5128
 - author: Stxcking
   changes:
   - message: Fixes electronic damage missing icon.
@@ -4322,4 +4315,11 @@
   id: 2522
   time: '2026-07-06T01:35:10.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6193
+- author: Proxysseia
+  changes:
+  - message: Butchering pigs now reveals the riches hidden in their stomach.
+    type: Add
+  id: 2523
+  time: '2026-07-06T01:53:04.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6173
 Order: 1
