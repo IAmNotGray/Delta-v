@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: The Santa anomalies have been removed from the anomaly pool (until next
-      December)!
-    type: Remove
-  id: 2025
-  time: '2026-01-06T05:27:29.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5145
 - author: Stxcking
   changes:
   - message: Added some missing feroxi mask/helm sprites. In total, 10 bandanas, 2
@@ -4324,4 +4316,25 @@
   id: 2525
   time: '2026-07-06T17:43:22.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6194
+- author: ShepardToTheStars, whatston3,  ScyronX, tonotom1
+  changes:
+  - message: You can now examine the condition of most structures, walls, machines,
+      etc., similar to how you can check the condition of windows.
+    type: Add
+  - message: Nanite applicators have been added! They allow you to repair the damage
+      to most structures, walls, machines, and more! It comes in normal, experimental,
+      and syndicate versions. For now, borgs, windows, and tesla coils will still
+      be repaired with welders.
+    type: Add
+  - message: Welding fuel and nanite jerry cans have been added!
+    type: Add
+  - message: Time to repair something now scales with how much damage it has taken.
+      It can take less time if there's not much damage or it can take up to 3 times
+      as long if its very severely damaged.
+    type: Tweak
+  - message: The experimental welder has had its capacity reduced to 200.
+    type: Tweak
+  id: 2526
+  time: '2026-07-06T20:08:04.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6132
 Order: 1
