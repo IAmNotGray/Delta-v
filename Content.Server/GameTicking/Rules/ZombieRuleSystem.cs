@@ -18,6 +18,7 @@ using Content.Shared.Zombies;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using System.Globalization;
+using System.Linq; // DeltaV
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -143,7 +144,8 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
         }
 
         var infectedPercent = GetInfectedFraction(false);
-        if (allInitialInfectedTurned && Math.Round(infectedPercent, 0) == 0)  // All zombies defeated
+        // All II turned, all crew that have turned are dead, and there are no more pending zombies
+        if (allInitialInfectedTurned && Math.Round(infectedPercent, 0) == 0 && !EntityQuery<PendingZombieComponent>(false).Any())  
         {
             _roundEnd.DoRoundEndBehavior(zombieRuleComponent.ZombieRoundEndBehavior, zombieRuleComponent.ZombieShuttleDelay);
             zombieRuleComponent.ZombieRoundEndBehavior = RoundEndBehavior.Nothing; // stop this check in the future
