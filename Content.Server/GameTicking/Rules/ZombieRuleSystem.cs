@@ -126,8 +126,24 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
 
 
         // BEGIN DeltaV - Change mode to survival if zombies die
+        var allInitialInfectedTurned = true;
+        var query = EntityQueryEnumerator<InitialInfectedComponent>();
+        while (query.MoveNext(out var uid, out _))
+        {
+            // We want to wait to fire the round-end behavior until
+            // all the of the II turn, and if there's at least 1 turned,
+            // they'll be considered infected if alive, and GetInfectedFraction 
+            // will be greater than 0 so we don't need to check their mobstate
+            // as part of this query.
+            if (!HasComp<ZombieComponent>(uid))
+            {
+                allInitialInfectedTurned = false;
+                break; // At least one is alive still
+            }
+        }
+
         var infectedPercent = GetInfectedFraction(false);
-        if (Math.Round(infectedPercent, 0) == 0)  // All zombies defeated
+        if (allInitialInfectedTurned && Math.Round(infectedPercent, 0) == 0)  // All zombies defeated
         {
             _roundEnd.DoRoundEndBehavior(zombieRuleComponent.ZombieRoundEndBehavior, zombieRuleComponent.ZombieShuttleDelay);
             zombieRuleComponent.ZombieRoundEndBehavior = RoundEndBehavior.Nothing; // stop this check in the future
@@ -229,4 +245,6 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
         }
         return healthy;
     }
+
+
 }
