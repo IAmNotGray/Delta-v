@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Stxcking
-  changes:
-  - message: Added some missing feroxi mask/helm sprites. In total, 10 bandanas, 2
-      hard suit helms (Goliath + Paramedic Void), 15 masks!
-    type: Add
-  id: 2026
-  time: '2026-01-06T15:59:40.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5149
 - author: MilonPL
   changes:
   - message: Reworked the deep fryer! It can now be used to make new recipes, check
@@ -4337,4 +4329,12 @@
   id: 2526
   time: '2026-07-06T20:08:04.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6132
+- author: sowelipililimute
+  changes:
+  - message: Cosmic Cultists can now draw glyphs wherever they damn please instead
+      of in front of the Monument
+    type: Tweak
+  id: 2527
+  time: '2026-07-06T20:13:02.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6197
 Order: 1
