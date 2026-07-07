@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: The colossus should no longer get objectives to put the effigy on non-station
-      locations, such as evac shuttle or space debris.
-    type: Fix
-  id: 2031
-  time: '2026-01-07T16:35:25.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5160
 - author: IamVelcroboy
   changes:
   - message: Lowered the chance of toilet cisterns containing loot but improved the
@@ -4337,4 +4329,15 @@
   id: 2531
   time: '2026-07-07T15:45:38.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6202
+- author: ShepardToTheStars
+  changes:
+  - message: Disabled surgeon job until it's re-implemented next week.
+    type: Remove
+  - message: Removed syndicate autodoc and surgery bundles from syndicate uplinks.
+    type: Remove
+  - message: Added Medical access to Surgery airlocks.
+    type: Tweak
+  id: 2532
+  time: '2026-07-07T17:06:20.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6209
 Order: 1
