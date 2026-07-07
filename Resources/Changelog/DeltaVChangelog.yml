@@ -1,22 +1,4 @@
 ﻿Entries:
-- author: IamVelcroboy
-  changes:
-  - message: Lowered the chance of toilet cisterns containing loot but improved the
-      loot table of the loot that spawned.
-    type: Tweak
-  - message: Dirty toilets may now contain something better or even perhaps worse
-      than just water or gastrotoxin.
-    type: Tweak
-  id: 2032
-  time: '2026-01-07T17:52:48.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5064
-- author: ShepardToTheStars
-  changes:
-  - message: The taser now has a 5 second cooldown between shots.
-    type: Tweak
-  id: 2033
-  time: '2026-01-08T15:53:20.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5106
 - author: kotobdev
   changes:
   - message: Flashlights will now always point towards your cursor in combat mode.
@@ -4340,4 +4322,21 @@
   id: 2532
   time: '2026-07-07T17:06:20.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6209
+- author: Stxcking
+  changes:
+  - message: Added a Xenoborg Sentry Turret which the Mothership can Access using
+      an Ability and a Shuttle Gun.
+    type: Add
+  id: 2533
+  time: '2026-07-07T18:40:18.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5957
+- author: Stxcking
+  changes:
+  - message: Xenoborgs game mode was added to the secret game mode pool.
+    type: Add
+  - message: Mothership Core and Xenoborgs time requirement were increased.
+    type: Tweak
+  id: 2534
+  time: '2026-07-07T18:40:15.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6055
 Order: 1
