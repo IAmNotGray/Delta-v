@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: Secure crates from Logistics once again have a 75% chance of acidifying
-      the contents inside.
-    type: Tweak
-  id: 2028
-  time: '2026-01-06T21:57:29.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5152
 - author: PureBreadBagel, ShepardToTheStars
   changes:
   - message: Added the medical Crashcart from funkystation! It holds life-saving equipment
@@ -4336,4 +4328,11 @@
   id: 2528
   time: '2026-07-07T14:23:28.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6236
+- author: ShepardToTheStars
+  changes:
+  - message: Holosigns should now be the correct rotation.
+    type: Fix
+  id: 2529
+  time: '2026-07-07T14:24:33.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6232
 Order: 1
