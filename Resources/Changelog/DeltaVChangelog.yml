@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: MilonPL
-  changes:
-  - message: AAC tablet UI looks slightly better now.
-    type: Tweak
-  id: 2030
-  time: '2026-01-07T15:57:29.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5153
 - author: ShepardToTheStars
   changes:
   - message: The colossus should no longer get objectives to put the effigy on non-station
@@ -4337,4 +4330,11 @@
   id: 2530
   time: '2026-07-07T14:56:40.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6237
+- author: sowelipililimute
+  changes:
+  - message: The Monument's progress bar is now obscured.
+    type: Tweak
+  id: 2531
+  time: '2026-07-07T15:45:38.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6202
 Order: 1
