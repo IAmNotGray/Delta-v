@@ -1,15 +1,4 @@
 ﻿Entries:
-- author: MilonPL
-  changes:
-  - message: Reworked the deep fryer! It can now be used to make new recipes, check
-      out the guidebook for more info!
-    type: Tweak
-  - message: Be careful about putting liquids that aren't cooking oils in the deep
-      fryer! It could start a grease fire!
-    type: Add
-  id: 2027
-  time: '2026-01-06T18:41:29.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5043
 - author: ShepardToTheStars
   changes:
   - message: Secure crates from Logistics once again have a 75% chance of acidifying
@@ -4337,4 +4326,14 @@
   id: 2527
   time: '2026-07-06T20:13:02.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6197
+- author: sowelipililimute
+  changes:
+  - message: Events are now properly gated by the round time once again. No more colossus
+      spawns at 10 minutes.
+    type: Fix
+  - message: Removed abductors.
+    type: Remove
+  id: 2528
+  time: '2026-07-07T14:23:28.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6236
 Order: 1
