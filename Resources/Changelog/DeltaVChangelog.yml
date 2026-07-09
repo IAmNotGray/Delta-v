@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: kotobdev
-  changes:
-  - message: Flashlights will now always point towards your cursor in combat mode.
-    type: Add
-  id: 2034
-  time: '2026-01-08T17:11:25.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5163
 - author: ShepardToTheStars
   changes:
   - message: Redrock spawns a bit further out until we can figure out why its spawning
@@ -4339,4 +4332,12 @@
   id: 2534
   time: '2026-07-07T18:40:15.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6055
+- author: jessiscah23
+  changes:
+  - message: Nanotrasen has fixed issues with salvage magnet calibration. Ore seams
+      can now be found on asteroid pulls!
+    type: Fix
+  id: 2535
+  time: '2026-07-09T01:24:45.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5973
 Order: 1
