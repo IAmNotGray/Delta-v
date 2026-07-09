@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: MilonPL
-  changes:
-  - message: Picking senior PDAs in the loadout will now change your job name accordingly
-      once again.
-    type: Fix
-  id: 2037
-  time: '2026-01-10T16:48:59.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5176
 - author: Eternally-Confused
   changes:
   - message: The announcement for the Spare Captain's ID no longer references crimes
@@ -4338,4 +4330,16 @@
   id: 2537
   time: '2026-07-09T04:42:44.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6226
+- author: rebe83
+  changes:
+  - message: Revenant  can be grinded... ground...grounded up in a grinder without
+      salt to be killed WITHOUT exploding!
+    type: Tweak
+  - message: Revenant stasis time increased from 60 seconds to 100 seconds.
+    type: Tweak
+  - message: Skia takes a bit less damage from light sources.
+    type: Tweak
+  id: 2538
+  time: '2026-07-09T11:38:49.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5981
 Order: 1
