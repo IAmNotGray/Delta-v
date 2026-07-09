@@ -1,14 +1,6 @@
 ﻿Entries:
 - author: Eternally-Confused
   changes:
-  - message: The announcement for the Spare Captain's ID no longer references crimes
-      that don't exist
-    type: Fix
-  id: 2038
-  time: '2026-01-10T21:42:58.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5177
-- author: Eternally-Confused
-  changes:
   - message: Feroxi nukies now recieve actual syndicate survival boxes.
     type: Fix
   id: 2039
@@ -4342,4 +4334,12 @@
   id: 2538
   time: '2026-07-09T11:38:49.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5981
+- author: Eternally-Confused
+  changes:
+  - message: The "Sentencing" and "Crime Modifiers" sections of Space Law have been
+      added to the in-game guidebook.
+    type: Fix
+  id: 2539
+  time: '2026-07-09T13:29:07.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6223
 Order: 1
