@@ -1,14 +1,4 @@
 ﻿Entries:
-- author: PureBreadBagel
-  changes:
-  - message: You are now able to craft the makeshift and forged varient of the omnitool!
-    type: Fix
-  - message: The makeshift/forged varient of the omnitool should no longer display
-      "verb-categories-switch" in its right click menu.
-    type: Fix
-  id: 2036
-  time: '2026-01-09T16:34:26.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5165
 - author: MilonPL
   changes:
   - message: Picking senior PDAs in the loadout will now change your job name accordingly
@@ -4340,4 +4330,12 @@
   id: 2536
   time: '2026-07-09T03:53:55.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6080
+- author: keekee38
+  changes:
+  - message: after years of testing, NT managed to make more bullets fit into the
+      magnum cartridge boxes
+    type: Tweak
+  id: 2537
+  time: '2026-07-09T04:42:44.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6226
 Order: 1
