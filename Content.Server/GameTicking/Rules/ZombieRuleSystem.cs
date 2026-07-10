@@ -143,16 +143,18 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
             }
         }
 
-        var infectedPercent = GetInfectedFraction(false);
+        var anyLivingZombies = EntityQuery<ZombieComponent, MobStateComponent>(false)
+            .Select(x => x.Item2.CurrentState != MobState.Dead).Any();
+        var anyPendingZombies = EntityQuery<PendingZombieComponent>(false).Any();
         // All II turned, all crew that have turned are dead, and there are no more pending zombies
-        if (allInitialInfectedTurned && Math.Round(infectedPercent, 0) == 0 && !EntityQuery<PendingZombieComponent>(false).Any())  
+        if (allInitialInfectedTurned && !anyLivingZombies && !anyPendingZombies)
         {
             _roundEnd.DoRoundEndBehavior(zombieRuleComponent.ZombieRoundEndBehavior, zombieRuleComponent.ZombieShuttleDelay);
             zombieRuleComponent.ZombieRoundEndBehavior = RoundEndBehavior.Nothing; // stop this check in the future
         }
         // END DeltaV
 
-        if (infectedPercent > zombieRuleComponent.ZombieShuttleCallPercentage && !_roundEnd.IsRoundEndRequested()) // DeltaV - Move GetInfectedFraction to var
+        if (GetInfectedFraction(false) > zombieRuleComponent.ZombieShuttleCallPercentage && !_roundEnd.IsRoundEndRequested()) // DeltaV - Move GetInfectedFraction to var
         {
             foreach (var station in _station.GetStations())
             {
