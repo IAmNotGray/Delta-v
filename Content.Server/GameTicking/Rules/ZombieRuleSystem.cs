@@ -141,7 +141,7 @@ public sealed class ZombieRuleSystem : GameRuleSystem<ZombieRuleComponent>
         }
         // END DeltaV
 
-        if (GetInfectedFraction(false) > zombieRuleComponent.ZombieShuttleCallPercentage && !_roundEnd.IsRoundEndRequested()) // DeltaV - Move GetInfectedFraction to var
+        if (GetInfectedFraction(false) > zombieRuleComponent.ZombieShuttleCallPercentage && !_roundEnd.IsRoundEndRequested())
         {
             foreach (var station in _station.GetStations())
             {
