@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: The spare ID will always unlock 15 seconds after nukies declare war,
-      even if there is a captain.
-    type: Tweak
-  id: 2047
-  time: '2026-01-11T15:40:02.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5104
 - author: Pharaz4
   changes:
   - message: Added Skia to guidebook.
@@ -4346,4 +4338,11 @@
   id: 2547
   time: '2026-07-10T20:20:09.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6217
+- author: ArionGekkota
+  changes:
+  - message: Allulalo can now fit inside bags!
+    type: Add
+  id: 2548
+  time: '2026-07-10T20:21:42.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6248
 Order: 1
