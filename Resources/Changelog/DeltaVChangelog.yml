@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: snowywinters
-  changes:
-  - message: The station AI is now better integrated into the station allowing use
-      of fabs and substations/SMES
-    type: Add
-  id: 2041
-  time: '2026-01-10T21:58:12.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5132
 - author: FaintSpeaker
   changes:
   - message: Adv. Cleaning Cyborg Module now regenerates Space Cleaner.
@@ -4341,4 +4333,12 @@
   id: 2541
   time: '2026-07-10T13:59:29.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6269
+- author: Radezolid
+  changes:
+  - message: Seismic charges cost increased from 1250 mining points to 6250 mining
+      points.
+    type: Tweak
+  id: 2542
+  time: '2026-07-10T14:05:18.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6245
 Order: 1
