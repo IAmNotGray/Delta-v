@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: FaintSpeaker
-  changes:
-  - message: Adv. Cleaning Cyborg Module now regenerates Space Cleaner.
-    type: Add
-  id: 2042
-  time: '2026-01-10T22:07:44.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5155
 - author: ShepardToTheStars, Toby222
   changes:
   - message: Fixed feroxi paramedic and goliath hardsuit helmet sprites displaying
@@ -4341,4 +4334,11 @@
   id: 2542
   time: '2026-07-10T14:05:18.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6245
+- author: ShepardToTheStars
+  changes:
+  - message: Advanced cleaning is now a T3 civilian services research.
+    type: Tweak
+  id: 2543
+  time: '2026-07-10T15:03:13.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6271
 Order: 1
