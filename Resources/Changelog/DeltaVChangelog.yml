@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: keekee38
-  changes:
-  - message: Increased minimum player count for nukies to 20 ready and 40 total players.
-    type: Tweak
-  id: 2044
-  time: '2026-01-10T23:06:04.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5159
 - author: MilonPL
   changes:
   - message: Fixed emergency jaws of life not draining their battery when prying doors.
@@ -4341,4 +4334,14 @@
   id: 2544
   time: '2026-07-10T17:22:38.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6241
+- author: ShepardToTheStars
+  changes:
+  - message: New death implanters have been added to the syndicate uplink for those
+      to get the objective to die a glorious death - the true death implanter (free),
+      death acidifier implanter (free), and microbomb implanter (2TC). Choose wisely
+      because you only get one.
+    type: Add
+  id: 2545
+  time: '2026-07-10T19:58:17.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6221
 Order: 1
