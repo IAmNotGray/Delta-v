@@ -80,7 +80,7 @@ public sealed class TechnologyDiskSystem : EntitySystem
 
         if (bundles.Count == 0)
         {
-            Log.Error($"Failed to pick recipe for a tech disk: no suitable recipes were found.");
+            Log.Error($"Failed to pick recipe for a tech disk: no suitable recipes were found");
             return;
         }
 
