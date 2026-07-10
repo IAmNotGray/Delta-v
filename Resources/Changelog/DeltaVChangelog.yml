@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars, Toby222
-  changes:
-  - message: Fixed feroxi paramedic and goliath hardsuit helmet sprites displaying
-      the incorrect sprite.
-    type: Fix
-  id: 2043
-  time: '2026-01-10T22:07:30.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5161
 - author: keekee38
   changes:
   - message: Increased minimum player count for nukies to 20 ready and 40 total players.
@@ -4341,4 +4333,12 @@
   id: 2543
   time: '2026-07-10T15:03:13.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6271
+- author: ShepardToTheStars
+  changes:
+  - message: You can no longer see your own health bar with the medical hud (or similar
+      eyewear).
+    type: Tweak
+  id: 2544
+  time: '2026-07-10T17:22:38.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6241
 Order: 1
