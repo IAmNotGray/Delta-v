@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: DisposableCrewmember42
-  changes:
-  - message: The Revenant can no longer be killed by spiking your own water bottle.
-    type: Fix
-  id: 2051
-  time: '2026-01-11T19:57:38.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5125
 - author: Apachito
   changes:
   - message: Moved the craftable armor to the clothing tab in the crafting menu
@@ -4344,4 +4337,11 @@
   id: 2551
   time: '2026-07-11T16:30:08.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6265
+- author: rebe83
+  changes:
+  - message: Ion damage has been removed.
+    type: Remove
+  id: 2552
+  time: '2026-07-11T16:34:56.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5960
 Order: 1
