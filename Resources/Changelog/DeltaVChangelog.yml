@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: Pharaz4
-  changes:
-  - message: Added Skia to guidebook.
-    type: Add
-  - message: Fixed some typos and a page on guidebook.
-    type: Fix
-  id: 2048
-  time: '2026-01-11T16:27:06.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5178
 - author: Minerva
   changes:
   - message: Crash carts can now be ordered from Logistics under the Medical category.
@@ -4345,4 +4336,12 @@
   id: 2548
   time: '2026-07-10T20:21:42.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6248
+- author: Radezolid
+  changes:
+  - message: The LO's knuckledusters are back in, get them at your closest Logistics
+      Officer's locker.
+    type: Tweak
+  id: 2549
+  time: '2026-07-11T08:29:20.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6243
 Order: 1
