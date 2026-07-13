@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Unkn0wnGh0st333
-  changes:
-  - message: Gulp Emote from Goob has been added...  gulp...
-    type: Add
-  id: 2053
-  time: '2026-01-12T04:42:07.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5033
 - author: Velcroboy
   changes:
   - message: Tanks of ammonia are now purchasable from logi for mixing more space
@@ -4341,4 +4334,11 @@
   id: 2553
   time: '2026-07-11T17:25:07.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5924
+- author: Coryler
+  changes:
+  - message: Avali Preened Feather Color are now correct again
+    type: Fix
+  id: 2554
+  time: '2026-07-13T13:32:05.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6285
 Order: 1
