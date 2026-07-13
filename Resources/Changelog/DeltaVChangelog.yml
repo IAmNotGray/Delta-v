@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: Halo3moth
-  changes:
-  - message: Re-added the graytide stamp to maints lockers.
-    type: Add
-  - message: Tweak some of the spawn rates for meme items in maints lockers.
-    type: Tweak
-  id: 2061
-  time: '2026-01-16T17:58:01.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5221
 - author: Pharaz4
   changes:
   - message: Fixed extra hardsuit that spawned in Suit storage lockers.
@@ -4333,4 +4324,25 @@
   id: 2561
   time: '2026-07-13T20:36:52.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6291
+- author: ShepardToTheStars
+  changes:
+  - message: Xenoborg ID chip slots are no longer compatible with crew ID chips or
+      IDs.
+    type: Tweak
+  - message: Only the Xenoborg Mothership Core can talk over binary. All xenoborgs
+      can still listen.
+    type: Tweak
+  - message: Xenoborgs now have EMP resistant batteries and will only take drain around
+      40% of battery.
+    type: Tweak
+  - message: Xenoborgs will only be disabled for 6 seconds when hit by an EMP, instead
+      of 60 seconds.
+    type: Tweak
+  - message: The Xenoborg mothership core now has a magnet for materials.
+    type: Tweak
+  - message: The Xenoborg silicon storage square now has a toggleable magnet.
+    type: Fix
+  id: 2562
+  time: '2026-07-13T21:26:01.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6278
 Order: 1
