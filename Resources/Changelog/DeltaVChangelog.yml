@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: Pharaz4
-  changes:
-  - message: Syndicate Assault, Medical, and Saboteur borgs now get names.
-    type: Add
-  - message: Fixed SRN Saboteur borg not being able to fit Engineering module
-    type: Fix
-  id: 2055
-  time: '2026-01-14T13:23:22.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5197
 - author: MilonPL
   changes:
   - message: Added a dynamic tip system that shows contextual tips to players based
@@ -4340,4 +4331,12 @@
   id: 2555
   time: '2026-07-13T13:46:25.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6250
+- author: ArionGekkota
+  changes:
+  - message: Added the small arms mining kit to the mining voucher. It contains a
+      crusher dagger and mining drill!
+    type: Add
+  id: 2556
+  time: '2026-07-13T13:51:12.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6260
 Order: 1
