@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Pharaz4
-  changes:
-  - message: Hard hats are now protective!
-    type: Tweak
-  id: 2058
-  time: '2026-01-15T15:44:57.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5175
 - author: Halo3moth
   changes:
   - message: The hos locker will now spawn with a briefcase that allows them to pick
@@ -4338,4 +4331,11 @@
   id: 2558
   time: '2026-07-13T16:16:20.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6264
+- author: ShepardToTheStars
+  changes:
+  - message: Derelict borgs no longer have access to heads' rooms.
+    type: Fix
+  id: 2559
+  time: '2026-07-13T17:38:08.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6284
 Order: 1
