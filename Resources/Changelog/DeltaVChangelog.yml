@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: mnva0
-  changes:
-  - message: Ovinia now start with a emergency survival box.
-    type: Fix
-  id: 2060
-  time: '2026-01-16T17:55:22.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5207
 - author: Halo3moth
   changes:
   - message: Re-added the graytide stamp to maints lockers.
@@ -4332,4 +4325,12 @@
   id: 2560
   time: '2026-07-13T19:58:26.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6205
+- author: ShepardToTheStars
+  changes:
+  - message: Objects animated by glimmer, revenants, or magic cannot be turned into
+      zombies anymore.
+    type: Fix
+  id: 2561
+  time: '2026-07-13T20:36:52.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6291
 Order: 1
