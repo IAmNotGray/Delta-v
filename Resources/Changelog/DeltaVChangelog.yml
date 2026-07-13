@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Velcroboy
-  changes:
-  - message: Tanks of ammonia are now purchasable from logi for mixing more space
-      cleaner or making the station stinky
-    type: Add
-  id: 2054
-  time: '2026-01-13T05:00:57.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5167
 - author: Pharaz4
   changes:
   - message: Syndicate Assault, Medical, and Saboteur borgs now get names.
@@ -4341,4 +4333,11 @@
   id: 2554
   time: '2026-07-13T13:32:05.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6285
+- author: pootslap
+  changes:
+  - message: Starlight forged weapons/armour/ammo are no longer craftable.
+    type: Remove
+  id: 2555
+  time: '2026-07-13T13:46:25.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6250
 Order: 1
