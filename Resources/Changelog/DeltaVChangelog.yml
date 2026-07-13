@@ -1,17 +1,4 @@
 ﻿Entries:
-- author: Halo3moth
-  changes:
-  - message: The hos locker will now spawn with a briefcase that allows them to pick
-      between sidearms.
-    type: Add
-  - message: The energy magnum now also works for the hos steal objective.
-    type: Tweak
-  - message: Energy magnum standard bolt from 20 heat to 24 and magnum bolt from 30
-      heat to 24 heat and 11 pierce.
-    type: Tweak
-  id: 2059
-  time: '2026-01-16T17:46:17.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5203
 - author: mnva0
   changes:
   - message: Ovinia now start with a emergency survival box.
@@ -4338,4 +4325,11 @@
   id: 2559
   time: '2026-07-13T17:38:08.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6284
+- author: Coryler
+  changes:
+  - message: Character height should be correctly applied for clones and paradox clones.
+    type: Fix
+  id: 2560
+  time: '2026-07-13T19:58:26.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6205
 Order: 1
