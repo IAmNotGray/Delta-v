@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Velcroboy
-  changes:
-  - message: Fixed bomb and effigy targets being on grids off the station sometimes.
-    type: Fix
-  id: 2057
-  time: '2026-01-15T07:29:44.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5213
 - author: Pharaz4
   changes:
   - message: Hard hats are now protective!
@@ -4337,4 +4330,12 @@
   id: 2557
   time: '2026-07-13T14:24:25.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6266
+- author: Velitation
+  changes:
+  - message: Added 2 new outfits and a mantle to the mime's loadout. The outfits can
+      also be printed out at a uniform printer.
+    type: Add
+  id: 2558
+  time: '2026-07-13T16:16:20.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6264
 Order: 1
