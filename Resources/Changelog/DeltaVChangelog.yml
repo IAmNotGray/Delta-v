@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: Pharaz4
-  changes:
-  - message: Fixed extra hardsuit that spawned in Suit storage lockers.
-    type: Fix
-  - message: Fixed free Epistemics access for HoP in pTech.
-    type: Fix
-  id: 2062
-  time: '2026-01-16T17:59:12.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5201
 - author: BarryNorfolk
   changes:
   - message: Added new mapping command 'togglenetworklinks'
@@ -4345,4 +4336,13 @@
   id: 2562
   time: '2026-07-13T21:26:01.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6278
+- author: Cepelinas1
+  changes:
+  - message: Certain fauna, like space dragons or mice can now see in the dark!
+    type: Add
+  - message: Dragons can now smell blood.
+    type: Add
+  id: 2563
+  time: '2026-07-14T01:38:28.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5902
 Order: 1
