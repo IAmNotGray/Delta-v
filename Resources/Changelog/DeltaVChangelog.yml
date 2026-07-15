@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: BarryNorfolk
-  changes:
-  - message: Added new mapping command 'togglenetworklinks'
-    type: Add
-  id: 2063
-  time: '2026-01-16T18:09:53.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5188
 - author: Halo3moth
   changes:
   - message: Devils will now role 2.5 times more often.
@@ -4345,4 +4338,12 @@
   id: 2563
   time: '2026-07-14T01:38:28.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5902
+- author: Velitation
+  changes:
+  - message: Mime PDAs once again start with the NanoTask, NoteKeeper, and NanoChat
+      apps.
+    type: Tweak
+  id: 2564
+  time: '2026-07-15T00:43:20.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6252
 Order: 1
