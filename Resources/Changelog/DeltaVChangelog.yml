@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: cmorley191
-  changes:
-  - message: Harpies are now reliably more sensitive to pollutant gases than other
-      species. For example, 0.4% of CO2 will make harpies start gasping, while humans
-      are okay up to 1.1% CO2
-    type: Add
-  id: 2069
-  time: '2026-01-16T18:32:20.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5158
 - author: ShepardToTheStars
   changes:
   - message: Added CentComm Shipyard to order free ships with CentComm access.
@@ -4354,4 +4345,29 @@
   id: 2569
   time: '2026-07-17T04:31:23.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6307
+- author: ArionGekkota
+  changes:
+  - message: 'Hitman: Added the ninja kit, for those who want a melee-oriented fight,
+      as well as its brand new medium-frequency blade!'
+    type: Add
+  - message: 'Hitman: Gave some extra goodies to the sharpshooter and poisoner kit.'
+    type: Tweak
+  - message: 'Hitman: Revamped the tracker kit to include way more tools to spy on
+      the crew.'
+    type: Tweak
+  - message: 'Hitman: Reworked the loud kit into the bounty hunter kit, now equipped
+      with a repeater and more cowboy attire'
+    type: Tweak
+  - message: 'Hitman: Merged the disguise and assassin kit into one kit, combining
+      stealth and the ability to blend in anywhere'
+    type: Tweak
+  - message: 'Hitman: Reworked the infiltrator kit into the saboteur kit, a kit more
+      focused on sabotage and setting up traps'
+    type: Tweak
+  - message: 'Hitman: Removed the escapist kit. The new ninja kit was given a scram
+      implant to compensate.'
+    type: Remove
+  id: 2570
+  time: '2026-07-17T04:40:05.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6270
 Order: 1
