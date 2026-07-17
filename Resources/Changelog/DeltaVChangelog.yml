@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: BunglesnortBoss
-  changes:
-  - message: Made AI Nanites a good option. Heals 50 HP with a shorter cooldown
-    type: Tweak
-  id: 2067
-  time: '2026-01-16T18:27:22.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5210
 - author: pootslap
   changes:
   - message: Carpy has acquired a fancy new pen and stamp and is ready to dispense
@@ -4352,4 +4345,13 @@
   id: 2567
   time: '2026-07-16T20:24:27.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6283
+- author: ollyoaner
+  changes:
+  - message: Slime people upgrades! (Incl. ports from Impstation). Some slimeperson
+      characters might need their eye marking(s) fix due to them being eyeless by
+      default!
+    type: Add
+  id: 2568
+  time: '2026-07-17T03:50:51.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6288
 Order: 1
