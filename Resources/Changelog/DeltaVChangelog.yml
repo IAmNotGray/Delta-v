@@ -1,14 +1,4 @@
 ﻿Entries:
-- author: pootslap
-  changes:
-  - message: Carpy has acquired a fancy new pen and stamp and is ready to dispense
-      legal advice.
-    type: Tweak
-  - message: Removed the duplicate chaplain stamp from the listening post
-    type: Fix
-  id: 2068
-  time: '2026-01-16T18:29:14.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5169
 - author: cmorley191
   changes:
   - message: Harpies are now reliably more sensitive to pollutant gases than other
@@ -4354,4 +4344,14 @@
   id: 2568
   time: '2026-07-17T03:50:51.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6288
+- author: Velitation
+  changes:
+  - message: Added 2 new hats, 3 new neck items, 1 new coat and, 1 pair of shoes to
+      the mime loadout.
+    type: Add
+  - message: Mimes can now select which shoes they start with.
+    type: Tweak
+  id: 2569
+  time: '2026-07-17T04:31:23.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6307
 Order: 1
