@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: EmberAstra
-  changes:
-  - message: Made the Engineering Void Suit printable!
-    type: Tweak
-  id: 2071
-  time: '2026-01-16T18:41:11.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5222
 - author: cmorley191
   changes:
   - message: The Oracle will no longer request items that are "very" far away from
@@ -4370,4 +4363,11 @@
   id: 2571
   time: '2026-07-19T16:19:30.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6323
+- author: GooeyPancake
+  changes:
+  - message: Pills now have taste again! Sorry Lexorin-pilled people.
+    type: Add
+  id: 2572
+  time: '2026-07-19T16:38:26.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6299
 Order: 1
