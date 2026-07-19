@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: Added CentComm Shipyard to order free ships with CentComm access.
-    type: Add
-  id: 2070
-  time: '2026-01-16T18:37:33.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5172
 - author: EmberAstra
   changes:
   - message: Made the Engineering Void Suit printable!
@@ -4370,4 +4363,11 @@
   id: 2570
   time: '2026-07-17T04:40:05.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6270
+- author: SumofThreeParts
+  changes:
+  - message: Traitors are now less likely to have the escape to Midpoint objective.
+    type: Tweak
+  id: 2571
+  time: '2026-07-19T16:19:30.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6323
 Order: 1
