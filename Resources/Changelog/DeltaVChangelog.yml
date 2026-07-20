@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Toby222
-  changes:
-  - message: Removed footprint prediction (for now)
-    type: Remove
-  id: 2074
-  time: '2026-01-16T19:07:45.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5224
 - author: Velcroboy
   changes:
   - message: Prisoners can find dull bread knives in the ChefVend.
@@ -4369,4 +4362,11 @@
   id: 2574
   time: '2026-07-20T00:24:43.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6310
+- author: kotobdev
+  changes:
+  - message: The Ardent Censer no longer requires fuel for deconversions.
+    type: Tweak
+  id: 2575
+  time: '2026-07-20T17:38:51.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5016
 Order: 1
