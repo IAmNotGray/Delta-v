@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: DisposableCrewmember42
-  changes:
-  - message: You can no longer drink the deep fryer.
-    type: Fix
-  id: 2078
-  time: '2026-01-18T04:40:48.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5238
 - author: snowywinters
   changes:
   - message: Reinforced cameras can now be built! They have additional HP and are
@@ -4371,4 +4364,14 @@
   id: 2578
   time: '2026-07-20T20:29:02.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6292
+- author: keekee38
+  changes:
+  - message: Added the novice mark, to help show that you're new! It is on intern
+      roles by default, and optional for everyone
+    type: Add
+  - message: Some clothes now have examine text, in particular pride clothes.
+    type: Tweak
+  id: 2579
+  time: '2026-07-20T22:08:57.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6118
 Order: 1
