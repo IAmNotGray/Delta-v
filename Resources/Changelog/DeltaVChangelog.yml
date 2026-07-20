@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Colin-Tel
-  changes:
-  - message: Eked the Anglish tung tie. In other words, added a trait that lets you
-      talk like an Anglo Saxon with over 1,100 word replacements.
-    type: Add
-  id: 2086
-  time: '2026-01-21T09:37:07.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/4092
 - author: ShepardToTheStars
   changes:
   - message: The ninja is now revealed with hit with attacks, projectiles, explosions,
@@ -4367,4 +4359,12 @@
   id: 2586
   time: '2026-07-20T23:23:28.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6306
+- author: Proxysseia
+  changes:
+  - message: (TEST MERGE) Increased traitor starting telecrystal balance from 20 to
+      30.
+    type: Tweak
+  id: 2587
+  time: '2026-07-20T23:37:07.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6275
 Order: 1
