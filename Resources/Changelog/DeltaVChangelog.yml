@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Velcroboy
-  changes:
-  - message: Prisoners can find dull bread knives in the ChefVend.
-    type: Tweak
-  id: 2075
-  time: '2026-01-17T21:13:59.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5234
 - author: Halo3moth
   changes:
   - message: The T1 armored vest (slim) can now once again be picked in security loadouts.
@@ -4369,4 +4362,12 @@
   id: 2575
   time: '2026-07-20T17:38:51.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5016
+- author: Halo3rat, kotobdev
+  changes:
+  - message: The Freighter Crew's Jumpsuit is now available in the AutoDrobe, for
+      those who value their dental hygiene.
+    type: Add
+  id: 2576
+  time: '2026-07-20T20:06:59.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6331
 Order: 1
