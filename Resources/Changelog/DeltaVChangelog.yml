@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: turtlemutt
-  changes:
-  - message: Added more names for ghost role spawns.
-    type: Add
-  id: 2084
-  time: '2026-01-21T05:17:05.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5254
 - author: Cepelinas1
   changes:
   - message: Logistics Officers can now use the shipyard to buy shuttles. No need
@@ -4367,4 +4360,12 @@
   id: 2584
   time: '2026-07-20T22:44:01.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6332
+- author: sowelipililimute
+  changes:
+  - message: Security now has access to evidence bags, for storing all the illegal
+      things that can be stored.
+    type: Add
+  id: 2585
+  time: '2026-07-20T23:17:53.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6280
 Order: 1
