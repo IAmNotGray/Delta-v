@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: pootslap
-  changes:
-  - message: You can now examine character descriptions from much further away.
-    type: Tweak
-  id: 2082
-  time: '2026-01-20T11:49:48.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5219
 - author: Eternally-Confused
   changes:
   - message: (TEST MERGE) Space pens now contain a chemical called Stabilizine instead
@@ -4368,4 +4361,13 @@
   id: 2582
   time: '2026-07-20T22:21:24.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6301
+- author: pootslap
+  changes:
+  - message: Improvised shotgun shells use the old upstream crafting recipe.
+    type: Tweak
+  - message: The improvised shotgun is craftable once again.
+    type: Fix
+  id: 2583
+  time: '2026-07-20T22:22:59.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6327
 Order: 1
