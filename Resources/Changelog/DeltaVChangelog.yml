@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Halo3moth
-  changes:
-  - message: The T1 armored vest (slim) can now once again be picked in security loadouts.
-    type: Add
-  id: 2076
-  time: '2026-01-17T21:36:45.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5220
 - author: biddygelson
   changes:
   - message: 'Academy: added anti-meteor zones and anti-anomaly zone, AI restoration
@@ -4370,4 +4363,12 @@
   id: 2576
   time: '2026-07-20T20:06:59.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6331
+- author: Mnemotechnician, kotobdev, ShepardToTheStars
+  changes:
+  - message: You can now offer items to other players by pressing F, and then clicking
+      on them! They can accept by clicking on the alert on the side of their screen.
+    type: Add
+  id: 2577
+  time: '2026-07-20T20:13:58.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5597
 Order: 1
