@@ -1,17 +1,4 @@
 ﻿Entries:
-- author: biddygelson
-  changes:
-  - message: 'Academy: added anti-meteor zones and anti-anomaly zone, AI restoration
-      console in Mystagogue, Robotics Console in robo, fishing hole added to park,
-      materials is cargo at roundstart.'
-    type: Add
-  - message: 'Academy: station starts with distro and waste enabled, spare atmos chambers
-      start as vacuums, split artifacts'' APCs for power management, botany has more
-      trays and is slightly larger, department-front holopads in the department.'
-    type: Tweak
-  id: 2077
-  time: '2026-01-18T01:54:56.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5130
 - author: DisposableCrewmember42
   changes:
   - message: You can no longer drink the deep fryer.
@@ -4371,4 +4358,17 @@
   id: 2577
   time: '2026-07-20T20:13:58.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5597
+- author: ShepardToTheStars
+  changes:
+  - message: Glimmer probers can once again turn on and lock into place when glimmer
+      is over 750.
+    type: Add
+  - message: Glimmer prober explosions are 1.5x bigger if glimmer is over 900. You
+      better build drainers! :)
+    type: Tweak
+  - message: The oracle can now give normality crystals when completing her requests.
+    type: Tweak
+  id: 2578
+  time: '2026-07-20T20:29:02.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6292
 Order: 1
