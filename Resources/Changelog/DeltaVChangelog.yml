@@ -1,14 +1,4 @@
 ﻿Entries:
-- author: Eternally-Confused
-  changes:
-  - message: (TEST MERGE) Space pens now contain a chemical called Stabilizine instead
-      of Leporazine, which is better at stabilizing body temperature.
-    type: Tweak
-  - message: Avali no longer die from space pens.
-    type: Tweak
-  id: 2083
-  time: '2026-01-20T21:15:21.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5181
 - author: turtlemutt
   changes:
   - message: Added more names for ghost role spawns.
@@ -4370,4 +4360,11 @@
   id: 2583
   time: '2026-07-20T22:22:59.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6327
+- author: kotobdev
+  changes:
+  - message: Security cold weather ponchos are gone from loadouts and the SecDrobe.
+    type: Remove
+  id: 2584
+  time: '2026-07-20T22:44:01.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6332
 Order: 1
