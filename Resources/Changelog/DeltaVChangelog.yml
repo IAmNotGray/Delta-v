@@ -1,11 +1,4 @@
 ﻿Entries:
-- author: Dorragon
-  changes:
-  - message: Ready Manifest added to the lobby
-    type: Add
-  id: 2080
-  time: '2026-01-18T18:47:07.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5187
 - author: MilonPL
   changes:
   - message: Added a new traits system, supporting conditions and new effects. Make
@@ -4371,4 +4364,11 @@
   id: 2580
   time: '2026-07-20T22:10:50.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/5481
+- author: sowelipililimute
+  changes:
+  - message: The crew monitor now reports global coordinate positions.
+    type: Tweak
+  id: 2581
+  time: '2026-07-20T22:20:12.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6326
 Order: 1
