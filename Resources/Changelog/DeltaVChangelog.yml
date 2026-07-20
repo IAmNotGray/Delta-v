@@ -1,15 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: The ninja is now revealed with hit with attacks, projectiles, explosions,
-      and grenades that do damage.
-    type: Tweak
-  - message: The ninja is now revealed with hit with attacks, projectiles, explosions,
-      and grenades that do damage.
-    type: Fix
-  id: 2087
-  time: '2026-01-21T14:18:56.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5217
 - author: Toby222
   changes:
   - message: FTL times have been adjusted. Startup is shorter, travel is longer.
@@ -4367,4 +4356,15 @@
   id: 2587
   time: '2026-07-20T23:37:07.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6275
+- author: ArionGekkota
+  changes:
+  - message: reintroduced researchable PKA modkits
+    type: Add
+  - message: Changed the PKA to its current upstream state
+    type: Tweak
+  - message: Reduced the health of some salvage mobs
+    type: Tweak
+  id: 2588
+  time: '2026-07-20T23:46:11.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6258
 Order: 1
