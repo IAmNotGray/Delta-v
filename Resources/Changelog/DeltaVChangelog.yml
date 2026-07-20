@@ -1,12 +1,4 @@
 ﻿Entries:
-- author: Cepelinas1
-  changes:
-  - message: Logistics Officers can now use the shipyard to buy shuttles. No need
-      to beg Captain to buy it anymore!
-    type: Add
-  id: 2085
-  time: '2026-01-21T05:52:10.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5251
 - author: Colin-Tel
   changes:
   - message: Eked the Anglish tung tie. In other words, added a trait that lets you
@@ -4368,4 +4360,11 @@
   id: 2585
   time: '2026-07-20T23:17:53.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6280
+- author: jessiscah23
+  changes:
+  - message: Added organizational capabilities to the cargo bounty computer.
+    type: Add
+  id: 2586
+  time: '2026-07-20T23:23:28.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6306
 Order: 1
