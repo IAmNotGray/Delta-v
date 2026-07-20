@@ -1,14 +1,4 @@
 ﻿Entries:
-- author: MilonPL
-  changes:
-  - message: Added a new traits system, supporting conditions and new effects. Make
-      sure to check out the Traits tab in the character editor!
-    type: Add
-  - message: All character traits have been reset.
-    type: Remove
-  id: 2081
-  time: '2026-01-20T11:49:59.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5208
 - author: pootslap
   changes:
   - message: You can now examine character descriptions from much further away.
@@ -4371,4 +4361,11 @@
   id: 2581
   time: '2026-07-20T22:20:12.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6326
+- author: keekee38
+  changes:
+  - message: Vulpkanins can yip now.
+    type: Tweak
+  id: 2582
+  time: '2026-07-20T22:21:24.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6301
 Order: 1
