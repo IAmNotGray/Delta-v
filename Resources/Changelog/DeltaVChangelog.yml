@@ -1,14 +1,4 @@
 ﻿Entries:
-- author: snowywinters
-  changes:
-  - message: Reinforced cameras can now be built! They have additional HP and are
-      more resistant to explosions and meteors.
-    type: Add
-  - message: The AI has its own section in the security cameras console.
-    type: Add
-  id: 2079
-  time: '2026-01-18T17:18:45.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5027
 - author: Dorragon
   changes:
   - message: Ready Manifest added to the lobby
@@ -4374,4 +4364,11 @@
   id: 2579
   time: '2026-07-20T22:08:57.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6118
+- author: Coryler
+  changes:
+  - message: Shadekin has arrived in the DeltaV sector.
+    type: Add
+  id: 2580
+  time: '2026-07-20T22:10:50.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/5481
 Order: 1
