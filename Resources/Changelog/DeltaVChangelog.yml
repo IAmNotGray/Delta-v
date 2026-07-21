@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars, foxcumberland
-  changes:
-  - message: Added fashionable longcoats for command, security, and crew. Find them
-      in the loadouts for command, security, and passengers, or in the ClothesMate
-      on station!
-    type: Add
-  id: 2089
-  time: '2026-01-21T16:23:14.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5235
 - author: Apachito
   changes:
   - message: Made tide breaker actually craftable
@@ -4365,4 +4356,11 @@
   id: 2589
   time: '2026-07-21T00:05:09.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6201
+- author: Stxcking
+  changes:
+  - message: Vulps can yip properly now.
+    type: Fix
+  id: 2590
+  time: '2026-07-21T02:20:30.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6354
 Order: 1
