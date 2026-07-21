@@ -1,17 +1,4 @@
 ﻿Entries:
-- author: ShepardToTheStars
-  changes:
-  - message: Certain painkillers are more long-lasting than others, based on how strong
-      they are.
-    type: Tweak
-  - message: Players with the chronic pain trait start with ~5 minutes of suppressed
-      pain before they start feeling the effects.
-    type: Tweak
-  - message: Fixed chronic pain's effects from pulsing continuously.
-    type: Fix
-  id: 2091
-  time: '2026-01-23T10:24:32.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5180
 - author: snowywinters
   changes:
   - message: Captain's armored winter coat a alternative to the carapace
@@ -4365,4 +4352,11 @@
   id: 2591
   time: '2026-07-21T07:58:56.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6357
+- author: Coryler
+  changes:
+  - message: Add back Felinid root ability
+    type: Add
+  id: 2592
+  time: '2026-07-21T18:44:49.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6358
 Order: 1
