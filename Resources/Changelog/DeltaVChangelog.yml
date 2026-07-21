@@ -1,13 +1,4 @@
 ﻿Entries:
-- author: Toby222
-  changes:
-  - message: FTL times have been adjusted. Startup is shorter, travel is longer.
-    type: Tweak
-  - message: The FTL startup sound now lines up with the duration of startup again!!!
-    type: Fix
-  id: 2088
-  time: '2026-01-21T14:50:49.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5257
 - author: ShepardToTheStars, foxcumberland
   changes:
   - message: Added fashionable longcoats for command, security, and crew. Find them
@@ -4367,4 +4358,11 @@
   id: 2588
   time: '2026-07-20T23:46:11.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6258
+- author: nlaky
+  changes:
+  - message: Fixed incorrect Vulpkanin mask sprites.
+    type: Fix
+  id: 2589
+  time: '2026-07-21T00:05:09.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6201
 Order: 1
