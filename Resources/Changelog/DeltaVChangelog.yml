@@ -1,13 +1,6 @@
 ﻿Entries:
 - author: MilonPL
   changes:
-  - message: The traits points bar will now show up correctly.
-    type: Fix
-  id: 2094
-  time: '2026-01-24T20:55:31.0000000+00:00'
-  url: https://github.com/DeltaV-Station/Delta-v/pull/5275
-- author: MilonPL
-  changes:
   - message: The uncloneable trait no longer prevents your character from getting
       revived by defibrillators.
     type: Fix
@@ -4356,4 +4349,15 @@
   id: 2594
   time: '2026-07-23T16:29:30.0000000+00:00'
   url: https://github.com/DeltaV-Station/Delta-v/pull/6088
+- author: ShepardToTheStars
+  changes:
+  - message: Buckling someone while they are being carried should work as intended
+      now.
+    type: Fix
+  - message: Picking someone up that is criticla will have priority over CPR unless
+      they are buckled to something.
+    type: Tweak
+  id: 2595
+  time: '2026-07-23T20:07:04.0000000+00:00'
+  url: https://github.com/DeltaV-Station/Delta-v/pull/6375
 Order: 1
