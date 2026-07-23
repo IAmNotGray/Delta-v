@@ -60,3 +60,46 @@
   components:
   - type: Door
     state: Open
+
+- type: entity
+  id: BlastDoorFrameDiagonal
+  parent: BaseStructureDynamic
+  name: diagonal blast door frame
+  description: This one says 'BLAST DONGER'.
+  components:
+  - type: Sprite
+    sprite: _DV/Structures/Doors/Shutters/blastdoor_diagonal.rsi
+    state: assembly
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 55
+        mask:
+        - Impassable
+        - HighImpassable
+        layer:
+        - HighImpassable
+  - type: Transform
+    noRot: true
+  - type: Construction
+    graph: BlastDoorDiagonal
+    node: frame1
+  placement:
+    mode: SnapgridCenter

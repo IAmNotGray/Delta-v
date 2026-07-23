@@ -12,7 +12,7 @@
       map: ["enum.WeldableLayers.BaseWelded"]
   - type: Occluder
   - type: Construction
-    graph: Shutters
+    graph: ShuttersDiagonal
     node: Shutters
     containers:
     - board
