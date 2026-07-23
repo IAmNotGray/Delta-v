@@ -13,7 +13,7 @@
   - type: Occluder
   - type: Construction
     graph: ShuttersDiagonal
-    node: Shutters
+    node: ShuttersDiagonal
     containers:
     - board
   - type: Fixtures

@@ -559,3 +559,43 @@
   - !type:NoWindowsInTile
   objectType: Structure
   placementMode: SnapgridCenter
+
+- type: construction
+  id: ShuttersNormalDiagonal
+  graph: ShuttersDiagonal
+  startNode: start
+  targetNode: ShuttersDiagonal
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+
+- type: construction
+  id: ShuttersWindowDiagonal
+  graph: ShuttersDiagonal
+  startNode: start
+  targetNode: ShuttersWindowDiagonal
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+
+- type: construction
+  id: ShuttersRadiationDiagonal
+  graph: ShuttersDiagonal
+  startNode: start
+  targetNode: ShuttersRadiationDiagonal
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+
+- type: construction
+  id: BlastDoorDiagonal
+  graph: BlastDoorDiagonal
+  startNode: start
+  targetNode: blastdoor
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true

@@ -30,7 +30,7 @@
     enabled: false
   - type: Construction
     graph: BlastDoorDiagonal
-    node: blastdoordiagonal
+    node: blastdoor
   - type: StaticPrice
     price: 250
   - type: Fixtures

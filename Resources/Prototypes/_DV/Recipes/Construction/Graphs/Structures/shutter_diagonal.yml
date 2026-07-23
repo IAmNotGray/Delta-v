@@ -73,14 +73,14 @@
 
     - node: frame4
       edges:
-        - to: Shutters
+        - to: ShuttersDiagonal
           conditions:
             - !type:EntityAnchored
               anchored: true
           steps:
             - tool: Anchoring
               doAfter: 1
-        - to: ShuttersWindowFrame
+        - to: ShuttersWindowFrameDiagonal
           conditions:
             - !type:EntityAnchored
               anchored: true
@@ -88,7 +88,7 @@
             - material: Glass
               amount: 2
               doAfter: 2
-        - to: ShuttersRadiationFrame
+        - to: ShuttersRadiationFrameDiagonal
           conditions:
             - !type:EntityAnchored
               anchored: true
@@ -108,8 +108,8 @@
             - tool: Screwing
               doAfter: 0.75
 
-    - node: Shutters
-      entity: ShuttersNormalOpen
+    - node: ShuttersDiagonal
+      entity: ShuttersNormalOpenDiagonal
       edges:
         - to: frame4
           conditions:
@@ -119,9 +119,9 @@
             - tool: Anchoring
               doAfter: 0.25
 
-    - node: ShuttersWindowFrame
+    - node: ShuttersWindowFrameDiagonal
       edges:
-        - to: ShuttersWindow
+        - to: ShuttersWindowDiagonal
           conditions:
             - !type:EntityAnchored
               anchored: true
@@ -138,10 +138,10 @@
               doAfter: 1
 
 
-    - node: ShuttersWindow
-      entity: ShuttersWindowOpen
+    - node: ShuttersWindowDiagonal
+      entity: ShuttersWindowOpenDiagonal
       edges:
-        - to: ShuttersWindowFrame
+        - to: ShuttersWindowFrameDiagonal
           conditions:
             - !type:EntityAnchored
               anchored: true
@@ -149,9 +149,9 @@
             - tool: Anchoring
               doAfter: 1
 
-    - node: ShuttersRadiationFrame
+    - node: ShuttersRadiationFrameDiagonal
       edges:
-        - to: ShuttersRadiation
+        - to: ShuttersRadiationDiagonal
           conditions:
             - !type:EntityAnchored
               anchored: true
@@ -167,8 +167,8 @@
             - tool: Screwing
               doAfter: 1
 
-    - node: ShuttersRadiation
-      entity: ShuttersRadiationOpen
+    - node: ShuttersRadiationDiagonal
+      entity: ShuttersRadiationOpenDiagonal
       edges:
         - to: frame4
           conditions:
