@@ -1283,7 +1283,15 @@
 - type: tile
   id: FloorGrass
   name: tiles-planet-grass-floor
+## Start of DeltaV Changes
   sprite: /Textures/_DV/Tiles/Planet/Grass/grass.png # DeltaV - Resprite, was "/Textures/Tiles/grass.png"
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+## End of DeltaV Changes
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
