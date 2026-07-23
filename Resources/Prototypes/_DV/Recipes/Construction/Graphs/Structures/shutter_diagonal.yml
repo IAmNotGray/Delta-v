@@ -137,7 +137,6 @@
             - tool: Screwing
               doAfter: 1
 
-
     - node: ShuttersWindowDiagonal
       entity: ShuttersWindowOpenDiagonal
       edges:
