@@ -109,7 +109,7 @@
               doAfter: 0.75
 
     - node: ShuttersDiagonal
-      entity: ShuttersNormalOpenDiagonal
+      entity: ShuttersNormalDiagonalOpen
       edges:
         - to: frame4
           conditions:
@@ -168,7 +168,7 @@
               doAfter: 1
 
     - node: ShuttersRadiationDiagonal
-      entity: ShuttersRadiationOpenDiagonal
+      entity: ShuttersRadiationDiagonalOpen
       edges:
         - to: frame4
           conditions:
