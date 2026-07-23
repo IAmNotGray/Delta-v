@@ -18,3 +18,9 @@ tiles-mowed-astro-snow-dug = mowed astro dug snow
 
 tiles-pool = pool
 tiles-pool-dark = dark pool
+
+tiles-grass-planet-floor-purple-astro = chromite astro-grass
+tiles-grass-planet-floor-red-astro = basalt astro-grass
+tiles-basalt-floor-bordered = basalt (bordered)
+tiles-chromite-floor-bordered = chromite (bodered)
+tiles-dirt-planet-floor = dirt floor (planet)
